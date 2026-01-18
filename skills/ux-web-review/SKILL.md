@@ -1,5 +1,6 @@
 ---
 name: ux-web-review
+version: 1.0.0
 description: Expert UX review and analysis of web applications with 10+ years of professional experience in SaaS, enterprise systems, and complex interfaces. Use when user requests UX feedback, web app review, or interface analysis. Triggers include "Give me UX feedback on this page", "Review this web app", "Analyze the UX of [URL]", or similar requests. Provides systematic analysis covering usability, accessibility, information architecture, and interaction design. Works with both live URLs and screenshots.
 ---
 

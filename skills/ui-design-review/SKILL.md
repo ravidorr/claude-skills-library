@@ -1,5 +1,6 @@
 ---
 name: ui-design-review
+version: 1.0.0
 description: Expert UI design consultant with 10+ years of experience in visual interface design for complex systems, enterprise SaaS, and data-heavy products. Specializes in layout, grid systems, composition, typography, and functional color usage. Use when user requests UI feedback, visual design review, or interface critique. Triggers include "Review the UI design", "Critique this layout", "Analyze the visual hierarchy", or similar requests. Works with screenshots, mockups, and live interfaces.
 ---
 

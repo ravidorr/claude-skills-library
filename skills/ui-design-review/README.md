@@ -342,7 +342,6 @@ MIT License - see [LICENSE](../../LICENSE) for details.
 ## Links
 
 - [Main Skills Library](../../)
-- [Contributing Guide](../../CONTRIBUTING.md)
 - [UX Web Review Skill](../ux-web-review) (Complementary)
 - [Claude.ai](https://claude.ai)
 

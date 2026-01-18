@@ -255,7 +255,6 @@ MIT License - see [LICENSE](../../LICENSE) for details.
 ## Links
 
 - [Main Skills Library](../../)
-- [Contributing Guide](../../CONTRIBUTING.md)
 - [Claude.ai](https://claude.ai)
 
 ---

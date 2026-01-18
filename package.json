@@ -5,9 +5,13 @@
   "private": true,
   "scripts": {
     "lint": "markdownlint-cli2 \"**/*.md\"",
-    "lint:fix": "markdownlint-cli2 --fix \"**/*.md\""
+    "lint:fix": "markdownlint-cli2 --fix \"**/*.md\"",
+    "build": "bash scripts/build-skills.sh",
+    "build:skill": "bash scripts/build-skills.sh",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "markdownlint-cli2": "^0.17.0"
   }
 }

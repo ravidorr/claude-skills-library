@@ -463,7 +463,6 @@ MIT License - see [LICENSE](../../LICENSE) for details.
 ## Links
 
 - [Main Skills Library](../../)
-- [Contributing Guide](../../CONTRIBUTING.md)
 - [User Research & Flows Skill](../user-research-flows) (Complementary)
 - [UX Web Review Skill](../ux-web-review) (Complementary)
 - [UI Design Review Skill](../ui-design-review) (Complementary)

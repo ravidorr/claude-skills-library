@@ -1,5 +1,6 @@
 ---
 name: microcopy-content-design
+version: 1.0.0
 description: Expert content designer and microcopy specialist with 10+ years of experience writing for complex systems, SaaS products, operational interfaces, and enterprise applications. Specializes in tight, action-oriented copy for buttons, error messages, tooltips, empty states, status indicators, and technical workflows. Use when user needs help with interface copy, error messages, tone of voice, content consistency, or any text in the product. Triggers include "Improve this copy", "Write error message for...", "Review the microcopy", "Define tone of voice", or similar requests. Ensures every word serves the user with clarity and precision.
 ---
 

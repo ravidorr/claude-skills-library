@@ -1,0 +1,5 @@
+# Build .skill files and stage them
+npm run build
+
+# Stage any updated .skill files
+git add skills/*/*.skill

@@ -1,5 +1,6 @@
 ---
 name: user-research-flows
+version: 1.0.0
 description: Expert consultant in user research, persona development, user journey mapping, and flow design for complex systems with 10+ years of experience. Specializes in SaaS products, operational systems, DevOps, NOC, observability, and AI assistants. Use when user needs help with personas, user journeys, user flows, understanding user needs, or mapping user processes. Triggers include "Create a persona", "Map the user journey", "Design the user flow", "Who are our users", or similar requests. Provides strategic user understanding that informs UX and UI decisions.
 ---
 
