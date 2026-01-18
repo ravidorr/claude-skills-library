@@ -1,4 +1,4 @@
-# Claude Skills Library
+# Skills Library
 
 A curated collection of high-quality skills that extend Claude's capabilities with specialized knowledge, workflows, and tool integrations.
 
