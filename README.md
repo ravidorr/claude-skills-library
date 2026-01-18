@@ -144,41 +144,46 @@ npm run lint:fix       # Auto-fix issues
 
 ## Contributing
 
-### Updating an Existing Skill
+We welcome contributions! Here's how to get involved.
 
-1. **Edit the source files**
+### How to Contribute
+
+1. **Fork the repository** on GitHub
+2. **Clone your fork**
 
    ```bash
-   # Edit the main skill file
-   code skills/ux-web-review/SKILL.md
-
-   # Edit reference files if needed
-   code skills/ux-web-review/references/ux_patterns.md
+   git clone https://github.com/YOUR-USERNAME/claude-skills-library.git
+   cd claude-skills-library
+   npm install
    ```
 
-2. **Rebuild the .skill file** (for Claude.ai distribution)
+3. **Create a branch** for your changes
 
    ```bash
-   npm run build ux-web-review   # Single skill
-   npm run build                  # All skills
+   git checkout -b feature/improve-ux-review
    ```
 
-3. **Validate and lint**
+4. **Make your changes**
+   - To update a skill: edit `skills/<skill-name>/SKILL.md` and any reference files
+   - To create a skill: see "Creating a New Skill" below
+
+5. **Build, validate, and lint**
 
    ```bash
+   npm run build
    npm run validate
    npm run lint
    ```
 
-4. **Commit and push**
+6. **Commit and push** to your fork
 
    ```bash
-   git add skills/ux-web-review/
-   git commit -m "Update ux-web-review: [description of changes]"
-   git push
+   git add .
+   git commit -m "Improve ux-web-review: add mobile patterns"
+   git push origin feature/improve-ux-review
    ```
 
-Users with symlinked installations will receive updates on their next `git pull`.
+7. **Open a Pull Request** from your fork to this repository
 
 ### Creating a New Skill
 
