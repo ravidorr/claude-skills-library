@@ -5,6 +5,7 @@ Comprehensive guide to designing user flows for complex systems, enterprise soft
 ## Why Flows Matter
 
 **Purpose**:
+
 - Guide users through tasks
 - Prevent errors
 - Optimize efficiency
@@ -12,6 +13,7 @@ Comprehensive guide to designing user flows for complex systems, enterprise soft
 - Create predictable experiences
 
 **What Makes a Good Flow**:
+
 - Logical (follows mental models)
 - Efficient (minimal steps)
 - Resilient (handles errors gracefully)
@@ -25,12 +27,14 @@ Comprehensive guide to designing user flows for complex systems, enterprise soft
 **Pattern**: Step 1 → Step 2 → Step 3 → Complete
 
 **Characteristics**:
+
 - Sequential progression
 - Each step builds on previous
 - Can't skip steps
 - Single path to completion
 
 **Best For**:
+
 - Onboarding/setup wizards
 - Checkout processes
 - Form submissions
@@ -38,6 +42,7 @@ Comprehensive guide to designing user flows for complex systems, enterprise soft
 - Tutorial/training flows
 
 **Design Principles**:
+
 - Show progress clearly (step X of Y)
 - Enable "back" to review
 - Save progress automatically
@@ -45,6 +50,7 @@ Comprehensive guide to designing user flows for complex systems, enterprise soft
 - Provide clear "next" action
 
 **Example**: Software Installation
+
 ```
 Welcome → 
 Select Components → 
@@ -55,12 +61,14 @@ Complete
 ```
 
 **When to Use**:
+
 - Required sequence
 - Each step depends on previous
 - User needs guidance
 - Compliance/regulations
 
 **When NOT to Use**:
+
 - Users need flexibility
 - Steps are independent
 - Power users want shortcuts
@@ -71,12 +79,14 @@ Complete
 **Pattern**: Decision Point → Path A OR Path B → (may reconverge)
 
 **Characteristics**:
+
 - Conditional paths
 - User choices determine route
 - Multiple valid outcomes
 - May loop back
 
 **Best For**:
+
 - Configuration wizards
 - Troubleshooting guides
 - Product customization
@@ -84,6 +94,7 @@ Complete
 - Feature toggles
 
 **Design Principles**:
+
 - Make decision criteria clear
 - Show consequences of choices
 - Allow path changes (when possible)
@@ -91,6 +102,7 @@ Complete
 - Remember previous choices
 
 **Example**: System Configuration
+
 ```
 Start → 
 Select Deployment Type?
@@ -100,18 +112,21 @@ Select Deployment Type?
 ```
 
 **Decision Types**:
+
 - **Simple Binary**: Yes/No, Enable/Disable
 - **Multiple Choice**: Select one of several
 - **Conditional**: Based on previous answers
 - **Smart**: System recommends path
 
 **When to Use**:
+
 - Different user needs
 - Product variants
 - Conditional features
 - Skill levels vary
 
 **When NOT to Use**:
+
 - Choices are overwhelming
 - Wrong choice is costly
 - All paths needed eventually
@@ -121,12 +136,14 @@ Select Deployment Type?
 **Pattern**: Central Hub ↔ Task 1, Task 2, Task 3 (return to hub)
 
 **Characteristics**:
+
 - Central starting point
 - Independent tasks/features
 - Return to hub between tasks
 - No required sequence
 
 **Best For**:
+
 - Dashboards
 - Admin panels
 - Control centers
@@ -134,6 +151,7 @@ Select Deployment Type?
 - System settings
 
 **Design Principles**:
+
 - Hub shows overall status
 - Quick access to all spokes
 - Remember last position
@@ -141,6 +159,7 @@ Select Deployment Type?
 - Persistent navigation to hub
 
 **Example**: Admin Dashboard
+
 ```
 Dashboard (Hub)
 ├─ User Management
@@ -153,12 +172,14 @@ Each spoke is independent, return to dashboard between tasks
 ```
 
 **When to Use**:
+
 - Independent features
 - Power users
 - Flexible task order
 - Dashboard/overview needed
 
 **When NOT to Use**:
+
 - Tasks must be sequential
 - New users need guidance
 - Complex cross-feature workflows
@@ -168,12 +189,14 @@ Each spoke is independent, return to dashboard between tasks
 **Pattern**: Multiple simultaneous paths → Sync point → Continue
 
 **Characteristics**:
+
 - Multiple actions at once
 - Progress independently
 - Synchronization point
 - May have dependencies
 
 **Best For**:
+
 - Bulk operations
 - Multi-resource provisioning
 - Team collaboration
@@ -181,6 +204,7 @@ Each spoke is independent, return to dashboard between tasks
 - Async processing
 
 **Design Principles**:
+
 - Show progress of all paths
 - Indicate dependencies clearly
 - Handle partial failures
@@ -188,6 +212,7 @@ Each spoke is independent, return to dashboard between tasks
 - Provide overall status
 
 **Example**: Multi-Server Deployment
+
 ```
 Start Deployment
 ├─ Server 1: Provision → Configure → Deploy
@@ -197,18 +222,21 @@ Start Deployment
 ```
 
 **Synchronization Strategies**:
+
 - **Wait for all**: Block until all complete
 - **Wait for any**: Proceed when first completes
 - **Threshold**: Proceed when N% complete
 - **Timeout**: Proceed after max wait time
 
 **When to Use**:
+
 - Independent parallel tasks
 - Bulk operations
 - Performance optimization
 - Distributed processing
 
 **When NOT to Use**:
+
 - Sequential dependencies
 - Resource contention
 - Complex error scenarios
@@ -218,12 +246,14 @@ Start Deployment
 **Pattern**: A → B → C → D → (back to A)
 
 **Characteristics**:
+
 - Repeating process
 - No true "end"
 - Continuous loop
 - May have exit points
 
 **Best For**:
+
 - Monitoring dashboards
 - Review/approval cycles
 - Iterative refinement
@@ -231,6 +261,7 @@ Start Deployment
 - Operational processes
 
 **Design Principles**:
+
 - Optimize for repetition
 - Remember preferences
 - Track iteration count
@@ -238,6 +269,7 @@ Start Deployment
 - Show cycle history
 
 **Example**: Incident Management
+
 ```
 Monitor → 
 Detect Issue → 
@@ -248,12 +280,14 @@ Document →
 ```
 
 **When to Use**:
+
 - Ongoing processes
 - Operational workflows
 - Regular review cycles
 - Continuous monitoring
 
 **When NOT to Use**:
+
 - One-time tasks
 - Goal-oriented processes
 - Completion is important
@@ -263,12 +297,14 @@ Document →
 **Pattern**: Free-form navigation, user-directed
 
 **Characteristics**:
+
 - Non-linear
 - User controls path
 - Multiple entry points
 - Emergent goals
 
 **Best For**:
+
 - Data exploration
 - Research/analysis
 - Content browsing
@@ -276,6 +312,7 @@ Document →
 - Troubleshooting (unknown cause)
 
 **Design Principles**:
+
 - Easy navigation everywhere
 - Clear current location
 - Breadcrumbs or history
@@ -283,6 +320,7 @@ Document →
 - Search always available
 
 **Example**: Log Analysis
+
 ```
 Start at Dashboard
 → User might:
@@ -296,12 +334,14 @@ Start at Dashboard
 ```
 
 **When to Use**:
+
 - Unknown end goal
 - Discovery-focused
 - Power users
 - Complex data
 
 **When NOT to Use**:
+
 - Clear goal exists
 - New users
 - Critical tasks
@@ -314,12 +354,14 @@ Start at Dashboard
 **Concept**: Show only what's needed now, reveal more as needed
 
 **Strategies**:
+
 - Start with essentials, expand for advanced
 - Show common options, hide rare ones
 - Provide "advanced settings" section
 - Reveal on hover or click
 
 **Example**: Form Design
+
 ```
 Basic Form:
 - Name
@@ -333,6 +375,7 @@ Expanded:
 ```
 
 **Benefits**:
+
 - Reduces cognitive load
 - Doesn't overwhelm beginners
 - Still powerful for experts
@@ -343,12 +386,14 @@ Expanded:
 **Concept**: Pre-fill with intelligent suggestions
 
 **Strategies**:
+
 - Use most common values
 - Learn from user's history
 - Infer from context
 - Provide reasonable starting point
 
 **Example**: Deployment Configuration
+
 ```
 Region: [us-east-1] (most common for this team)
 Instance Type: [t3.medium] (based on previous deploys)
@@ -356,6 +401,7 @@ Auto-scaling: [Enabled] (company policy)
 ```
 
 **Benefits**:
+
 - Faster completion
 - Fewer errors
 - Guided experience
@@ -364,11 +410,13 @@ Auto-scaling: [Enabled] (company policy)
 ### Validation Strategy
 
 **When to Validate**:
+
 - **Inline**: As user types (for format issues)
 - **On Blur**: When leaving field (for completeness)
 - **On Submit**: Before proceeding (for business rules)
 
 **What to Validate**:
+
 - Required fields
 - Format (email, phone, etc.)
 - Range (min/max)
@@ -388,18 +436,21 @@ GOOD: "Password must be at least 8 characters"
 **Error Types**:
 
 **Validation Errors** (User-fixable):
+
 - Show immediately
 - Explain what's wrong
 - Show how to fix
 - Don't block other fields
 
 **System Errors** (Technical issues):
+
 - Apologize
 - Explain impact
 - Provide workaround if possible
 - Offer contact for help
 
 **Business Rule Violations**:
+
 - Explain the rule
 - Show why it failed
 - Suggest alternatives
@@ -416,6 +467,7 @@ GOOD: "Password must be at least 8 characters"
 ### Flow Shortcuts
 
 **For Power Users**:
+
 - Keyboard shortcuts
 - Bulk actions
 - Quick filters
@@ -424,6 +476,7 @@ GOOD: "Password must be at least 8 characters"
 - API access
 
 **Example**: Admin Actions
+
 ```
 Normal: Click user → Edit → Change role → Save
 Shortcut: Select multiple users → Bulk change role → Save
@@ -437,12 +490,14 @@ Power: API call to update roles via script
 **When**: No content/data yet
 
 **Design**:
+
 - Clear explanation
 - Primary action prominent
 - Maybe sample data
 - Educational content
 
 **Example**: New Dashboard
+
 ```
 "No dashboards yet"
 [Create Your First Dashboard]
@@ -454,12 +509,14 @@ Or import from template →
 **When**: Waiting for system
 
 **Design**:
+
 - Progress indicator
 - Time estimate (if possible)
 - What's happening
 - Allow cancellation
 
 **Example**: Processing Data
+
 ```
 "Analyzing 10,000 records..."
 [████████░░] 80% complete
@@ -472,14 +529,16 @@ Estimated: 15 seconds remaining
 **When**: Action completed
 
 **Design**:
+
 - Clear confirmation
 - What happened
 - Next actions
 - Dismiss option
 
 **Example**: File Uploaded
+
 ```
-✓ Report uploaded successfully
+[SUCCESS] Report uploaded successfully
 "Monthly_Report_Q4.pdf" (2.4 MB)
 [View Report] [Upload Another] [Done]
 ```
@@ -489,14 +548,16 @@ Estimated: 15 seconds remaining
 **When**: Something failed
 
 **Design**:
+
 - What went wrong
 - Why it happened (if known)
 - How to fix
 - Alternative actions
 
 **Example**: Upload Failed
+
 ```
-✗ Upload failed
+[ERROR] Upload failed
 The file is too large (max 10 MB)
 [Try a smaller file] [Compress file] [Contact support]
 ```
@@ -506,17 +567,19 @@ The file is too large (max 10 MB)
 **When**: Some items succeeded, some failed
 
 **Design**:
+
 - Overall status
 - List successes and failures
 - Bulk retry option
 - Individual actions
 
 **Example**: Bulk User Import
+
 ```
 8 of 10 users imported successfully
 
-✓ 8 users created
-✗ 2 users failed:
+[OK] 8 users created
+[FAILED] 2 users failed:
   - john@example.com: Duplicate email
   - invalid@: Invalid email format
 
@@ -530,43 +593,52 @@ The file is too large (max 10 MB)
 Ask these questions:
 
 **1. Is there a required sequence?**
+
 - Yes → Linear or Branching Flow
 - No → Hub-and-Spoke or Exploratory
 
 **2. Are there conditional paths?**
+
 - Yes → Branching Flow
 - No → Linear Flow
 
 **3. Can tasks happen simultaneously?**
+
 - Yes → Parallel Flow
 - No → Sequential Flow
 
 **4. Is this a repeating process?**
+
 - Yes → Cyclical Flow
 - No → One-time completion flow
 
 **5. Does user know the goal?**
+
 - Yes → Directed flows (Linear, Branching)
 - No → Exploratory Flow
 
 **6. What's the user's skill level?**
+
 - Novice → Guided, Linear
 - Expert → Flexible, Hub-and-Spoke, Shortcuts
 
 ### Flow Complexity Assessment
 
 **Simple Flow** (3-5 steps):
+
 - Use linear progression
 - Minimal branching
 - Clear progress indication
 
 **Medium Flow** (6-12 steps):
+
 - Consider grouping into stages
 - May need branching
 - Progress indicator essential
 - Save progress capability
 
 **Complex Flow** (13+ steps):
+
 - Break into multiple flows
 - Use wizard with stages
 - Provide overview/navigation
@@ -654,26 +726,32 @@ Ask these questions:
 ## Common Flow Mistakes
 
 ### Mistake 1: Too Many Steps
+
 BAD: 15 steps for simple task
 GOOD: Consolidate, remove unnecessary steps
 
 ### Mistake 2: Unclear Next Action
+
 BAD: Multiple buttons, unclear which is primary
 GOOD: One clear primary action
 
 ### Mistake 3: No Error Recovery
+
 BAD: Error message, no way to fix
 GOOD: Clear fix path, retry option
 
 ### Mistake 4: Lost Progress
+
 BAD: Back button loses all data
 GOOD: Save progress automatically
 
 ### Mistake 5: No Escape Hatch
+
 BAD: Wizard with no cancel
 GOOD: Clear way to exit
 
 ### Mistake 6: Forcing Linear When Not Needed
+
 BAD: Must complete steps 1-10 even if only need step 5
 GOOD: Allow direct access for power users
 
@@ -693,17 +771,20 @@ GOOD: Allow direct access for power users
 ## Flow Resources
 
 ### Tools
+
 - Figma: Flow diagramming
 - Miro/Mural: Collaborative flow design
 - Whimsical: Quick flow diagrams
 - Lucidchart: Professional diagrams
 
 ### Patterns
-- GOV.UK Design Patterns: https://design-system.service.gov.uk/patterns/
-- Nielsen Norman Group: https://www.nngroup.com/
+
+- GOV.UK Design Patterns: <https://design-system.service.gov.uk/patterns/>
+- Nielsen Norman Group: <https://www.nngroup.com/>
 - Baymard Institute: E-commerce flows
 
 ### Books
+
 - "Don't Make Me Think" by Steve Krug
 - "The Design of Everyday Things" by Don Norman
 - "About Face" by Alan Cooper

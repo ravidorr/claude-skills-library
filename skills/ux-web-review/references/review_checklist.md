@@ -5,6 +5,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 1. First Impressions
 
 ### Visual Hierarchy
+
 - [ ] Clear visual hierarchy (size, color, spacing)
 - [ ] Eye naturally flows to most important elements
 - [ ] Proper use of whitespace
@@ -12,6 +13,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Consistent spacing and alignment
 
 ### Branding & Polish
+
 - [ ] Professional, polished appearance
 - [ ] Consistent with brand identity
 - [ ] Appropriate for target audience
@@ -19,6 +21,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Consistent iconography style
 
 ### Value Proposition
+
 - [ ] Clear what the product does
 - [ ] Immediate value evident
 - [ ] Appropriate for user's context
@@ -27,6 +30,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 2. Navigation & Information Architecture
 
 ### Global Navigation
+
 - [ ] Clear, persistent navigation structure
 - [ ] Current location clearly indicated
 - [ ] Logical organization of sections
@@ -35,6 +39,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Breadcrumbs for deep hierarchies
 
 ### Navigation Usability
+
 - [ ] All links and buttons clearly identifiable
 - [ ] Descriptive navigation labels (no jargon)
 - [ ] Consistent navigation placement
@@ -42,6 +47,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Back button works as expected
 
 ### Information Architecture
+
 - [ ] Logical content grouping
 - [ ] Appropriate depth (not too flat or deep)
 - [ ] Clear mental model for users
@@ -51,6 +57,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 3. Layout & Visual Design
 
 ### Grid & Structure
+
 - [ ] Consistent grid system
 - [ ] Appropriate column structure
 - [ ] Aligned elements
@@ -58,6 +65,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Responsive breakpoints logical
 
 ### Typography
+
 - [ ] Readable font sizes (16px+ for body)
 - [ ] Clear hierarchy (heading levels)
 - [ ] Appropriate line height (1.5-1.7 for body)
@@ -65,6 +73,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Sufficient contrast for readability
 
 ### Color
+
 - [ ] Consistent color system
 - [ ] Appropriate use of color for meaning
 - [ ] Not relying on color alone
@@ -72,6 +81,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Color palette supports hierarchy
 
 ### Imagery & Icons
+
 - [ ] High quality, relevant images
 - [ ] Consistent icon style
 - [ ] Appropriate icon sizes
@@ -81,6 +91,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 4. Content & Microcopy
 
 ### Content Quality
+
 - [ ] Clear, concise writing
 - [ ] Appropriate tone for audience
 - [ ] Free of jargon (or explained)
@@ -88,6 +99,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Action-oriented language
 
 ### Labels & Instructions
+
 - [ ] Clear, descriptive labels
 - [ ] Helpful placeholder text (not as label replacement)
 - [ ] Instructions before fields (not after)
@@ -95,6 +107,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Examples provided where helpful
 
 ### Error Messages
+
 - [ ] Specific, actionable error messages
 - [ ] Clear what went wrong
 - [ ] How to fix the error
@@ -102,6 +115,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Positioned near relevant field
 
 ### Empty States
+
 - [ ] Welcoming first-use empty states
 - [ ] Clear next steps
 - [ ] Helpful zero-results states
@@ -111,6 +125,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 5. Interactive Elements
 
 ### Buttons & CTAs
+
 - [ ] Clear visual hierarchy (primary/secondary/tertiary)
 - [ ] Appropriate button sizes (44x44px mobile minimum)
 - [ ] Descriptive action labels (not "Submit" or "OK")
@@ -119,6 +134,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Adequate spacing between buttons
 
 ### Links
+
 - [ ] Visually distinct from body text
 - [ ] Clear hover/focus states
 - [ ] Descriptive link text (not "click here")
@@ -126,6 +142,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] External links indicated if important
 
 ### Form Controls
+
 - [ ] Appropriate input types (email, tel, etc.)
 - [ ] Clear focus indicators
 - [ ] Proper labeling (not placeholder-only)
@@ -134,6 +151,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Touch-friendly on mobile
 
 ### Interactive States
+
 - [ ] Hover states for clickable elements
 - [ ] Focus states for keyboard navigation
 - [ ] Active/pressed states
@@ -144,6 +162,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 6. Forms & Input
 
 ### Form Structure
+
 - [ ] Logical flow (top to bottom)
 - [ ] Related fields grouped
 - [ ] Single column layout
@@ -151,6 +170,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Required fields clearly marked
 
 ### Field Design
+
 - [ ] Labels above fields (not placeholder-only)
 - [ ] Appropriate field widths (match content)
 - [ ] Input masks for formatted data
@@ -158,6 +178,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Default values when helpful
 
 ### Validation
+
 - [ ] Real-time validation after blur (not while typing)
 - [ ] Clear success indicators
 - [ ] Specific error messages
@@ -165,6 +186,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Preserve entered data on error
 
 ### Multi-Step Forms
+
 - [ ] Progress indicator visible
 - [ ] Ability to navigate back
 - [ ] Save progress if appropriate
@@ -174,6 +196,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 7. Data Display
 
 ### Tables
+
 - [ ] Clear column headers
 - [ ] Sortable columns where appropriate
 - [ ] Appropriate data formatting
@@ -183,6 +206,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Loading states for data fetch
 
 ### Lists & Cards
+
 - [ ] Scannable layout
 - [ ] Consistent card structure
 - [ ] Clear visual hierarchy within cards
@@ -191,6 +215,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Loading states (skeleton or spinner)
 
 ### Charts & Visualizations
+
 - [ ] Clear labels and legends
 - [ ] Appropriate chart type for data
 - [ ] Interactive tooltips
@@ -199,6 +224,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Mobile-friendly (responsive or simplified)
 
 ### Dashboards
+
 - [ ] Most important metrics prominent
 - [ ] Logical widget arrangement
 - [ ] Consistent widget styling
@@ -209,6 +235,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 8. Feedback & Communication
 
 ### System Status
+
 - [ ] Loading indicators for async operations
 - [ ] Progress bars for long operations
 - [ ] Clear busy states
@@ -216,6 +243,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Offline state handling
 
 ### Notifications
+
 - [ ] Appropriate notification type (toast, banner, modal)
 - [ ] Auto-dismiss timing appropriate
 - [ ] Action for undo when applicable
@@ -224,6 +252,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Clear dismiss mechanism
 
 ### Confirmations
+
 - [ ] Destructive actions require confirmation
 - [ ] Clear consequences stated
 - [ ] Primary/secondary actions distinct
@@ -231,6 +260,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Success confirmation after action
 
 ### Help & Documentation
+
 - [ ] Contextual help when needed
 - [ ] Tooltips for complex features
 - [ ] Clear documentation access
@@ -240,6 +270,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 9. Search & Filtering
 
 ### Search
+
 - [ ] Prominent search placement
 - [ ] Clear placeholder text
 - [ ] Search suggestions if appropriate
@@ -248,6 +279,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Search within results if needed
 
 ### Filtering
+
 - [ ] Filters appropriate for content
 - [ ] Applied filters visible
 - [ ] Easy to remove filters
@@ -256,6 +288,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Save filter combinations if useful
 
 ### Sorting
+
 - [ ] Multiple sort options
 - [ ] Current sort clearly indicated
 - [ ] Sort direction clear
@@ -265,6 +298,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 10. Performance & Perceived Performance
 
 ### Loading Experience
+
 - [ ] Fast initial load (<3 seconds ideal)
 - [ ] Skeleton screens for content
 - [ ] Progressive loading for heavy content
@@ -272,6 +306,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Prioritize above-the-fold content
 
 ### Interactions
+
 - [ ] Immediate feedback for interactions
 - [ ] Optimistic UI updates where possible
 - [ ] Smooth animations (not janky)
@@ -279,6 +314,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Cached data used when appropriate
 
 ### Page Transitions
+
 - [ ] Smooth navigation between pages
 - [ ] Back button works instantly
 - [ ] State preserved when appropriate
@@ -288,6 +324,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 11. Mobile & Responsive
 
 ### Mobile Experience
+
 - [ ] Touch-friendly target sizes (44x44px minimum)
 - [ ] Appropriate for thumb zones
 - [ ] No hover-dependent interactions
@@ -296,6 +333,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Gestures work as expected
 
 ### Responsive Behavior
+
 - [ ] Works at all common breakpoints
 - [ ] Content adapts (not just scales)
 - [ ] No horizontal scrolling (unless intentional)
@@ -304,6 +342,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Content parity across devices
 
 ### Viewport & Zoom
+
 - [ ] Viewport meta tag configured
 - [ ] Zoom enabled (not disabled)
 - [ ] Content readable at 200% zoom
@@ -313,6 +352,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 12. Accessibility
 
 ### Keyboard Navigation
+
 - [ ] All functionality keyboard accessible
 - [ ] Logical tab order
 - [ ] Visible focus indicators
@@ -321,6 +361,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] No keyboard traps
 
 ### Screen Reader
+
 - [ ] Semantic HTML used
 - [ ] Proper heading hierarchy
 - [ ] ARIA labels where needed
@@ -329,6 +370,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Images have alt text
 
 ### Visual Accessibility
+
 - [ ] Sufficient color contrast (4.5:1 text, 3:1 UI)
 - [ ] Not relying on color alone
 - [ ] Text resizable without breakage
@@ -336,6 +378,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Content readable at 200% zoom
 
 ### Forms & Input
+
 - [ ] Labels for all inputs
 - [ ] Required fields indicated (not color only)
 - [ ] Error messages accessible
@@ -345,6 +388,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 13. Complex Interactions
 
 ### Modal Dialogs
+
 - [ ] Clear purpose
 - [ ] Easy to dismiss (X, Escape, click outside)
 - [ ] Focus trapped within modal
@@ -353,6 +397,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Not overused
 
 ### Dropdown Menus
+
 - [ ] Click to open (not hover only)
 - [ ] Keyboard navigable
 - [ ] Clear selected state
@@ -360,6 +405,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Touch-friendly on mobile
 
 ### Drag & Drop
+
 - [ ] Alternative keyboard method
 - [ ] Clear drop zones
 - [ ] Visual feedback during drag
@@ -367,6 +413,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Undo capability
 
 ### Tooltips & Popovers
+
 - [ ] Hover delay appropriate (0.5s)
 - [ ] Keyboard accessible
 - [ ] Don't obscure related content
@@ -376,6 +423,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 14. Error Handling
 
 ### Error Prevention
+
 - [ ] Input constraints prevent errors
 - [ ] Helpful format examples
 - [ ] Warnings before destructive actions
@@ -383,6 +431,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Smart defaults reduce errors
 
 ### Error Recovery
+
 - [ ] Clear error explanation
 - [ ] Specific, actionable guidance
 - [ ] Preserve user input
@@ -390,6 +439,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Graceful degradation
 
 ### Edge Cases
+
 - [ ] No data states handled
 - [ ] Error states handled
 - [ ] Loading failure states
@@ -399,6 +449,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## 15. Context-Specific Checks
 
 ### SaaS/Enterprise
+
 - [ ] Multi-user considerations
 - [ ] Permission levels clear
 - [ ] Bulk actions available
@@ -407,6 +458,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Onboarding for new users
 
 ### E-commerce
+
 - [ ] Clear product information
 - [ ] Smooth checkout flow
 - [ ] Cart always accessible
@@ -415,6 +467,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Guest checkout option
 
 ### Dashboards
+
 - [ ] Most critical data prominent
 - [ ] Real-time updates indicated
 - [ ] Drill-down capabilities
@@ -423,6 +476,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - [ ] Customization options
 
 ### Content Platforms
+
 - [ ] Easy content discovery
 - [ ] Clear content hierarchy
 - [ ] Sharing functionality
@@ -433,6 +487,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 ## Priority Framework
 
 ### Critical (P0) - Launch Blockers
+
 - Broken core functionality
 - Cannot complete primary tasks
 - Severe usability issues
@@ -440,6 +495,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - Data loss risks
 
 ### High Priority (P1) - Fix Before Launch
+
 - Confusing user flows
 - Inconsistent patterns
 - Missing feedback
@@ -447,6 +503,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - Moderate accessibility issues
 
 ### Medium Priority (P2) - Roadmap Items
+
 - Optimization opportunities
 - Nice-to-have features
 - Polish improvements
@@ -454,6 +511,7 @@ Systematic checklist for comprehensive web application review. Use to ensure tho
 - Performance enhancements
 
 ### Low Priority (P3) - Future Consideration
+
 - Advanced features
 - Edge case improvements
 - Aesthetic refinements

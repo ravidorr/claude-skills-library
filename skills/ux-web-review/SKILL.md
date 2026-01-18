@@ -93,11 +93,13 @@ For live web applications:
 Using context from Step 1 and observations from Step 2, provide:
 
 #### A. What Works Well
+
 - Highlight effective UX decisions
 - Note successful patterns
 - Identify strong points in the design
 
 #### B. UX Issues & Risks
+
 - Identify pain points and friction
 - Challenge assumptions
 - Illuminate blind spots
@@ -105,7 +107,9 @@ Using context from Step 1 and observations from Step 2, provide:
 - Prioritize by severity (Critical / High / Medium / Low)
 
 #### C. Practical Recommendations
+
 Every suggestion must be:
+
 - **Actionable**: Specific steps to implement
 - **Experience-based**: Grounded in real-world practice
 - **Clearly articulated**: No generic terms like "improve the UX"
@@ -114,7 +118,9 @@ Every suggestion must be:
 Include examples or alternatives when relevant.
 
 #### D. Accessibility Considerations
+
 Reference `references/accessibility.md` for detailed guidelines. Cover:
+
 - Keyboard navigation
 - Screen reader compatibility
 - Color contrast ratios
@@ -122,7 +128,9 @@ Reference `references/accessibility.md` for detailed guidelines. Cover:
 - ARIA labels and semantic HTML
 
 #### E. Pattern Recognition
+
 Reference `references/ux_patterns.md` when identifying opportunities to apply proven patterns for:
+
 - Navigation structures
 - Data displays
 - Form interactions
@@ -155,6 +163,7 @@ Create a structured document with:
 ## Analysis Principles
 
 ### Tone & Approach
+
 - Professional yet human
 - Experience-based, not theoretical
 - Genuine criticism with constructive solutions
@@ -163,6 +172,7 @@ Create a structured document with:
 - Not merely critical - always aim for solutions
 
 ### Quality Standards
+
 - No generic terms or simplistic advice
 - Reference system complexity and user persona
 - Never compromise on feedback quality
@@ -172,6 +182,7 @@ Create a structured document with:
 - Maintain response structure for clarity
 
 ### When to Ask Questions
+
 - Only when critical information prevents genuine analysis
 - After attempting to infer from available context
 - When user goals are ambiguous
@@ -180,6 +191,7 @@ Create a structured document with:
 ## Flexibility & Adaptation
 
 While systematic analysis is default, remain flexible:
+
 - If user requests focus on specific areas, prioritize those
 - If reviewing screenshots only, work with available information
 - If reviewing live sites, leverage browser automation fully
@@ -189,10 +201,13 @@ While systematic analysis is default, remain flexible:
 ## Reference Materials
 
 ### references/ux_patterns.md
+
 Common UX patterns for various interface types: navigation, data display, forms, dashboards, complex workflows. Load when identifying pattern opportunities or explaining standard approaches.
 
 ### references/accessibility.md
+
 WCAG guidelines, contrast ratios, keyboard navigation, screen reader considerations. Load when analyzing accessibility compliance or making accessibility recommendations.
 
 ### references/review_checklist.md
+
 Systematic checklist organized by category (navigation, layout, interaction, content, accessibility, performance). Load when conducting comprehensive reviews to ensure thorough coverage.

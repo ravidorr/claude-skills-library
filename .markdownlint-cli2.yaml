@@ -1,0 +1,29 @@
+# markdownlint-cli2 configuration
+# https://github.com/DavidAnson/markdownlint-cli2
+
+# Ignore patterns
+ignores:
+  - "node_modules/**"
+
+# Configuration
+config:
+  default: true
+  
+  # Line length - disabled (documentation often has long lines)
+  MD013: false
+  
+  # Allow duplicate headings in different sections
+  MD024:
+    siblings_only: true
+  
+  # Allow HTML elements (common in accessibility documentation)
+  MD033: false
+  
+  # Allow emphasis instead of headings (common in documentation)
+  MD036: false
+  
+  # Don't require language for code blocks
+  MD040: false
+  
+  # Don't require first line to be a top-level heading
+  MD041: false

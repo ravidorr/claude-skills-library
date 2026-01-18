@@ -5,6 +5,7 @@ Expert consultant in user research, persona development, user journey mapping, a
 ## What This Skill Does
 
 Transforms Claude into an expert user research consultant who provides the **strategic user understanding layer** that informs both UX and UI decisions. The skill covers:
+
 - Persona development for power users and technical professionals
 - User journey mapping for complex, multi-step processes
 - Flow design for operational systems (NOC, DevOps, observability)
@@ -31,6 +32,7 @@ This skill provides the foundational understanding that guides design:
 ## When To Use
 
 Trigger this skill by saying:
+
 - "Create a persona for..."
 - "Map the user journey for..."
 - "Design the user flow for..."
@@ -38,6 +40,7 @@ Trigger this skill by saying:
 - "What do users need to accomplish?"
 
 Works with:
+
 - Product descriptions
 - Feature requirements
 - User research data
@@ -46,7 +49,9 @@ Works with:
 ## Key Features
 
 ### Mandatory Context Gathering
+
 Before any persona/journey/flow work, Claude asks questions to understand:
+
 - What your product does
 - Who your users are
 - What problems you're solving
@@ -57,6 +62,7 @@ This ensures relevant, grounded work tailored to your situation.
 ### Persona Building
 
 **Strong, Actionable Personas**:
+
 - Clear demographics and role
 - Specific goals and motivations
 - Context and environment details
@@ -65,6 +71,7 @@ This ensures relevant, grounded work tailored to your situation.
 - Drivers and triggers
 
 **Quality Standards**:
+
 - Distinct (not overlapping)
 - Based on research (or clear assumptions)
 - Actionable (guides design decisions)
@@ -74,6 +81,7 @@ This ensures relevant, grounded work tailored to your situation.
 ### User Journey Mapping
 
 **Complete Journey Maps**:
+
 - Trigger that starts journey
 - Stages and steps
 - Touchpoints and interactions
@@ -82,6 +90,7 @@ This ensures relevant, grounded work tailored to your situation.
 - Opportunities for improvement
 
 **Analysis Depth**:
+
 - Actions (what user does)
 - System responses (what happens)
 - Mental state (thoughts/feelings)
@@ -91,6 +100,7 @@ This ensures relevant, grounded work tailored to your situation.
 ### Flow Design
 
 **Flow Types Covered**:
+
 - **Linear**: Sequential steps (onboarding, checkout)
 - **Branching**: Conditional paths (configuration, troubleshooting)
 - **Hub-and-Spoke**: Central dashboard with independent tasks
@@ -99,6 +109,7 @@ This ensures relevant, grounded work tailored to your situation.
 - **Exploratory**: User-directed (data analysis, discovery)
 
 **Flow Specifications**:
+
 - Step-by-step breakdown
 - Decision points and branching
 - Error handling and recovery
@@ -108,18 +119,21 @@ This ensures relevant, grounded work tailored to your situation.
 ### Specialized Expertise
 
 **Power Users / Technical Professionals**:
+
 - DevOps engineers, SREs, security analysts
 - High technical proficiency patterns
 - Keyboard-driven workflows
 - Low tolerance for friction
 
 **Operational / Real-Time Systems**:
+
 - NOC operators, incident responders
 - High-stress environments
 - Time-critical decisions
 - 24/7 contexts
 
 **Enterprise / B2B**:
+
 - Multiple stakeholders
 - Long sales cycles
 - Approval processes
@@ -128,6 +142,7 @@ This ensures relevant, grounded work tailored to your situation.
 ## What's Included
 
 ### Core Instructions (SKILL.md)
+
 - Expert user research methodology
 - Context-gathering workflow
 - Persona, journey, and flow frameworks
@@ -136,6 +151,7 @@ This ensures relevant, grounded work tailored to your situation.
 ### Reference Materials
 
 **persona_frameworks.md** (16 KB)
+
 - Persona template structure
 - Behavioral patterns and drivers
 - Enterprise/B2B persona types
@@ -144,6 +160,7 @@ This ensures relevant, grounded work tailored to your situation.
 - Documentation templates
 
 **journey_mapping.md** (15 KB)
+
 - Journey map components and stages
 - Touchpoints and emotions
 - Pain points and opportunities
@@ -152,6 +169,7 @@ This ensures relevant, grounded work tailored to your situation.
 - Mapping methodologies
 
 **flow_patterns.md** (18 KB)
+
 - 6 core flow patterns with examples
 - Flow optimization techniques
 - Progressive disclosure, smart defaults
@@ -160,6 +178,7 @@ This ensures relevant, grounded work tailored to your situation.
 - Decision frameworks
 
 **research_methods.md** (17 KB)
+
 - Qualitative vs quantitative research
 - Interview techniques and guides
 - Observational studies
@@ -346,10 +365,12 @@ Claude: [After context]
 This skill works beautifully with:
 
 ### UX Web Review
+
 - **This Skill**: Defines WHO users are, WHAT they need
 - **UX Skill**: Evaluates HOW well design serves those needs
 
 ### UI Design Review
+
 - **This Skill**: Establishes user goals and mental models
 - **UI Skill**: Ensures visual design supports those goals
 
@@ -399,11 +420,13 @@ user-research-flows/
 ## How This Fits Your Library
 
 **Skill #3 in your growing library**:
+
 1. **UX Web Review** - Experience & usability evaluation
 2. **UI Design Review** - Visual design & precision
 3. **User Research & Flows** - Strategic user understanding (this one!)
 
 **Combined Power**:
+
 - Research - Personas, journeys, flows (this skill)
 - Design - Experience solutions (UX skill)
 - Execute - Visual precision (UI skill)
@@ -413,6 +436,7 @@ user-research-flows/
 ## Progressive Disclosure
 
 The skill uses a three-level loading system:
+
 1. **Metadata** - Always in context (name + description)
 2. **SKILL.md** - Loaded when skill triggers
 3. **References** - Loaded only when Claude needs specific guidance

@@ -5,6 +5,7 @@ Expert UX consultant with 10+ years of experience in SaaS, enterprise systems, a
 ## What This Skill Does
 
 Transforms Claude into an expert UX consultant who provides professional, systematic reviews of web applications. The skill covers:
+
 - Usability analysis
 - Visual design critique
 - Accessibility evaluation (WCAG 2.1)
@@ -24,6 +25,7 @@ Transforms Claude into an expert UX consultant who provides professional, system
 ## When To Use
 
 Trigger this skill by saying:
+
 - "Give me UX feedback on this page"
 - "Review this web app"
 - "Analyze the UX of [URL]"
@@ -31,6 +33,7 @@ Trigger this skill by saying:
 - "Critique the design of this dashboard"
 
 Works with:
+
 - Live URLs (Claude will navigate and capture screenshots)
 - Screenshots you upload
 - Design mockups and wireframes
@@ -38,7 +41,9 @@ Works with:
 ## Key Features
 
 ### Mandatory Context Gathering
+
 Before any review, Claude asks questions to understand:
+
 - What your product does
 - Who your users are
 - What problems you're solving
@@ -48,14 +53,18 @@ Before any review, Claude asks questions to understand:
 This ensures relevant, informed feedback rather than generic advice.
 
 ### Systematic Visual Analysis
+
 For live URLs, Claude:
+
 - Captures comprehensive screenshots
 - Tests interactions
 - Checks responsive behavior
 - Documents edge cases
 
 ### Structured Analysis
+
 Every review includes:
+
 - **What Works Well** - Effective UX decisions
 - **Issues & Risks** - Prioritized by severity (P0-P3)
 - **Practical Recommendations** - Actionable, specific fixes
@@ -63,7 +72,9 @@ Every review includes:
 - **Pattern Recognition** - Industry-standard solutions
 
 ### Professional Deliverables
+
 Creates comprehensive reports with:
+
 - Executive summary
 - Detailed findings with screenshots
 - Prioritized action items
@@ -72,6 +83,7 @@ Creates comprehensive reports with:
 ## What's Included
 
 ### Core Instructions (SKILL.md)
+
 - Expert UX persona and methodology
 - Context-gathering workflow
 - Browser automation guidance
@@ -81,12 +93,14 @@ Creates comprehensive reports with:
 ### Reference Materials
 
 **ux_patterns.md** (8.5 KB)
+
 - 50+ proven UX patterns
 - Navigation, data display, forms, complex workflows
 - Mobile-specific patterns
 - Anti-patterns to avoid
 
 **accessibility.md** (13 KB)
+
 - Complete WCAG 2.1 guidelines
 - Keyboard navigation requirements
 - Screen reader support
@@ -95,6 +109,7 @@ Creates comprehensive reports with:
 - Common issues with solutions
 
 **review_checklist.md** (14 KB)
+
 - 15 comprehensive review categories
 - 200+ specific checkpoints
 - Priority framework
@@ -112,6 +127,7 @@ Creates comprehensive reports with:
 ## Usage Examples
 
 ### Example 1: Quick Review
+
 ```
 You: Give me UX feedback on https://example.com/dashboard
 
@@ -125,6 +141,7 @@ Claude: [Navigates, captures screenshots, provides detailed analysis]
 ```
 
 ### Example 2: Focused Review
+
 ```
 You: Review the checkout flow on this e-commerce site, focus on 
      mobile experience and conversion optimization
@@ -133,6 +150,7 @@ Claude: [Context gathering, then mobile-focused analysis]
 ```
 
 ### Example 3: Screenshot Review
+
 ```
 You: [Uploads screenshot] Analyze the UX of this dashboard design
 
@@ -141,6 +159,7 @@ Claude: [Asks clarifying questions, then provides analysis based
 ```
 
 ### Example 4: Accessibility Audit
+
 ```
 You: Do a full accessibility audit of our app including WCAG 
      compliance
@@ -152,18 +171,21 @@ Claude: [Comprehensive accessibility review with specific WCAG
 ## Review Approach
 
 ### Professional Tone
+
 - Sharp, practical, direct feedback
 - Experience-based, not theoretical
 - Genuine criticism with constructive solutions
 - No generic terms like "improve the UX"
 
 ### Quality Standards
+
 - Every recommendation is actionable
 - Issues prioritized by severity
 - Concrete examples provided
 - Real-world applicable solutions
 
 ### Flexibility
+
 - Adapts to different review depths
 - Can focus on specific areas
 - Works with varying levels of fidelity
@@ -196,6 +218,7 @@ ux-web-review/
 ## Progressive Disclosure
 
 The skill uses a three-level loading system:
+
 1. **Metadata** - Always in context (name + description)
 2. **SKILL.md** - Loaded when skill triggers
 3. **References** - Loaded only when Claude needs specific guidance

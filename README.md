@@ -1,4 +1,4 @@
-# My Skills Library
+# Skills Library
 
 A curated collection of high-quality skills that extend Claude's capabilities with specialized knowledge, workflows, and tool integrations.
 
@@ -29,7 +29,7 @@ Skills are modular, self-contained packages that transform Claude from a general
 ### In Claude.ai
 
 1. **Download a skill**: Click on a skill name above, then download the `.skill` file
-2. **Install in Claude**: 
+2. **Install in Claude**:
    - Go to [Claude.ai](https://claude.ai) > Settings > Skills
    - Click "Upload Skill"
    - Select the downloaded `.skill` file
@@ -84,6 +84,7 @@ The `SKILL.md` files are standard Markdown with YAML frontmatter. They can be us
 ### Using Skills
 
 Once configured, skills provide Claude with specialized expertise. For example:
+
 - Say "Give me UX feedback on this page" - triggers `ux-web-review`
 - Say "Review the accessibility" - triggers `accessibility-expert`
 - Say "Full design review" - triggers `design-super-agent`
@@ -109,6 +110,7 @@ See the [skill-creator guide](https://github.com/anthropics/claude-skills) for d
 ## Skill Quality Standards
 
 All skills in this library must:
+
 - Have clear, comprehensive descriptions
 - Include usage examples
 - Follow the progressive disclosure pattern

@@ -79,6 +79,7 @@ Based on the request, identify what's needed:
 When building personas:
 
 **1. Clarify User Segments**
+
 - Identify distinct user types
 - Define primary vs secondary personas
 - Establish role, experience level, technical proficiency
@@ -88,42 +89,49 @@ When building personas:
 For each persona, define:
 
 **Demographics & Role**:
+
 - Job title and responsibilities
 - Technical proficiency level
 - Experience with similar systems
 - Team size and structure
 
 **Goals & Motivations**:
+
 - Primary objectives (what they're trying to achieve)
 - Success metrics (how they measure success)
 - Motivations (why they care)
 - Constraints (what limits them)
 
 **Context & Environment**:
+
 - Where they work (office, remote, NOC, field)
 - When they use the system (24/7, business hours, ad-hoc)
 - Device/platform preferences
 - Stress level during use
 
 **Pain Points & Barriers**:
+
 - Current frustrations
 - Workflow interruptions
 - Technical limitations
 - Organizational constraints
 
 **Behavioral Patterns**:
+
 - How they make decisions
 - Information they prioritize
 - Communication preferences
 - Learning style
 
 **Drivers & Triggers**:
+
 - What prompts action
 - Urgency factors
 - Dependencies on others
 - External pressures
 
 **3. Validate & Refine**
+
 - Ensure personas are distinct (not overlapping)
 - Ground in real user research if available
 - Make actionable (guide design decisions)
@@ -134,6 +142,7 @@ For each persona, define:
 When mapping journeys:
 
 **1. Define Journey Scope**
+
 - Start point (trigger)
 - End point (goal achieved)
 - Boundary (what's in/out of scope)
@@ -143,11 +152,13 @@ When mapping journeys:
 For each journey, include:
 
 **Trigger**: What starts this journey?
+
 - User-initiated or system-initiated
 - Urgency level
 - Context leading to trigger
 
 **Stages**: Major phases of the journey
+
 - Awareness
 - Consideration
 - Action
@@ -155,35 +166,41 @@ For each journey, include:
 - Follow-up (if applicable)
 
 **Steps**: Specific actions per stage
+
 - What user does
 - What system does
 - Data/information exchanged
 - Dependencies
 
 **Touchpoints**: Where user interacts
+
 - Interfaces (web, mobile, CLI, API)
 - Channels (email, Slack, dashboard)
 - Tools (integrated systems)
 
 **Thoughts & Emotions**: User mental state
+
 - What they're thinking
 - How they're feeling (frustrated, confident, anxious)
 - Decision-making process
 - Confidence level
 
 **Pain Points**: Friction in journey
+
 - Where things slow down
 - Where confusion occurs
 - Where errors happen
 - Where users need help
 
 **Opportunities**:
+
 - Automation possibilities
 - AI assistance points
 - Simplification opportunities
 - Proactive guidance
 
 **3. Analyze & Improve**
+
 - Identify critical paths
 - Find drop-off points
 - Highlight areas for optimization
@@ -194,6 +211,7 @@ For each journey, include:
 When designing flows:
 
 **1. Define Flow Scope**
+
 - Specific task or feature
 - Entry point
 - Exit points (success, error, cancel)
@@ -201,40 +219,49 @@ When designing flows:
 **2. Create Flow Structure**
 
 **Linear Flow** (sequential steps):
+
 ```
 Step 1 → Step 2 → Step 3 → Complete
 ```
+
 - When: Simple, mandatory sequence
 - Example: Onboarding, checkout, setup wizard
 
 **Branching Flow** (conditional paths):
+
 ```
 Step 1 → Decision Point
          ├─ Path A → Step 2A → Complete
          └─ Path B → Step 2B → Step 3B → Complete
 ```
+
 - When: User choices affect path
 - Example: Configuration, troubleshooting, advanced vs simple mode
 
 **Hub Flow** (central point):
+
 ```
 Dashboard (hub) ↔ Feature 1
                 ↔ Feature 2
                 ↔ Feature 3
 ```
+
 - When: Multiple independent tasks
 - Example: Admin dashboard, control panel
 
 **Parallel Flow** (simultaneous paths):
+
 ```
 Start → [Task A + Task B + Task C] → Sync Point → Complete
 ```
+
 - When: Multiple actions can happen concurrently
 - Example: Bulk operations, multi-resource provisioning
 
 **3. Specify Each Step**
 
 For each step in the flow:
+
 - **Action**: What user does
 - **System Response**: What happens
 - **Context Provided**: Information shown
@@ -252,6 +279,7 @@ For each step in the flow:
 **Progressive Disclosure**: What can be hidden until needed?
 
 **5. Define Edge Cases**
+
 - Empty states
 - Error states
 - Loading states
@@ -263,34 +291,40 @@ For each step in the flow:
 Provide analysis in this format:
 
 #### User Understanding
+
 - Who they are
 - Why they're here
 - What they're trying to accomplish
 
 #### Key User Goals
+
 - Primary objectives
 - Success criteria
 - Priority ranking
 
 #### Relevant User Journey (if applicable)
+
 - Full journey map with stages
 - Touchpoints and interactions
 - Emotions and thoughts
 - Pain points and opportunities
 
 #### Proposed Flow / Flow Analysis
+
 - Flow diagram or step-by-step breakdown
 - Decision points
 - Branching logic
 - Alternative paths
 
 #### Friction Points & UX Risks
+
 - Where users struggle
 - Where errors occur
 - Where confusion happens
 - Priority for addressing
 
 #### Practical Recommendations
+
 - Actionable improvements
 - Prioritized by impact
 - Specific to user needs
@@ -301,21 +335,25 @@ Provide analysis in this format:
 Load relevant references based on work type:
 
 **references/persona_frameworks.md**
+
 - Persona templates
 - Question frameworks
 - Validation techniques
 
 **references/journey_mapping.md**
+
 - Journey mapping methodologies
 - Stage definitions
 - Emotion mapping techniques
 
 **references/flow_patterns.md**
+
 - Common flow types
 - Decision tree structures
 - Error handling patterns
 
 **references/research_methods.md**
+
 - Research techniques for B2B/enterprise
 - Interview frameworks
 - Synthesis methodologies
@@ -323,12 +361,14 @@ Load relevant references based on work type:
 ## Analysis Principles
 
 ### Tone & Approach
+
 - Professional, sharp, experience-based
 - Focused on building practical, not theoretical, products
 - Always with examples and applicable insights
 - Emphasizes what users really need, not what product wants
 
 ### Quality Standards
+
 - No weak or generic personas (must be clear and distinct)
 - No superficial journeys (include actions, thoughts, emotions, context)
 - Every recommendation based on user behavior, not feeling
@@ -337,6 +377,7 @@ Load relevant references based on work type:
 - Operative directions for execution
 
 ### When to Ask Questions
+
 - Only when information is missing in a way that prevents genuine analysis
 - When user segments are unclear
 - When goals are ambiguous
@@ -347,6 +388,7 @@ Load relevant references based on work type:
 ### Power Users / Technical Professionals
 
 **Characteristics**:
+
 - High technical proficiency
 - Efficient, keyboard-driven workflows
 - Low tolerance for unnecessary friction
@@ -354,6 +396,7 @@ Load relevant references based on work type:
 - Need depth, not simplicity
 
 **Design Implications**:
+
 - Provide advanced options
 - Enable keyboard shortcuts
 - Support bulk operations
@@ -363,6 +406,7 @@ Load relevant references based on work type:
 ### Operational / Real-Time Systems
 
 **Characteristics**:
+
 - High-stress environments
 - Time-critical decisions
 - Need for situational awareness
@@ -370,6 +414,7 @@ Load relevant references based on work type:
 - Collaboration required
 
 **Design Implications**:
+
 - Prioritize critical information
 - Reduce cognitive load
 - Clear status indicators
@@ -379,6 +424,7 @@ Load relevant references based on work type:
 ### Enterprise / B2B Context
 
 **Characteristics**:
+
 - Multiple stakeholders
 - Approval processes
 - Integration requirements
@@ -386,6 +432,7 @@ Load relevant references based on work type:
 - Long-term relationships
 
 **Design Implications**:
+
 - Support for roles/permissions
 - Audit trails
 - Bulk operations
@@ -395,6 +442,7 @@ Load relevant references based on work type:
 ## Flexibility & Adaptation
 
 While systematic analysis is default, remain flexible:
+
 - If user requests only persona, focus on that
 - If user requests only journey map, provide comprehensive journey
 - If user requests only flow, design detailed flow
@@ -404,6 +452,7 @@ While systematic analysis is default, remain flexible:
 ## Professional Standards
 
 ### Persona Quality
+
 - Based on research or realistic assumptions (state which)
 - Distinct (not overlapping with other personas)
 - Actionable (guides design decisions)
@@ -411,6 +460,7 @@ While systematic analysis is default, remain flexible:
 - Validated (or validation plan provided)
 
 ### Journey Quality
+
 - Complete (trigger to resolution)
 - Realistic (based on actual user behavior)
 - Detailed (actions, thoughts, emotions)
@@ -418,6 +468,7 @@ While systematic analysis is default, remain flexible:
 - Opportunity-focused (improvement areas identified)
 
 ### Flow Quality
+
 - Logical (clear progression)
 - Comprehensive (all paths covered)
 - Resilient (error handling included)
@@ -427,13 +478,17 @@ While systematic analysis is default, remain flexible:
 ## Reference Materials
 
 ### references/persona_frameworks.md
+
 Persona templates, question frameworks, segmentation approaches, and validation techniques. Load when creating or refining personas.
 
 ### references/journey_mapping.md
+
 Journey mapping methodologies, stage definitions, emotion mapping, touchpoint identification, and analysis frameworks. Load when mapping user journeys.
 
 ### references/flow_patterns.md
+
 Common flow types (linear, branching, hub, parallel), decision structures, error handling patterns, and optimization techniques. Load when designing flows.
 
 ### references/research_methods.md
+
 Research methodologies for enterprise/B2B users, interview frameworks, synthesis techniques, and validation approaches. Load when conducting or planning user research.

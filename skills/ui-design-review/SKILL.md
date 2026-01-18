@@ -61,6 +61,7 @@ Wait for user responses before proceeding.
 Systematically analyze the interface across six dimensions:
 
 #### 1. Layout & Hierarchy
+
 - Information density vs. white space balance
 - Focal points and visual anchors
 - Reading flow and eye path
@@ -68,6 +69,7 @@ Systematically analyze the interface across six dimensions:
 - Alignment and precision
 
 #### 2. Grid & Structure
+
 - Grid adherence (4/8/12 column systems)
 - Responsive breakpoint planning
 - Column usage and width allocation
@@ -75,6 +77,7 @@ Systematically analyze the interface across six dimensions:
 - Element positioning on grid
 
 #### 3. Composition & Balance
+
 - Proportions between areas
 - Visual weight distribution
 - Negative space usage
@@ -82,6 +85,7 @@ Systematically analyze the interface across six dimensions:
 - Spatial relationships
 
 #### 4. Typography
+
 - Type scale appropriateness
 - Hierarchy clarity (H1/H2/H3/body/metadata)
 - Font weight usage
@@ -90,6 +94,7 @@ Systematically analyze the interface across six dimensions:
 - Contrast ratios
 
 #### 5. Color & Accessibility
+
 - Functional vs. decorative color usage
 - Palette balance and restraint
 - Status communication (success/warning/error)
@@ -98,6 +103,7 @@ Systematically analyze the interface across six dimensions:
 - Semantic color meaning
 
 #### 6. Pattern Consistency
+
 - Component reuse
 - Spacing system adherence
 - State representation
@@ -109,12 +115,14 @@ Systematically analyze the interface across six dimensions:
 Provide analysis in this format:
 
 #### A. General Visual Analysis
+
 - Overall impression
 - Primary strengths
 - Critical weaknesses
 - Design maturity level
 
 #### B. Layout Issues
+
 - Density problems
 - Alignment breaks
 - Spacing inconsistencies
@@ -122,6 +130,7 @@ Provide analysis in this format:
 - Specific recommendations with measurements
 
 #### C. Grid Issues
+
 - Column misalignment
 - Responsive concerns
 - Breakpoint problems
@@ -129,6 +138,7 @@ Provide analysis in this format:
 - Specific grid corrections
 
 #### D. Composition Issues
+
 - Proportion problems
 - Balance failures
 - Visual weight distribution
@@ -136,6 +146,7 @@ Provide analysis in this format:
 - Spatial relationship fixes
 
 #### E. Typography Issues
+
 - Scale problems
 - Hierarchy confusion
 - Weight misuse
@@ -143,6 +154,7 @@ Provide analysis in this format:
 - Specific type specifications
 
 #### F. Color Issues
+
 - Functional color failures
 - Palette imbalance
 - Contrast violations
@@ -150,7 +162,9 @@ Provide analysis in this format:
 - Accessibility fixes
 
 #### G. Practical Implementation Recommendations
+
 Every recommendation must be:
+
 - **Specific**: "Change heading from 18px to 24px, weight 600"
 - **Measurable**: "Increase spacing from 12px to 16px"
 - **Actionable**: "Align to 8px grid, left edge at column 2"
@@ -161,24 +175,28 @@ Every recommendation must be:
 Load relevant references based on issues identified:
 
 **references/grid_systems.md**
+
 - Column configurations
 - Breakpoint strategies
 - Responsive patterns
 - Grid best practices
 
 **references/typography_scales.md**
+
 - Type scales for different contexts
 - Hierarchy patterns
 - Font weight systems
 - Line height ratios
 
 **references/color_systems.md**
+
 - Functional palettes
 - Status color patterns
 - Accessibility guidelines
 - Enterprise color approaches
 
 **references/layout_patterns.md**
+
 - Dashboard layouts
 - Data display patterns
 - Information density strategies
@@ -187,6 +205,7 @@ Load relevant references based on issues identified:
 ## Analysis Principles
 
 ### Tone & Approach
+
 - Direct, professional, confident
 - Technically precise
 - Always offers alternatives, not just criticism
@@ -194,6 +213,7 @@ Load relevant references based on issues identified:
 - Focus on balance between aesthetics and usability
 
 ### Quality Standards
+
 - No generic criticism ("improve the design")
 - Every recommendation is specific and actionable
 - Practical changes: spacing values, weight changes, color adjustments, grid alignments
@@ -202,6 +222,7 @@ Load relevant references based on issues identified:
 - No buzzwords or vague advice
 
 ### When to Ask Questions
+
 - Only when it prevents genuine feedback
 - May request additional views or details
 - May ask for design system specifications
@@ -210,6 +231,7 @@ Load relevant references based on issues identified:
 ## Flexibility & Adaptation
 
 While systematic analysis is default, remain flexible:
+
 - If user requests focus on specific areas (e.g., "just typography"), prioritize those
 - For early wireframes, focus on structure over polish
 - For high-fidelity mockups, address all six dimensions thoroughly
@@ -219,7 +241,9 @@ While systematic analysis is default, remain flexible:
 ## Professional Standards
 
 ### Grid Systems
+
 Reference modern approaches:
+
 - 12-column for complex layouts
 - 8-column for moderate complexity
 - 4-column for mobile
@@ -227,7 +251,9 @@ Reference modern approaches:
 - Consistent gutters (16px, 24px, 32px)
 
 ### Typography
+
 Reference proven scales:
+
 - Major Third (1.25) for dense interfaces
 - Perfect Fourth (1.333) for balanced hierarchy
 - Major Second (1.125) for subtle distinction
@@ -235,14 +261,18 @@ Reference proven scales:
 - Line height 1.5-1.7 for body text
 
 ### Color
+
 Reference functional approaches:
+
 - 60-30-10 rule (60% neutral, 30% primary, 10% accent)
 - Semantic status colors (green success, yellow warning, red error)
 - WCAG AA minimum (4.5:1 text, 3:1 UI components)
 - Maximum 3-4 brand colors in enterprise contexts
 
 ### Spacing
+
 Reference systematic approaches:
+
 - 8px base unit (or 4px for tight interfaces)
 - Consistent scale: 4, 8, 12, 16, 24, 32, 48, 64px
 - Component padding: 12-16px
@@ -252,13 +282,17 @@ Reference systematic approaches:
 ## Reference Materials
 
 ### references/grid_systems.md
+
 Comprehensive guide to modern grid systems, column configurations, responsive strategies, and breakpoint planning. Load when addressing layout structure issues.
 
 ### references/typography_scales.md
+
 Typography scales for different contexts, hierarchy patterns, font weight systems, and readability guidelines. Load when addressing type issues.
 
 ### references/color_systems.md
+
 Functional color palettes, status communication, accessibility compliance, and enterprise color approaches. Load when addressing color usage.
 
 ### references/layout_patterns.md
+
 Dashboard layouts, data display patterns, information density strategies, and modern UI patterns. Load when suggesting layout alternatives.

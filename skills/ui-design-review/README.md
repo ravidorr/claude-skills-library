@@ -5,6 +5,7 @@ Expert UI design consultant with 10+ years of experience in visual interface des
 ## What This Skill Does
 
 Transforms Claude into an expert UI design consultant who provides professional, systematic reviews of visual interface design. The skill covers:
+
 - Layout and information hierarchy
 - Grid systems and structural precision
 - Composition and visual balance
@@ -23,6 +24,7 @@ Transforms Claude into an expert UI design consultant who provides professional,
 ## When To Use
 
 Trigger this skill by saying:
+
 - "Review the UI design"
 - "Critique this layout"
 - "Analyze the visual hierarchy"
@@ -30,6 +32,7 @@ Trigger this skill by saying:
 - "Review this interface for visual consistency"
 
 Works with:
+
 - Screenshots of interfaces
 - Mockups and prototypes
 - Design system components
@@ -38,7 +41,9 @@ Works with:
 ## Key Features
 
 ### Mandatory Context Gathering
+
 Before any review, Claude asks questions to understand:
+
 - What your product does
 - Who your users are
 - What stage the design is in
@@ -48,40 +53,49 @@ Before any review, Claude asks questions to understand:
 This ensures relevant, informed feedback tailored to your context.
 
 ### Six-Dimension Analysis
+
 Every review systematically covers:
 
 **1. Layout & Hierarchy**
+
 - Information density vs. white space
 - Focal points and visual flow
 - Element grouping and alignment
 
 **2. Grid & Structure**
+
 - Grid system adherence (4/8/12 column)
 - Responsive breakpoint planning
 - Precision and consistency
 
 **3. Composition & Balance**
+
 - Proportions between areas
 - Visual weight distribution
 - Spatial relationships
 
 **4. Typography**
+
 - Type scale appropriateness
 - Hierarchy clarity (H1/H2/H3/body)
 - Readability and contrast
 
 **5. Color & Accessibility**
+
 - Functional color usage
 - WCAG contrast compliance
 - Status communication
 
 **6. Pattern Consistency**
+
 - Component reuse
 - State representation
 - Modern UI standards alignment
 
 ### Precise, Actionable Feedback
+
 Every recommendation includes:
+
 - **Specific measurements**: "Change from 18px to 24px"
 - **Exact specifications**: "Use font-weight 600, not 400"
 - **Grid coordinates**: "Align to column 2, span 8 columns"
@@ -90,7 +104,9 @@ Every recommendation includes:
 No vague advice like "improve the design" - only concrete, implementable changes.
 
 ### Expert Reference Materials
+
 50+ KB of professional design knowledge:
+
 - Grid system patterns and calculations
 - Typography scales for different contexts
 - Color system patterns and WCAG compliance
@@ -99,6 +115,7 @@ No vague advice like "improve the design" - only concrete, implementable changes
 ## What's Included
 
 ### Core Instructions (SKILL.md)
+
 - Expert UI design methodology
 - Context-gathering workflow
 - Six-dimension analysis framework
@@ -107,12 +124,14 @@ No vague advice like "improve the design" - only concrete, implementable changes
 ### Reference Materials
 
 **grid_systems.md** (11 KB)
+
 - 12/8/4-column grid systems
 - Responsive breakpoint strategies
 - Gutter and margin calculations
 - Grid precision and alignment rules
 
 **typography_scales.md** (13 KB)
+
 - Type scale ratios (Major Third, Perfect Fourth, etc.)
 - Hierarchy patterns for different contexts
 - Font weight systems and usage
@@ -120,6 +139,7 @@ No vague advice like "improve the design" - only concrete, implementable changes
 - WCAG contrast requirements
 
 **color_systems.md** (11 KB)
+
 - Functional color palettes (60-30-10 rule)
 - Status color patterns (success, warning, error)
 - WCAG AA/AAA contrast compliance
@@ -127,6 +147,7 @@ No vague advice like "improve the design" - only concrete, implementable changes
 - Dark mode considerations
 
 **layout_patterns.md** (11 KB)
+
 - Dashboard layouts (3-column, 2-column, card grid)
 - Data display patterns (tables, lists, timelines)
 - Navigation patterns
@@ -146,6 +167,7 @@ No vague advice like "improve the design" - only concrete, implementable changes
 ## Usage Examples
 
 ### Example 1: Dashboard Layout Review
+
 ```
 You: Review the UI design of this dashboard
      [uploads screenshot]
@@ -162,6 +184,7 @@ Claude: [Provides systematic six-dimension analysis with specific
 ```
 
 ### Example 2: Typography Check
+
 ```
 You: Check the typography and hierarchy in this interface
 
@@ -183,6 +206,7 @@ Claude: Typography Analysis:
 ```
 
 ### Example 3: Grid Precision Review
+
 ```
 You: Analyze the grid system and alignment precision
 
@@ -201,6 +225,7 @@ Claude: Grid Issues:
 ```
 
 ### Example 4: Color & Accessibility
+
 ```
 You: Review color usage and check WCAG compliance
 
@@ -224,12 +249,14 @@ Claude: Color Analysis:
 ## Review Approach
 
 ### Professional Tone
+
 - Direct, professional, confident
 - Technically precise with measurements
 - Always offers alternatives with rationale
 - Emphasizes readability, order, functionality
 
 ### Quality Standards
+
 - No generic criticism
 - Every recommendation is specific and actionable
 - Practical changes with exact values
@@ -237,6 +264,7 @@ Claude: Color Analysis:
 - Based on modern principles (Material, Apple HIG, data UI patterns)
 
 ### Flexibility
+
 - Adapts to design stage (wireframe vs high-fidelity)
 - Can focus on specific dimensions if requested
 - Works with varying levels of context
@@ -288,6 +316,7 @@ ui-design-review/
 ## Complementary Skills
 
 This skill pairs well with:
+
 - **ux-web-review**: For holistic experience + visual review
 - **accessibility**: For deeper WCAG compliance
 - **design-system**: For component library creation
@@ -295,6 +324,7 @@ This skill pairs well with:
 ## Progressive Disclosure
 
 The skill uses a three-level loading system:
+
 1. **Metadata** - Always in context (name + description)
 2. **SKILL.md** - Loaded when skill triggers
 3. **References** - Loaded only when Claude needs specific guidance

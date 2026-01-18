@@ -5,6 +5,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 ## Typography Fundamentals
 
 ### Why Type Scales Matter
+
 - **Hierarchy**: Clear content organization
 - **Rhythm**: Consistent vertical spacing
 - **Readability**: Appropriate sizing for context
@@ -22,15 +23,18 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 ## Type Scale Ratios
 
 ### Major Third (1.25)
+
 **Best for**: Dense interfaces, dashboards, data-heavy applications
 
 **Characteristics**:
+
 - Subtle distinction between levels
 - More sizes fit in viewport
 - Professional, restrained feel
 - Common in enterprise software
 
 **Example Scale (16px base)**:
+
 - 12px (0.75rem) - Small/metadata
 - 14px (0.875rem) - Secondary text
 - 16px (1rem) - Body text
@@ -40,6 +44,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - 39px (2.441rem) - H1
 
 **Best for**:
+
 - Admin panels
 - Data dashboards
 - Monitoring interfaces
@@ -47,15 +52,18 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - Dense information
 
 ### Perfect Fourth (1.333)
+
 **Best for**: Balanced hierarchy, standard applications
 
 **Characteristics**:
+
 - Clear distinction between levels
 - Standard professional appearance
 - Works well for most contexts
 - Used by Material Design
 
 **Example Scale (16px base)**:
+
 - 12px (0.75rem) - Small/metadata
 - 16px (1rem) - Body text
 - 21px (1.333rem) - H4
@@ -64,6 +72,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - 50px (3.157rem) - H1
 
 **Best for**:
+
 - SaaS applications
 - Marketing sites
 - Standard web apps
@@ -71,15 +80,18 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - Balanced content
 
 ### Major Second (1.125)
+
 **Best for**: Subtle hierarchy, minimal interfaces
 
 **Characteristics**:
+
 - Very subtle size changes
 - Modern, minimal aesthetic
 - Requires weight variations for hierarchy
 - Common in contemporary design
 
 **Example Scale (16px base)**:
+
 - 14px (0.875rem) - Small/metadata
 - 16px (1rem) - Body text
 - 18px (1.125rem) - H4
@@ -88,6 +100,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - 26px (1.602rem) - H1
 
 **Best for**:
+
 - Minimal interfaces
 - Modern marketing
 - Mobile applications
@@ -95,15 +108,18 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - Content-focused sites
 
 ### Golden Ratio (1.618)
+
 **Best for**: Editorial content, marketing, high contrast
 
 **Characteristics**:
+
 - Strong differentiation
 - Dramatic hierarchy
 - Pleasing proportions
 - Larger file size (more sizes)
 
 **Example Scale (16px base)**:
+
 - 10px (0.625rem) - Fine print
 - 16px (1rem) - Body text
 - 26px (1.618rem) - H4
@@ -112,6 +128,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - 110px (6.854rem) - H1
 
 **Best for**:
+
 - Editorial sites
 - Marketing landing pages
 - Presentation interfaces
@@ -123,6 +140,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 ### Standard Hierarchy (6 levels)
 
 **H1 - Page Title**
+
 - Largest size (typically 2.5-4× body)
 - Boldest weight (600-700)
 - One per page (semantic)
@@ -130,6 +148,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - Example: "Dashboard Overview"
 
 **H2 - Section Title**
+
 - Large size (typically 2-3× body)
 - Bold weight (600-700)
 - Multiple per page
@@ -137,6 +156,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - Example: "Recent Activity"
 
 **H3 - Subsection Title**
+
 - Medium-large size (typically 1.5-2× body)
 - Medium-bold weight (500-600)
 - Common throughout page
@@ -144,6 +164,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - Example: "Top Performing Campaigns"
 
 **H4 - Component Title**
+
 - Moderate size (typically 1.2-1.5× body)
 - Medium weight (500-600)
 - Micro-headlines
@@ -151,6 +172,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - Example: "User Settings"
 
 **Body Text**
+
 - Base size (16px standard)
 - Regular weight (400)
 - Primary reading text
@@ -158,6 +180,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 - Line height: 1.5-1.7
 
 **Small Text**
+
 - Reduced size (12-14px)
 - Regular or light weight (300-400)
 - Metadata, captions, footnotes
@@ -167,26 +190,31 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 ### Dashboard Hierarchy (5 levels)
 
 **Page Title** (H1)
+
 - 24-32px
 - Weight: 600-700
 - Example: "Sales Dashboard"
 
 **Section Header** (H2)
+
 - 18-24px
 - Weight: 600
 - Example: "Revenue Breakdown"
 
 **Widget Title** (H3)
+
 - 16-18px
 - Weight: 600
 - Example: "Top Products"
 
 **Body/Data**
+
 - 14-16px
 - Weight: 400-500
 - Numbers, labels, table content
 
 **Metadata**
+
 - 12-13px
 - Weight: 400
 - Timestamps, units, labels
@@ -194,11 +222,13 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 ### Mobile Hierarchy (Scale Down)
 
 **Reduce by**:
+
 - 10-20% from desktop sizes
 - Or use same scale with smaller base (14-15px)
 - Maintain relative relationships
 
 **Example Mobile Scale**:
+
 - H1: 28px (desktop 32px)
 - H2: 20px (desktop 24px)
 - H3: 16px (desktop 18px)
@@ -222,12 +252,14 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 ### Practical Weight Usage
 
 **Enterprise/Dashboard Context**:
+
 - **Regular (400)**: Body text, descriptions, table data
 - **Medium (500)**: Labels, secondary headings, table headers
 - **Semi-Bold (600)**: Primary headings, card titles, buttons
 - **Bold (700)**: Page titles, critical actions
 
 **Marketing Context**:
+
 - **Light (300)**: Hero text, large displays
 - **Regular (400)**: Body text
 - **Medium (500)**: Emphasis
@@ -239,6 +271,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 **Better**: Large size + medium weight OR Medium size + heavy weight
 
 **Examples**:
+
 - GOOD: 32px at 600 weight
 - GOOD: 24px at 700 weight
 - BAD: 32px at 700 weight (too heavy)
@@ -246,6 +279,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 ## Line Height Guidelines
 
 ### Body Text
+
 **Optimal**: 1.5-1.7 (24-27px for 16px text)
 **Tight**: 1.4 (for UI labels, dense interfaces)
 **Loose**: 1.8-2.0 (for large text blocks, accessibility)
@@ -253,6 +287,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 **Rule**: Longer line length = more line height needed
 
 ### Headings
+
 **Large headings (32px+)**: 1.1-1.3
 **Medium headings (20-28px)**: 1.2-1.4
 **Small headings (16-18px)**: 1.3-1.5
@@ -260,6 +295,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 **Reason**: Large text needs less relative spacing
 
 ### UI Elements
+
 **Buttons**: 1.0-1.2 (tight for vertical centering)
 **Labels**: 1.2-1.4
 **Table cells**: 1.4-1.5
@@ -268,16 +304,19 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 ## Letter Spacing (Tracking)
 
 ### Body Text
+
 **Standard**: 0 (default)
 **Tight**: -0.01em to -0.02em (for large sizes)
 **Loose**: +0.01em to +0.02em (for small sizes, all caps)
 
 ### Headings
+
 **Large (32px+)**: -0.02em to -0.04em (tighten)
 **Medium (20-28px)**: -0.01em to -0.02em
 **Small (16-18px)**: 0 to -0.01em
 
 ### Special Cases
+
 **All Caps**: +0.05em to +0.1em (always looser)
 **Small Text (<12px)**: +0.01em to +0.02em (improve readability)
 **Monospace**: Usually default (0)
@@ -287,16 +326,19 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 ### System Font Stacks
 
 **Modern System (Recommended)**:
+
 ```css
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
              "Helvetica Neue", Arial, sans-serif;
 ```
+
 - Fast loading (no download)
 - Native feel per OS
 - Excellent readability
 - Professional appearance
 
 **Monospace (Code, Data)**:
+
 ```css
 font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", 
              Consolas, monospace;
@@ -305,12 +347,14 @@ font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono",
 ### Web Fonts
 
 **Google Fonts - Professional**:
+
 - **Inter**: Modern, clear, excellent for UI (free)
 - **Roboto**: Clean, widely used, Material Design (free)
 - **Open Sans**: Readable, neutral, versatile (free)
 - **Work Sans**: Contemporary, professional (free)
 
 **Premium Fonts - Enterprise**:
+
 - **Proxima Nova**: Clean, professional, widely licensed
 - **Gotham**: Geometric, strong, corporate
 - **Avenir**: Elegant, balanced, refined
@@ -319,13 +363,16 @@ font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono",
 ### Font Pairing
 
 **Same Family**: Safest, most cohesive
+
 - Example: Inter for both headings and body
 
 **Serif + Sans-Serif**: Classic contrast
+
 - Example: Playfair Display (headings) + Inter (body)
 - Caution: Rare in enterprise/dashboard contexts
 
 **Geometric + Humanist**: Modern pairing
+
 - Example: Montserrat (headings) + Open Sans (body)
 
 ## Readability Guidelines
@@ -338,6 +385,7 @@ font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono",
 **Too Long (>80 chars)**: Hard to track to next line
 
 **Implementation**:
+
 ```css
 .content {
   max-width: 65ch; /* ch unit = character width */
@@ -347,14 +395,17 @@ font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono",
 ### Text Contrast
 
 **WCAG AA (Minimum)**:
+
 - Normal text: 4.5:1 contrast ratio
 - Large text (18px+ or 14px+ bold): 3:1
 
 **WCAG AAA (Enhanced)**:
+
 - Normal text: 7:1
 - Large text: 4.5:1
 
 **Common Mistakes**:
+
 - Light gray on white (#999 on #FFF = 2.85:1) - FAIL
 - Medium gray on white (#666 on #FFF = 5.74:1) - PASS
 
@@ -365,6 +416,7 @@ font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono",
 **Before headings**: 1.5-2× line height of body
 
 **Example (16px body, 24px line height)**:
+
 - Paragraph spacing: 12-24px
 - After H2: 12-18px
 - Before H2: 36-48px
@@ -426,12 +478,14 @@ body {
 ### Data Tables
 
 **Column Headers**:
+
 - Size: 12-14px
 - Weight: 600
 - Transform: Uppercase or Regular case
 - Letter spacing: +0.05em if uppercase
 
 **Table Data**:
+
 - Size: 13-15px
 - Weight: 400
 - Monospace for numbers (optional)
@@ -440,21 +494,25 @@ body {
 ### Forms
 
 **Labels**:
+
 - Size: 14-16px
 - Weight: 500-600
 - Above input (preferred) or left-aligned
 
 **Input Text**:
+
 - Size: 16px (minimum on mobile to prevent zoom)
 - Weight: 400
 - Match body text size
 
 **Helper Text**:
+
 - Size: 12-14px
 - Weight: 400
 - Color: Secondary text color
 
 **Error Messages**:
+
 - Size: 12-14px
 - Weight: 500
 - Color: Error color
@@ -476,6 +534,7 @@ body {
 ## Typography Checklist
 
 ### Planning
+
 - [ ] Chosen appropriate scale ratio
 - [ ] Defined 5-6 size steps
 - [ ] Selected font family
@@ -484,6 +543,7 @@ body {
 - [ ] Planned responsive behavior
 
 ### Implementation
+
 - [ ] All headings use scale
 - [ ] Body text is 16px minimum (desktop)
 - [ ] Line height is 1.5+ for body text
@@ -492,6 +552,7 @@ body {
 - [ ] Heading hierarchy is logical
 
 ### Quality Check
+
 - [ ] No arbitrary sizes (all from scale)
 - [ ] Weights create clear hierarchy
 - [ ] Mobile sizes are readable
@@ -502,42 +563,51 @@ body {
 ## Common Typography Mistakes
 
 ### Mistake 1: Too Many Sizes
+
 **Problem**: 15+ different font sizes
 **Solution**: Stick to scale, use weight for variation
 
 ### Mistake 2: Insufficient Contrast
+
 **Problem**: #999 gray text on white background
 **Solution**: Darker text, minimum #666 for body
 
 ### Mistake 3: Tiny Body Text
+
 **Problem**: 12-13px body text on desktop
 **Solution**: 16px minimum for primary reading
 
 ### Mistake 4: Inconsistent Line Height
+
 **Problem**: Some paragraphs 1.3, others 1.7
 **Solution**: Standardize to 1.5-1.6 for body
 
 ### Mistake 5: All Caps Overuse
+
 **Problem**: Headers, buttons, labels all uppercase
 **Solution**: Reserve for labels/tags only, use weight instead
 
 ### Mistake 6: Wrong Font for Context
+
 **Problem**: Decorative font for dashboard data
 **Solution**: Clean sans-serif for functional interfaces
 
 ## Typography Resources
 
 ### Tools
-- **Type Scale**: https://type-scale.com/ (visual scale generator)
-- **Modular Scale**: https://www.modularscale.com/ (ratio calculator)
+
+- **Type Scale**: <https://type-scale.com/> (visual scale generator)
+- **Modular Scale**: <https://www.modularscale.com/> (ratio calculator)
 - **Contrast Checker**: WebAIM or Stark (contrast testing)
 
 ### Fonts
-- **Google Fonts**: https://fonts.google.com/ (free web fonts)
-- **Adobe Fonts**: https://fonts.adobe.com/ (included with Creative Cloud)
-- **Font Squirrel**: https://www.fontsquirrel.com/ (free fonts)
+
+- **Google Fonts**: <https://fonts.google.com/> (free web fonts)
+- **Adobe Fonts**: <https://fonts.adobe.com/> (included with Creative Cloud)
+- **Font Squirrel**: <https://www.fontsquirrel.com/> (free fonts)
 
 ### Reference
-- **Material Type System**: https://material.io/design/typography/
-- **Apple Typography**: https://developer.apple.com/design/human-interface-guidelines/typography
-- **Practical Typography**: https://practicaltypography.com/
+
+- **Material Type System**: <https://material.io/design/typography/>
+- **Apple Typography**: <https://developer.apple.com/design/human-interface-guidelines/typography>
+- **Practical Typography**: <https://practicaltypography.com/>
