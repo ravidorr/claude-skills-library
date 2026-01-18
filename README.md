@@ -35,18 +35,40 @@ Skills are modular, self-contained packages that transform Claude from a general
 
 ### Cursor IDE
 
-1. Clone the library:
+#### Option 1: Global Installation (Recommended)
 
-   ```bash
-   git clone https://github.com/ravidorr/claude-skills-library.git
-   ```
+Install skills globally so they're available in all Cursor windows:
 
-2. Add skills to **Cursor Settings > Rules and Commands > Agent Requestable Workspace Rules**
+```bash
+# Clone the library
+git clone https://github.com/ravidorr/claude-skills-library.git ~/claude-skills-library
 
-3. Done. Just ask naturally:
-   - "Review the UX of this page"
-   - "Check accessibility"
-   - "Improve this microcopy"
+# Create symlinks to ~/.codex/skills (creates directory if needed)
+mkdir -p ~/.codex/skills
+for skill in ~/claude-skills-library/skills/*/; do
+  ln -s "$skill" ~/.codex/skills/
+done
+```
+
+**Updating:** Just pull the latest changes:
+
+```bash
+cd ~/claude-skills-library && git pull
+```
+
+Since skills are symlinked, updates are immediately available - no reinstall needed.
+
+#### Option 2: Workspace-Only Installation
+
+For project-specific skills, add them to **Cursor Settings > Rules and Commands > Agent Requestable Workspace Rules** pointing to your cloned repo.
+
+#### Using the Skills
+
+Once installed, just ask naturally:
+
+- "Review the UX of this page"
+- "Check accessibility"
+- "Improve this microcopy"
 
 ### Other IDEs
 
