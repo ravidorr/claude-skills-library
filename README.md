@@ -128,6 +128,18 @@ mkdir -p ~/.codex/skills
 chmod 755 ~/.codex/skills
 ```
 
+## Recommended User Rules
+
+For the best experience with skills that require context gathering or user input, add this rule to your IDE settings:
+
+**Cursor IDE**: Settings > Rules for AI > User Rules
+
+```text
+When using skills that have context-gathering questions or require user input, ALWAYS ask me those questions and wait for my response before proceeding. NEVER assume defaults or answer on my behalf.
+```
+
+This ensures Claude will pause and ask you the skill's context questions rather than making assumptions about your project, users, or requirements.
+
 ## Resources
 
 - [Anthropic Skills Documentation](https://docs.anthropic.com)
