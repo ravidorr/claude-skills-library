@@ -81,38 +81,38 @@ Comprehensive guide to writing effective error messages that help users recover 
 **Empty Required Field**:
 
 ```text
-❌ "This field is required"
-✅ "Email address is required"
+BAD: "This field is required"
+GOOD: "Email address is required"
 ```text
 
 **Invalid Format**:
 
 ```text
-❌ "Invalid input"
-✅ "Email must include @ symbol (e.g., you@company.com)"
+BAD: "Invalid input"
+GOOD: "Email must include @ symbol (e.g., you@company.com)"
 
-❌ "Wrong format"
-✅ "Date format: MM/DD/YYYY (e.g., 01/15/2026)"
+BAD: "Wrong format"
+GOOD: "Date format: MM/DD/YYYY (e.g., 01/15/2026)"
 ```text
 
 **Out of Range**:
 
 ```text
-❌ "Value too high"
-✅ "Quantity must be between 1 and 100"
+BAD: "Value too high"
+GOOD: "Quantity must be between 1 and 100"
 
-❌ "Invalid number"
-✅ "Port number must be 1-65535"
+BAD: "Invalid number"
+GOOD: "Port number must be 1-65535"
 ```text
 
 **Password Requirements**:
 
 ```text
-❌ "Password doesn't meet requirements"
-✅ "Password must be at least 8 characters and include one number"
+BAD: "Password doesn't meet requirements"
+GOOD: "Password must be at least 8 characters and include one number"
 
 Better:
-✅ "Password requirements:
+GOOD: "Password requirements:
    • At least 8 characters
    • One number
    • One special character"
@@ -121,11 +121,11 @@ Better:
 **Character Limitations**:
 
 ```text
-❌ "Invalid characters"
-✅ "Project name can only contain letters, numbers, and hyphens"
+BAD: "Invalid characters"
+GOOD: "Project name can only contain letters, numbers, and hyphens"
 
-❌ "Too long"
-✅ "Description must be under 500 characters (currently 547)"
+BAD: "Too long"
+GOOD: "Description must be under 500 characters (currently 547)"
 ```text
 
 ### System Errors
@@ -139,38 +139,38 @@ Better:
 **Connection Failures**:
 
 ```text
-❌ "Error: ECONNREFUSED"
-✅ "Can't connect to server. Check your connection or try again later."
+BAD: "Error: ECONNREFUSED"
+GOOD: "Can't connect to server. Check your connection or try again later."
 
-❌ "Network error"
-✅ "Connection lost. Reconnecting automatically..."
+BAD: "Network error"
+GOOD: "Connection lost. Reconnecting automatically..."
 ```text
 
 **Timeout Errors**:
 
 ```text
-❌ "Request timed out"
-✅ "Request took too long. Simplify your query or try again."
+BAD: "Request timed out"
+GOOD: "Request took too long. Simplify your query or try again."
 
-❌ "Timeout"
-✅ "Loading timed out after 30 seconds. [Retry] or [Cancel]"
+BAD: "Timeout"
+GOOD: "Loading timed out after 30 seconds. [Retry] or [Cancel]"
 ```text
 
 **Server Errors**:
 
 ```text
-❌ "500 Internal Server Error"
-✅ "Something went wrong on our end. Try refreshing the page."
+BAD: "500 Internal Server Error"
+GOOD: "Something went wrong on our end. Try refreshing the page."
 
-❌ "Error occurred"
-✅ "Unable to process request. Our team has been notified. [Retry]"
+BAD: "Error occurred"
+GOOD: "Unable to process request. Our team has been notified. [Retry]"
 ```text
 
 **Service Unavailable**:
 
 ```text
-❌ "503 Service Unavailable"
-✅ "Service temporarily unavailable. Try again in a few minutes."
+BAD: "503 Service Unavailable"
+GOOD: "Service temporarily unavailable. Try again in a few minutes."
 ```text
 
 ### Permission Errors
@@ -184,28 +184,28 @@ Better:
 **Access Denied**:
 
 ```text
-❌ "Access denied"
-✅ "You don't have permission to view this page. Contact your admin for access."
+BAD: "Access denied"
+GOOD: "You don't have permission to view this page. Contact your admin for access."
 
-❌ "Forbidden"
-✅ "This feature requires admin privileges. Contact support@company.com."
+BAD: "Forbidden"
+GOOD: "This feature requires admin privileges. Contact support@company.com."
 ```text
 
 **Feature Restricted**:
 
 ```text
-❌ "Not available"
-✅ "Advanced analytics requires Pro plan. [View Plans]"
+BAD: "Not available"
+GOOD: "Advanced analytics requires Pro plan. [View Plans]"
 
-❌ "Upgrade required"
-✅ "This feature is available on the Enterprise plan. [Contact Sales]"
+BAD: "Upgrade required"
+GOOD: "This feature is available on the Enterprise plan. [Contact Sales]"
 ```text
 
 **Read-Only Mode**:
 
 ```text
-❌ "Cannot edit"
-✅ "This document is read-only. Request edit access from the owner."
+BAD: "Cannot edit"
+GOOD: "This document is read-only. Request edit access from the owner."
 ```text
 
 ### Resource Not Found
@@ -219,21 +219,21 @@ Better:
 **404 Errors**:
 
 ```text
-❌ "404 Not Found"
-✅ "Page not found. The link may be broken or the page moved. [Go to Home]"
+BAD: "404 Not Found"
+GOOD: "Page not found. The link may be broken or the page moved. [Go to Home]"
 
-❌ "Page doesn't exist"
-✅ "We can't find that page. Try searching or browse from home."
+BAD: "Page doesn't exist"
+GOOD: "We can't find that page. Try searching or browse from home."
 ```text
 
 **Item Not Found**:
 
 ```text
-❌ "Not found"
-✅ "Dashboard not found. It may have been deleted or you don't have access."
+BAD: "Not found"
+GOOD: "Dashboard not found. It may have been deleted or you don't have access."
 
-❌ "Item doesn't exist"
-✅ "User 'john@company.com' not found. Check spelling or [Invite User]"
+BAD: "Item doesn't exist"
+GOOD: "User 'john@company.com' not found. Check spelling or [Invite User]"
 ```text
 
 ### Rate Limiting
@@ -247,18 +247,18 @@ Better:
 **API Rate Limit**:
 
 ```text
-❌ "Too many requests"
-✅ "Rate limit exceeded. Wait 60 seconds before trying again."
+BAD: "Too many requests"
+GOOD: "Rate limit exceeded. Wait 60 seconds before trying again."
 
-❌ "429 Error"
-✅ "You've made 1,000 requests this hour (limit: 1,000/hour). Resets at 3:00 PM."
+BAD: "429 Error"
+GOOD: "You've made 1,000 requests this hour (limit: 1,000/hour). Resets at 3:00 PM."
 ```text
 
 **Login Attempts**:
 
 ```text
-❌ "Locked out"
-✅ "Too many failed login attempts. Try again in 15 minutes or [Reset Password]"
+BAD: "Locked out"
+GOOD: "Too many failed login attempts. Try again in 15 minutes or [Reset Password]"
 ```text
 
 ### Validation Errors
@@ -272,31 +272,31 @@ Better:
 **Duplicate Entry**:
 
 ```text
-❌ "Already exists"
-✅ "Email address already in use. Use a different email or [Sign In]"
+BAD: "Already exists"
+GOOD: "Email address already in use. Use a different email or [Sign In]"
 
-❌ "Duplicate"
-✅ "Project name 'website-redesign' already exists. Choose a different name."
+BAD: "Duplicate"
+GOOD: "Project name 'website-redesign' already exists. Choose a different name."
 ```text
 
 **Dependency Conflict**:
 
 ```text
-❌ "Cannot delete"
-✅ "Can't delete user with active projects. Reassign projects first."
+BAD: "Cannot delete"
+GOOD: "Can't delete user with active projects. Reassign projects first."
 
-❌ "Conflict"
-✅ "This alert is used by 3 dashboards. Remove from dashboards before deleting."
+BAD: "Conflict"
+GOOD: "This alert is used by 3 dashboards. Remove from dashboards before deleting."
 ```text
 
 **Business Rule Violation**:
 
 ```text
-❌ "Invalid operation"
-✅ "Can't schedule deployment during maintenance window (2-4 AM EST)."
+BAD: "Invalid operation"
+GOOD: "Can't schedule deployment during maintenance window (2-4 AM EST)."
 
-❌ "Not allowed"
-✅ "Projects require at least one admin. Assign another admin before removing yourself."
+BAD: "Not allowed"
+GOOD: "Projects require at least one admin. Assign another admin before removing yourself."
 ```text
 
 ## Error Severity Levels
@@ -371,7 +371,7 @@ Better:
 
 ```text
 [Email field with red border]
-⚠️ Email must include @ symbol
+WARNING: Email must include @ symbol
 ```text
 
 ### Banner Errors (Page-Level)
@@ -384,7 +384,7 @@ Better:
 
 ```text
 [Red banner at top]
-⚠️ Unable to load dashboard: Connection failed. [Retry]
+WARNING: Unable to load dashboard: Connection failed. [Retry]
 ```text
 
 ### Modal Errors (Blocking)
@@ -397,7 +397,7 @@ Better:
 
 ```text
 [Modal Dialog]
-❌ Deployment Failed
+BAD: Deployment Failed
 
 Deployment to production failed after 2 of 8 servers.
 
@@ -416,7 +416,7 @@ Error: Connection timeout on servers 3-8.
 
 ```text
 [Toast notification]
-❌ Auto-save failed [Retry]
+BAD: Auto-save failed [Retry]
 ```text
 
 ## Progressive Error Messages
@@ -565,49 +565,49 @@ Import Error:
 **1. Blame the User**:
 
 ```text
-❌ "You entered invalid data"
-✅ "Email must include @ symbol"
+BAD: "You entered invalid data"
+GOOD: "Email must include @ symbol"
 ```text
 
 **2. Use Technical Jargon Alone**:
 
 ```text
-❌ "NullPointerException at line 247"
-✅ "Something went wrong loading this data [Retry]"
+BAD: "NullPointerException at line 247"
+GOOD: "Something went wrong loading this data [Retry]"
 
-❌ "ERR_CONNECTION_REFUSED"
-✅ "Can't connect to server. Check connection and retry."
+BAD: "ERR_CONNECTION_REFUSED"
+GOOD: "Can't connect to server. Check connection and retry."
 ```text
 
 **3. Be Vague**:
 
 ```text
-❌ "Error occurred"
-✅ "Can't save changes: Connection timed out"
+BAD: "Error occurred"
+GOOD: "Can't save changes: Connection timed out"
 
-❌ "Invalid input"
-✅ "Password must be at least 8 characters"
+BAD: "Invalid input"
+GOOD: "Password must be at least 8 characters"
 ```text
 
 **4. Over-Apologize**:
 
 ```text
-❌ "We're terribly sorry for the inconvenience this has caused..."
-✅ "Changes not saved. Check connection and retry."
+BAD: "We're terribly sorry for the inconvenience this has caused..."
+GOOD: "Changes not saved. Check connection and retry."
 ```text
 
 **5. Use ALL CAPS**:
 
 ```text
-❌ "ERROR: FILE NOT FOUND"
-✅ "File not found"
+BAD: "ERROR: FILE NOT FOUND"
+GOOD: "File not found"
 ```text
 
 **6. Multiple Errors at Once (If Avoidable)**:
 
 ```text
-❌ "Email invalid, password too short, name required"
-✅ "Email must include @ symbol"
+BAD: "Email invalid, password too short, name required"
+GOOD: "Email must include @ symbol"
     [Fix this first, then validate others]
 ```text
 

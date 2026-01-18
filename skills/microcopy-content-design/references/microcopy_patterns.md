@@ -151,14 +151,14 @@ Best: "Delete Permanently" / "Cancel"
 **Examples**:
 
 ```text
-❌ "Click here for more information"
-✅ "View pricing details"
+BAD: "Click here for more information"
+GOOD: "View pricing details"
 
-❌ "Learn more"
-✅ "Read deployment guide"
+BAD: "Learn more"
+GOOD: "Read deployment guide"
 
-❌ "Go to settings"
-✅ "Configure alert settings"
+BAD: "Go to settings"
+GOOD: "Configure alert settings"
 ```text
 
 **Guidelines**:
@@ -323,25 +323,25 @@ Keyboard shortcut:
 **For Icons**:
 
 ```text
-❌ "This icon allows you to delete"
-✅ "Delete"
+BAD: "This icon allows you to delete"
+GOOD: "Delete"
 
-❌ "Click to export data"
-✅ "Export to CSV"
+BAD: "Click to export data"
+GOOD: "Export to CSV"
 ```text
 
 **For Technical Terms**:
 
 ```text
-❌ "RPO stands for Recovery Point Objective which is..."
-✅ "RPO: Maximum acceptable data loss measured in time"
+BAD: "RPO stands for Recovery Point Objective which is..."
+GOOD: "RPO: Maximum acceptable data loss measured in time"
 ```text
 
 **For Disabled Elements**:
 
 ```text
-❌ "You can't do this because you don't have the right permissions"
-✅ "Requires admin permissions"
+BAD: "You can't do this because you don't have the right permissions"
+GOOD: "Requires admin permissions"
 ```text
 
 ## Status Indicator Patterns
@@ -673,11 +673,11 @@ Status:
 **Examples**:
 
 ```text
-Preferred: "—" (em dash)
+Preferred: em dash character
 Alternative: "N/A"
 Avoid: Empty cell
 Avoid: "None"
-```text
+```
 
 ## Placeholder Text Patterns
 
@@ -757,14 +757,14 @@ Help: "Endpoint to receive real-time notifications"
 **Examples**:
 
 ```text
-❌ "Invalid email"
-✅ "Email must include @ symbol"
+BAD: "Invalid email"
+GOOD: "Email must include @ symbol"
 
-❌ "Error in password"
-✅ "Password must be at least 8 characters"
+BAD: "Error in password"
+GOOD: "Password must be at least 8 characters"
 
-❌ "Field required"
-✅ "Email address is required"
+BAD: "Field required"
+GOOD: "Email address is required"
 ```text
 
 ## Modal Dialog Patterns
@@ -822,14 +822,14 @@ Would you like to extend your session?"
 **Examples**:
 
 ```text
-❌ "Yes" / "No"
-✅ "Delete Account" / "Cancel"
+BAD: "Yes" / "No"
+GOOD: "Delete Account" / "Cancel"
 
-❌ "OK" / "Cancel"
-✅ "Save Changes" / "Discard"
+BAD: "OK" / "Cancel"
+GOOD: "Save Changes" / "Discard"
 
-❌ "Are you sure?"
-✅ "Continue" / "Go Back"
+BAD: "Are you sure?"
+GOOD: "Continue" / "Go Back"
 ```text
 
 ## Notification Patterns
@@ -889,51 +889,51 @@ Error:
 **1. Redundant Words**:
 
 ```text
-❌ "Please enter your email address"
-✅ "Email address"
+BAD: "Please enter your email address"
+GOOD: "Email address"
 
-❌ "Click the button below to continue"
-✅ [Continue Button]
+BAD: "Click the button below to continue"
+GOOD: [Continue Button]
 ```text
 
 **2. Apologetic Language**:
 
 ```text
-❌ "Sorry, but you must enter a valid email"
-✅ "Email must include @ symbol"
+BAD: "Sorry, but you must enter a valid email"
+GOOD: "Email must include @ symbol"
 
-❌ "Unfortunately, we couldn't save your changes"
-✅ "Changes not saved. Check connection and retry."
+BAD: "Unfortunately, we couldn't save your changes"
+GOOD: "Changes not saved. Check connection and retry."
 ```text
 
 **3. Vague Instructions**:
 
 ```text
-❌ "Click here"
-✅ "View documentation"
+BAD: "Click here"
+GOOD: "View documentation"
 
-❌ "Learn more"
-✅ "Read setup guide"
+BAD: "Learn more"
+GOOD: "Read setup guide"
 ```text
 
 **4. Technical Jargon (Without Context)**:
 
 ```text
-❌ "Error: ECONNREFUSED"
-✅ "Can't connect to server. Check connection and retry."
+BAD: "Error: ECONNREFUSED"
+GOOD: "Can't connect to server. Check connection and retry."
 
-❌ "NullPointerException occurred"
-✅ "Something went wrong loading this data. [Retry]"
+BAD: "NullPointerException occurred"
+GOOD: "Something went wrong loading this data. [Retry]"
 ```text
 
 **5. Passive Voice**:
 
 ```text
-❌ "Your changes have been saved"
-✅ "Changes saved"
+BAD: "Your changes have been saved"
+GOOD: "Changes saved"
 
-❌ "The file has been uploaded"
-✅ "File uploaded"
+BAD: "The file has been uploaded"
+GOOD: "File uploaded"
 ```text
 
 ## Word Choice Guidelines

@@ -103,7 +103,7 @@ Critical (Direct, Urgent):
 **Enthusiastic Voice**:
 
 ```text
-"Welcome aboard! 🎉"
+"Welcome aboard!"
 "Awesome! Changes saved."
 "You're all set!"
 ```text
@@ -622,11 +622,11 @@ Help: [Example]
 **Example Comparisons**:
 
 ```text
-❌ Don't Say: [Bad example]
-✅ Do Say: [Good example]
+BAD: Don't Say: [Bad example]
+GOOD: Do Say: [Good example]
 
-❌ Don't Say: [Bad example]
-✅ Do Say: [Good example]
+BAD: Don't Say: [Bad example]
+GOOD: Do Say: [Good example]
 ```text
 
 ## Consistency Across Channels
