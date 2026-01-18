@@ -26,13 +26,6 @@ Skills are modular, self-contained packages that transform Claude from a general
 
 ## Installation
 
-### Claude.ai
-
-1. Download the `.skill` file from any skill folder
-2. Go to [Claude.ai](https://claude.ai) > Settings > Skills
-3. Click "Upload Skill" and select the file
-4. Confirm installation
-
 ### Cursor IDE
 
 Clone the skill library:
@@ -69,6 +62,19 @@ for skill in ~/claude-skills-library/skills/*/; do
 done
 ```
 
+**Using the Skills:** Once installed, just ask naturally:
+
+- "Review the UX of this page"
+- "Check accessibility"
+- "Improve this microcopy"
+
+### Claude.ai
+
+1. Download the `.skill` file from any skill folder
+2. Go to [Claude.ai](https://claude.ai) > Settings > Skills
+3. Click "Upload Skill" and select the file
+4. Confirm installation
+
 ### Codex CLI
 
 For OpenAI's Codex CLI, use `~/.codex/skills` instead:
@@ -81,14 +87,6 @@ for skill in ~/claude-skills-library/skills/*/; do
   ln -s "$skill" ~/.codex/skills/
 done
 ```
-
-#### Using the Skills
-
-Once installed, just ask naturally:
-
-- "Review the UX of this page"
-- "Check accessibility"
-- "Improve this microcopy"
 
 ### Other IDEs
 
