@@ -2,7 +2,7 @@
 
 A curated collection of high-quality skills that extend Claude's capabilities with specialized knowledge, workflows, and tool integrations.
 
-## 📚 What are Skills?
+## What are Skills?
 
 Skills are modular, self-contained packages that transform Claude from a general-purpose AI into a specialized agent equipped with domain-specific expertise. Think of them as "onboarding guides" that give Claude procedural knowledge for specific tasks.
 
@@ -13,19 +13,19 @@ Skills are modular, self-contained packages that transform Claude from a general
 - **Domain expertise** - Industry-specific knowledge, schemas, business logic
 - **Bundled resources** - Scripts, references, and assets for complex tasks
 
-## 🎯 Available Skills
+## Available Skills
 
 | Skill | Description | Use When |
 |-------|-------------|----------|
 | [ux-web-review](skills/ux-web-review) | Expert UX review and analysis of web applications with 10+ years of professional experience | Reviewing web apps, analyzing interfaces, providing UX feedback |
 
-## 🚀 How to Use Skills
+## How to Use Skills
 
 ### Installation
 
 1. **Download a skill**: Click on a skill name above, then download the `.skill` file from the releases
 2. **Install in Claude**: 
-   - Go to [Claude.ai](https://claude.ai) → Settings → Skills
+   - Go to [Claude.ai](https://claude.ai) > Settings > Skills
    - Click "Upload Skill"
    - Select the downloaded `.skill` file
    - Confirm installation
@@ -33,12 +33,12 @@ Skills are modular, self-contained packages that transform Claude from a general
 ### Using Skills
 
 Once installed, skills trigger automatically based on your requests. For example:
-- Say "Give me UX feedback on this page" → triggers `ux-web-review`
-- Say "Create a presentation about Q3 results" → would trigger a `pptx` skill (if installed)
+- Say "Give me UX feedback on this page" - triggers `ux-web-review`
+- Say "Create a presentation about Q3 results" - would trigger a `pptx` skill (if installed)
 
 Each skill's README contains specific trigger phrases and usage examples.
 
-## 📖 Skill Catalog
+## Skill Catalog
 
 ### UX & Design
 - **[ux-web-review](skills/ux-web-review)** - Professional UX analysis for web applications
@@ -52,7 +52,7 @@ Each skill's README contains specific trigger phrases and usage examples.
 ### Data & Analytics
 *Coming soon*
 
-## 🛠️ Creating Your Own Skills
+## Creating Your Own Skills
 
 Want to create a skill? Check out our [Contributing Guide](CONTRIBUTING.md) for:
 - Skill creation workflow
@@ -74,7 +74,7 @@ your-skill-name/
 
 See the [skill-creator guide](https://github.com/anthropics/claude-skills) for detailed instructions.
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Here's how:
 
@@ -88,17 +88,17 @@ We welcome contributions! Here's how:
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
-## 📋 Skill Quality Standards
+## Skill Quality Standards
 
 All skills in this library must:
-- ✅ Have clear, comprehensive descriptions
-- ✅ Include usage examples
-- ✅ Follow the progressive disclosure pattern
-- ✅ Be well-tested on real-world tasks
-- ✅ Include proper documentation
-- ✅ Be self-contained (all dependencies included)
+- Have clear, comprehensive descriptions
+- Include usage examples
+- Follow the progressive disclosure pattern
+- Be well-tested on real-world tasks
+- Include proper documentation
+- Be self-contained (all dependencies included)
 
-## 🏷️ Skill Categories
+## Skill Categories
 
 Skills are organized into categories for easy discovery:
 
@@ -109,33 +109,33 @@ Skills are organized into categories for easy discovery:
 - **Creative** - Content creation, design, media
 - **Productivity** - Automation, workflows, organization
 
-## 📝 License
+## License
 
 This repository is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 
 Individual skills may have their own licenses - check each skill's directory for details.
 
-## 🌟 Featured Skills
+## Featured Skills
 
 ### UX Web Review
 Expert-level UX analysis with 10+ years of professional experience. Provides systematic reviews covering usability, accessibility, information architecture, and interaction design.
 
-[→ View skill](skills/ux-web-review) | [→ Download](skills/ux-web-review/ux-web-review.skill)
+[View skill](skills/ux-web-review) | [Download](skills/ux-web-review/ux-web-review.skill)
 
-## 🔍 Finding Skills
+## Finding Skills
 
 Browse by category or search for specific capabilities:
-- **Need UX feedback?** → ux-web-review
-- **Creating presentations?** → Check Business & Productivity
-- **Data analysis?** → Check Data & Analytics
+- **Need UX feedback?** - ux-web-review
+- **Creating presentations?** - Check Business & Productivity
+- **Data analysis?** - Check Data & Analytics
 
-## 💬 Community
+## Community
 
 - **Discussions**: Share use cases, ask questions, provide feedback
 - **Issues**: Report bugs or request new skills
 - **Pull Requests**: Contribute new skills or improvements
 
-## 🗺️ Roadmap
+## Roadmap
 
 Upcoming skill categories:
 - [ ] Frontend development workflows
@@ -145,7 +145,7 @@ Upcoming skill categories:
 - [ ] Testing & QA workflows
 - [ ] DevOps & deployment
 
-## ⚡ Quick Links
+## Quick Links
 
 - [Anthropic Skills Documentation](https://docs.anthropic.com/skills)
 - [Skill Creator Tool](https://github.com/anthropics/claude-skills)
@@ -153,6 +153,6 @@ Upcoming skill categories:
 
 ---
 
-**Built with ❤️ by the Claude community**
+**Built by the Claude community**
 
 *Have a skill idea? [Open an issue](../../issues) or [start a discussion](../../discussions)!*

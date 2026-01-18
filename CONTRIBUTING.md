@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing! This guide will help you create and submit high-quality skills.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Before You Start](#before-you-start)
 - [Skill Creation Process](#skill-creation-process)
@@ -128,12 +128,12 @@ Files used in output:
 ### Step 7: Test Thoroughly
 
 Before submitting:
-- ✅ Test on at least 5 real-world use cases
-- ✅ Verify all scripts execute successfully
-- ✅ Check that skill triggers appropriately
-- ✅ Confirm bundled resources are referenced correctly
-- ✅ Test with different user request phrasings
-- ✅ Verify no broken links or missing files
+- Test on at least 5 real-world use cases
+- Verify all scripts execute successfully
+- Check that skill triggers appropriately
+- Confirm bundled resources are referenced correctly
+- Test with different user request phrasings
+- Verify no broken links or missing files
 
 ### Step 8: Package Your Skill
 
@@ -224,21 +224,21 @@ description: UX reviews
 ### Code Quality
 
 For scripts:
-- ✅ Python 3.8+ compatible
-- ✅ Include docstrings
-- ✅ Handle errors gracefully
-- ✅ No hardcoded paths
-- ✅ Clear variable names
-- ✅ Comments for complex logic
+- Python 3.8+ compatible
+- Include docstrings
+- Handle errors gracefully
+- No hardcoded paths
+- Clear variable names
+- Comments for complex logic
 
 ### Documentation Quality
 
 For references:
-- ✅ Clear structure with headings
-- ✅ Scannable formatting
-- ✅ Concrete examples
-- ✅ No redundancy with SKILL.md
-- ✅ Under 10k words per file
+- Clear structure with headings
+- Scannable formatting
+- Concrete examples
+- No redundancy with SKILL.md
+- Under 10k words per file
 
 ## Submission Process
 
@@ -301,34 +301,34 @@ Open a PR with:
 Pull requests are evaluated on:
 
 ### Functionality
-- ✅ Skill works as described
-- ✅ Triggers appropriately
-- ✅ Handles edge cases
-- ✅ Scripts execute successfully
+- Skill works as described
+- Triggers appropriately
+- Handles edge cases
+- Scripts execute successfully
 
 ### Quality
-- ✅ Clear, comprehensive description
-- ✅ Well-structured instructions
-- ✅ Concrete examples provided
-- ✅ Appropriate level of detail
+- Clear, comprehensive description
+- Well-structured instructions
+- Concrete examples provided
+- Appropriate level of detail
 
 ### Documentation
-- ✅ README explains skill clearly
-- ✅ Usage examples are realistic
-- ✅ Installation instructions present
-- ✅ All resources documented
+- README explains skill clearly
+- Usage examples are realistic
+- Installation instructions present
+- All resources documented
 
 ### Code (if applicable)
-- ✅ Clean, readable code
-- ✅ Proper error handling
-- ✅ Documented functions
-- ✅ No security issues
+- Clean, readable code
+- Proper error handling
+- Documented functions
+- No security issues
 
 ### Testing
-- ✅ Tested on multiple use cases
-- ✅ Edge cases considered
-- ✅ No broken references
-- ✅ Resources load correctly
+- Tested on multiple use cases
+- Edge cases considered
+- No broken references
+- Resources load correctly
 
 ## Review Timeline
 

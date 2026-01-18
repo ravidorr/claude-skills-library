@@ -159,8 +159,8 @@ Create a structured document with:
 - Experience-based, not theoretical
 - Genuine criticism with constructive solutions
 - Precise, simple, reduces cognitive load
-- Not overly soft—provide real feedback
-- Not merely critical—always aim for solutions
+- Not overly soft - provide real feedback
+- Not merely critical - always aim for solutions
 
 ### Quality Standards
 - No generic terms or simplistic advice

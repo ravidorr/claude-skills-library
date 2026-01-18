@@ -2,7 +2,7 @@
 
 Expert UX consultant with 10+ years of experience in SaaS, enterprise systems, and complex interfaces.
 
-## 📋 What This Skill Does
+## What This Skill Does
 
 Transforms Claude into an expert UX consultant who provides professional, systematic reviews of web applications. The skill covers:
 - Usability analysis
@@ -13,7 +13,7 @@ Transforms Claude into an expert UX consultant who provides professional, system
 - Mobile responsiveness
 - Content and microcopy analysis
 
-## 👥 Who It's For
+## Who It's For
 
 - **Product Designers** seeking expert feedback on interfaces
 - **Product Managers** evaluating design decisions
@@ -21,7 +21,7 @@ Transforms Claude into an expert UX consultant who provides professional, system
 - **UX Teams** needing structured review methodology
 - **Founders** getting professional design critique
 
-## 🎯 When To Use
+## When To Use
 
 Trigger this skill by saying:
 - "Give me UX feedback on this page"
@@ -35,9 +35,9 @@ Works with:
 - Screenshots you upload
 - Design mockups and wireframes
 
-## ⚡ Key Features
+## Key Features
 
-### 🔍 Mandatory Context Gathering
+### Mandatory Context Gathering
 Before any review, Claude asks questions to understand:
 - What your product does
 - Who your users are
@@ -47,14 +47,14 @@ Before any review, Claude asks questions to understand:
 
 This ensures relevant, informed feedback rather than generic advice.
 
-### 📸 Systematic Visual Analysis
+### Systematic Visual Analysis
 For live URLs, Claude:
 - Captures comprehensive screenshots
 - Tests interactions
 - Checks responsive behavior
 - Documents edge cases
 
-### 🎯 Structured Analysis
+### Structured Analysis
 Every review includes:
 - **What Works Well** - Effective UX decisions
 - **Issues & Risks** - Prioritized by severity (P0-P3)
@@ -62,14 +62,14 @@ Every review includes:
 - **Accessibility Review** - WCAG compliance check
 - **Pattern Recognition** - Industry-standard solutions
 
-### 📊 Professional Deliverables
+### Professional Deliverables
 Creates comprehensive reports with:
 - Executive summary
 - Detailed findings with screenshots
 - Prioritized action items
 - Implementation guidance
 
-## 📚 What's Included
+## What's Included
 
 ### Core Instructions (SKILL.md)
 - Expert UX persona and methodology
@@ -100,16 +100,16 @@ Creates comprehensive reports with:
 - Priority framework
 - Adaptation guidelines for different review types
 
-## 🚀 Installation
+## Installation
 
 1. **Download**: Get `ux-web-review.skill` from this directory
 2. **Install in Claude**:
-   - Go to [Claude.ai](https://claude.ai) → Settings → Skills
+   - Go to [Claude.ai](https://claude.ai) > Settings > Skills
    - Click "Upload Skill"
    - Select `ux-web-review.skill`
    - Confirm installation
 
-## 💡 Usage Examples
+## Usage Examples
 
 ### Example 1: Quick Review
 ```
@@ -149,7 +149,7 @@ Claude: [Comprehensive accessibility review with specific WCAG
         criteria, contrast ratios, keyboard nav, screen reader support]
 ```
 
-## 🎨 Review Approach
+## Review Approach
 
 ### Professional Tone
 - Sharp, practical, direct feedback
@@ -169,7 +169,7 @@ Claude: [Comprehensive accessibility review with specific WCAG
 - Works with varying levels of fidelity
 - Conversational or formal report style
 
-## 📖 Core Expertise Areas
+## Core Expertise Areas
 
 - Complex systems (dashboards, monitoring, NOC, incident management)
 - SaaS enterprise products
@@ -180,7 +180,7 @@ Claude: [Comprehensive accessibility review with specific WCAG
 - AI integration into existing products
 - Principles from DataDog, New Relic, GitHub, Monday, Figma
 
-## ⚙️ Skill Structure
+## Skill Structure
 
 ```
 ux-web-review/
@@ -193,7 +193,7 @@ ux-web-review/
     └── review_checklist.md      # Systematic checklist (14 KB)
 ```
 
-## 🔄 Progressive Disclosure
+## Progressive Disclosure
 
 The skill uses a three-level loading system:
 1. **Metadata** - Always in context (name + description)
@@ -202,7 +202,7 @@ The skill uses a three-level loading system:
 
 This keeps context usage efficient while providing comprehensive knowledge when needed.
 
-## 🎯 What Makes This Effective
+## What Makes This Effective
 
 1. **Context-First Approach** - No generic feedback; always grounded in product goals
 2. **Systematic Coverage** - Comprehensive checklist ensures nothing is missed
@@ -211,7 +211,7 @@ This keeps context usage efficient while providing comprehensive knowledge when 
 5. **Priority Framework** - Clear P0-P3 severity levels for action planning
 6. **Professional Delivery** - Sharp feedback without being harsh
 
-## 🚫 What This Skill Doesn't Do
+## What This Skill Doesn't Do
 
 - Visual design (pixel-perfect mockups)
 - User research or testing
@@ -221,15 +221,15 @@ This keeps context usage efficient while providing comprehensive knowledge when 
 - A/B test setup
 - Analytics configuration
 
-## 🤝 Contributing
+## Contributing
 
 Found an issue or have suggestions? This skill is part of the Claude Skills Library. See the main repository for contribution guidelines.
 
-## 📝 License
+## License
 
 MIT License - see [LICENSE](../../LICENSE) for details.
 
-## 🔗 Links
+## Links
 
 - [Main Skills Library](../../)
 - [Contributing Guide](../../CONTRIBUTING.md)
