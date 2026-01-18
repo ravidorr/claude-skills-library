@@ -263,7 +263,7 @@ Claude: [Provides comprehensive six-dimension analysis]
         Medium-term:
         1. Add customizable dashboard layouts
         2. Implement saved filter presets
-```text
+```
 
 ### Example 2: Focused Comprehensive Review
 
@@ -273,7 +273,7 @@ You: Full design review, but focus more on accessibility
 
 Claude: [After context gathering, provides full review
         with expanded accessibility and microcopy sections]
-```text
+```
 
 ### Example 3: Flow-Focused Review
 
@@ -295,7 +295,7 @@ Claude: [Reviews all screens as connected flow]
         - Can't go back from step 4
         
         [Continues with UI, copy, accessibility for each screen]
-```text
+```
 
 ## Specialized Context Expertise
 
@@ -338,7 +338,7 @@ design-super-agent/
 ├── SKILL.md (21 KB)               Core instructions
 ├── README.md                       This file
 └── design-super-agent.skill       Packaged skill
-```text
+```
 
 ## What Makes This Effective
 

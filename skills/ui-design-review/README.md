@@ -181,7 +181,7 @@ You: Yes, that's right.
 Claude: [Provides systematic six-dimension analysis with specific 
         recommendations for grid alignment, typography hierarchy, 
         color usage, etc.]
-```text
+```
 
 ### Example 2: Typography Check
 
@@ -203,7 +203,7 @@ Claude: Typography Analysis:
         - H3: 20px, weight 600
         - Body: 16px, weight 400
         - Line height: 1.6 for body text
-```text
+```
 
 ### Example 3: Grid Precision Review
 
@@ -222,7 +222,7 @@ Claude: Grid Issues:
         - Sidebar: Span columns 1-3 (3 cols)
         - Main content: Span columns 4-12 (9 cols)
         - Align all cards to column boundaries
-```text
+```
 
 ### Example 4: Color & Accessibility
 
@@ -244,7 +244,7 @@ Claude: Color Analysis:
         - Status colors well-chosen
         - Recommend reducing decorative color usage
         - Apply 60-30-10 rule more strictly
-```text
+```
 
 ## Review Approach
 
@@ -292,7 +292,7 @@ ui-design-review/
     ├── typography_scales.md       # Type scales (13 KB)
     ├── color_systems.md           # Color patterns (11 KB)
     └── layout_patterns.md         # Layout patterns (11 KB)
-```text
+```
 
 ## What Makes This Effective
 

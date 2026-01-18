@@ -163,7 +163,7 @@ Wrap-up (5 min)
 - Additional thoughts
 - Thank you
 - Next steps
-```text
+```
 
 **Question Types**:
 
@@ -373,7 +373,7 @@ Demographics (if needed)
 Thank You
 - What happens next
 - Contact info (if needed)
-```text
+```
 
 ### Analytics Analysis
 
@@ -556,7 +556,7 @@ Thank You
 - X participants completed
 - Key questions answered
 - Actionable insights generated
-```text
+```
 
 ## Research Synthesis
 
@@ -576,7 +576,7 @@ Thank You
 Observation: User opened three different tabs to find API documentation
 Interpretation: Information architecture may not be clear
 Question: Is this common? What would make it easier?
-```text
+```
 
 ### Analysis Process
 
@@ -614,7 +614,7 @@ Question: Is this common? What would make it easier?
 **Implication**: [What it means for design]
 **Recommendation**: [What we should do]
 **Priority**: [Critical / High / Medium / Low]
-```text
+```
 
 ### Research Deliverables
 

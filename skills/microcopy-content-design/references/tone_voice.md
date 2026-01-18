@@ -24,7 +24,7 @@ Mailchimp's Voice:
 - Informal, not sloppy
 - Helpful, not overbearing
 - Expert, not bossy
-```text
+```
 
 ### Tone (How You Say It)
 
@@ -50,7 +50,7 @@ Error (Helpful, Calm):
 
 Critical (Direct, Urgent):
 "Production service down. 1,200 users affected. Act now."
-```text
+```
 
 ## Voice Dimensions Framework
 
@@ -64,7 +64,7 @@ Critical (Direct, Urgent):
 "Your request has been submitted successfully."
 "Please contact support for assistance."
 "An error occurred during processing."
-```text
+```
 
 **Casual Voice**:
 
@@ -72,7 +72,7 @@ Critical (Direct, Urgent):
 "Request submitted!"
 "Need help? Contact support."
 "Oops, something went wrong."
-```text
+```
 
 **Balanced** (Most Enterprise/B2B):
 
@@ -80,7 +80,7 @@ Critical (Direct, Urgent):
 "Request submitted successfully."
 "Contact support for help."
 "Something went wrong. Try again."
-```text
+```
 
 **When to Use**:
 
@@ -98,7 +98,7 @@ Critical (Direct, Urgent):
 "Account created."
 "Changes saved."
 "Configuration updated."
-```text
+```
 
 **Enthusiastic Voice**:
 
@@ -106,7 +106,7 @@ Critical (Direct, Urgent):
 "Welcome aboard!"
 "Awesome! Changes saved."
 "You're all set!"
-```text
+```
 
 **Balanced**:
 
@@ -114,7 +114,7 @@ Critical (Direct, Urgent):
 "Account created. Let's get started."
 "Changes saved successfully."
 "Configuration updated."
-```text
+```
 
 **When to Use**:
 
@@ -132,7 +132,7 @@ Critical (Direct, Urgent):
 "Connection lost. Check your internet."
 "File too large. Use smaller file."
 "Not enough space. Delete old files."
-```text
+```
 
 **Technical Voice**:
 
@@ -140,7 +140,7 @@ Critical (Direct, Urgent):
 "WebSocket connection terminated (ERR_CONNECTION_RESET)."
 "File exceeds 5 MB maximum payload."
 "Insufficient storage quota: 95% utilized."
-```text
+```
 
 **Balanced**:
 
@@ -148,7 +148,7 @@ Critical (Direct, Urgent):
 "Connection lost. Check network and retry."
 "File exceeds 5 MB limit. Choose smaller file."
 "Storage 95% full. Delete unused files."
-```text
+```
 
 **When to Use**:
 
@@ -166,7 +166,7 @@ Critical (Direct, Urgent):
 "We noticed you haven't completed your profile yet."
 "It looks like something went wrong."
 "We're working on fixing this issue."
-```text
+```
 
 **Direct Voice**:
 
@@ -174,7 +174,7 @@ Critical (Direct, Urgent):
 "Complete your profile."
 "Error occurred."
 "Issue being fixed."
-```text
+```
 
 **Balanced**:
 
@@ -182,7 +182,7 @@ Critical (Direct, Urgent):
 "Profile incomplete. Add details to continue."
 "Something went wrong. Retry or contact support."
 "Working on fix. Check status page."
-```text
+```
 
 **When to Use**:
 
@@ -204,21 +204,21 @@ Critical (Direct, Urgent):
 Low-stakes: "Saved!"
 Medium: "Changes saved successfully."
 High-stakes: "Deployment complete. All 8 servers updated."
-```text
+```
 
 **Account Creation**:
 
 ```text
 "Account created. Check your email to verify."
 "Welcome to [Product]! Let's get you started."
-```text
+```
 
 **Purchase Complete**:
 
 ```text
 "Order confirmed. You'll receive tracking info soon."
 "Payment successful. Receipt emailed to you@company.com."
-```text
+```
 
 **Principles**:
 
@@ -239,7 +239,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Email must include @ symbol."
 "Password must be at least 8 characters."
 "File size must be under 5 MB."
-```text
+```
 
 **System Error (Medium Stress)**:
 
@@ -247,7 +247,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Can't connect to server. Check connection and retry."
 "Request timed out. Try again or simplify query."
 "Something went wrong. Our team has been notified."
-```text
+```
 
 **Critical Error (High Stress)**:
 
@@ -255,7 +255,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Service outage: All systems unavailable. Check status.company.com."
 "Deployment failed after 2 of 8 servers. Rollback initiated."
 "Payment processing down. We're working on it. Check back soon."
-```text
+```
 
 **Principles**:
 
@@ -277,7 +277,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Unsaved changes. Save before leaving?"
 "This will delete all data. Continue?"
 "Storage 90% full. Consider deleting old files."
-```text
+```
 
 **Time-Sensitive**:
 
@@ -285,7 +285,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Trial ends in 3 days. Upgrade to continue."
 "Session expires in 5 minutes. Extend session?"
 "Backup scheduled in 10 minutes. Save your work."
-```text
+```
 
 **Destructive Action**:
 
@@ -293,7 +293,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Delete account? This can't be undone."
 "Permanently delete 24 items?"
 "Remove admin access for 5 users?"
-```text
+```
 
 **Principles**:
 
@@ -314,7 +314,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Welcome! Let's set up your account in 3 steps."
 "New to [Product]? Start with our quick guide."
 "First dashboard? Add your first metric to begin."
-```text
+```
 
 **Empty States**:
 
@@ -322,7 +322,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "No projects yet. Create your first project to get started."
 "Your inbox is empty. Great! Check back later."
 "No team members invited. Invite colleagues to collaborate."
-```text
+```
 
 **Help Offered**:
 
@@ -330,7 +330,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Need help getting started? [View Tutorial]"
 "Stuck? Check our docs or contact support."
 "Pro tip: Keyboard shortcuts speed up your workflow."
-```text
+```
 
 **Principles**:
 
@@ -351,7 +351,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Configure webhook endpoint for real-time notifications."
 "Set cron expression for scheduled execution."
 "Define custom SQL query for data extraction."
-```text
+```
 
 **Keyboard Shortcuts**:
 
@@ -359,7 +359,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "⌘K to search"
 "⌘⇧P for command palette"
 "? for keyboard shortcuts"
-```text
+```
 
 **Technical Details**:
 
@@ -367,7 +367,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "API rate limit: 1,000 requests/hour"
 "Webhook payload format: JSON with UTF-8 encoding"
 "Max query execution time: 30 seconds"
-```text
+```
 
 **Principles**:
 
@@ -388,7 +388,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Loading..."
 "Processing..."
 "Saving..."
-```text
+```
 
 **Medium Wait (3-10 seconds)**:
 
@@ -396,7 +396,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Loading dashboard..."
 "Processing 1,200 records..."
 "Deploying to 8 servers..."
-```text
+```
 
 **Long Wait (>10 seconds)**:
 
@@ -404,7 +404,7 @@ High-stakes: "Deployment complete. All 8 servers updated."
 "Analyzing logs... 45% complete"
 "Generating report... This may take 2-3 minutes"
 "Uploading 247 MB... 5 minutes remaining"
-```text
+```
 
 **Principles**:
 
@@ -431,7 +431,7 @@ Normal: "System healthy. 0 active alerts."
 Warning: "Elevated error rate: 12% (normal <1%)"
 Critical: "Service down. 1,200 users affected. Act now."
 Success: "Incident resolved. All systems operational."
-```text
+```
 
 **Tone Scale**:
 
@@ -456,7 +456,7 @@ Onboarding: "Welcome to [Product]. Let's set up your workspace."
 Success: "Report generated successfully. [Download] [Share]"
 Error: "Export failed. File size exceeds limit. Try smaller date range."
 Feature: "Automate workflows with custom triggers and actions."
-```text
+```
 
 **Tone Scale**:
 
@@ -481,7 +481,7 @@ Success: "API key created: sk_live_abc123..."
 Error: "401 Unauthorized: Invalid API key"
 Info: "Rate limit: 1,000 req/hour. Resets at :00."
 Docs: "POST /v1/webhooks - Create new webhook endpoint"
-```text
+```
 
 **Tone Scale**:
 
@@ -506,7 +506,7 @@ Success: "Beautiful! Your design is saved."
 Encouragement: "You're on a 7-day streak! Keep it going."
 Error: "Oops! File format not supported. Try JPG or PNG."
 Empty: "Your canvas is blank. What will you create today?"
-```text
+```
 
 **Tone Scale**:
 
@@ -530,7 +530,7 @@ Good:
 Avoid:
 "Your appointment has been scheduled." (passive)
 "Click here for results." (vague)
-```text
+```
 
 ### Finance/Banking
 
@@ -545,7 +545,7 @@ Good:
 Avoid:
 "Money moved!" (imprecise)
 "You're all set." (vague)
-```text
+```
 
 ### Education/Learning
 
@@ -560,7 +560,7 @@ Good:
 Avoid:
 "You failed this quiz." (discouraging)
 "This is simple..." (condescending)
-```text
+```
 
 ### E-commerce/Retail
 
@@ -575,7 +575,7 @@ Good:
 Avoid:
 "Only 2 left! Buy now!" (false urgency)
 "Just $19.99!" (hiding costs)
-```text
+```
 
 ## Voice Documentation Template
 
@@ -598,7 +598,7 @@ Success: [Example]
 Error: [Example]
 Warning: [Example]
 Help: [Example]
-```text
+```
 
 **Tone Scale by Context**:
 
@@ -627,7 +627,7 @@ GOOD: Do Say: [Good example]
 
 BAD: Don't Say: [Bad example]
 GOOD: Do Say: [Good example]
-```text
+```
 
 ## Consistency Across Channels
 
@@ -678,7 +678,7 @@ Email:
 Subject: "Your monthly report is ready"
 Body: "Your monthly report for January is ready. 
 Download it here."
-```text
+```
 
 ## Testing Your Voice
 

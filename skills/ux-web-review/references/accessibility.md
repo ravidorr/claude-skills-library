@@ -137,27 +137,27 @@ Use proper HTML elements instead of generic divs:
 
 ```html
 <button aria-label="Close dialog">×</button>
-```text
+```
 
 `aria-labelledby`: References visible element(s) as label
 
 ```html
 <h2 id="dialog-title">Confirm Action</h2>
 <dialog aria-labelledby="dialog-title">
-```text
+```
 
 `aria-describedby`: References additional descriptive text
 
 ```html
 <input aria-describedby="password-help">
 <div id="password-help">Must be 8+ characters</div>
-```text
+```
 
 `role`: Defines element's purpose (use sparingly)
 
 ```html
 <div role="alert">Error: Form submission failed</div>
-```text
+```
 
 `aria-live`: Announces dynamic content changes
 
@@ -169,14 +169,14 @@ Use proper HTML elements instead of generic divs:
 
 ```html
 <button aria-expanded="false" aria-controls="menu-id">Menu</button>
-```text
+```
 
 `aria-hidden`: Hides content from assistive technologies
 
 ```html
 <span aria-hidden="true">★</span> <!-- Decorative icon -->
 <span class="sr-only">Rating: 4 stars</span>
-```text
+```
 
 ### Heading Structure
 

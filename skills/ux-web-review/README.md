@@ -138,7 +138,7 @@ Claude: Based on what I see, this appears to be a SaaS analytics
 You: Yes, that's right.
 
 Claude: [Navigates, captures screenshots, provides detailed analysis]
-```text
+```
 
 ### Example 2: Focused Review
 
@@ -147,7 +147,7 @@ You: Review the checkout flow on this e-commerce site, focus on
      mobile experience and conversion optimization
 
 Claude: [Context gathering, then mobile-focused analysis]
-```text
+```
 
 ### Example 3: Screenshot Review
 
@@ -156,7 +156,7 @@ You: [Uploads screenshot] Analyze the UX of this dashboard design
 
 Claude: [Asks clarifying questions, then provides analysis based 
         on available visual information]
-```text
+```
 
 ### Example 4: Accessibility Audit
 
@@ -166,7 +166,7 @@ You: Do a full accessibility audit of our app including WCAG
 
 Claude: [Comprehensive accessibility review with specific WCAG 
         criteria, contrast ratios, keyboard nav, screen reader support]
-```text
+```
 
 ## Review Approach
 
@@ -213,7 +213,7 @@ ux-web-review/
     ├── ux_patterns.md           # Common UX patterns (8.5 KB)
     ├── accessibility.md         # WCAG guidelines (13 KB)
     └── review_checklist.md      # Systematic checklist (14 KB)
-```text
+```
 
 ## Progressive Disclosure
 

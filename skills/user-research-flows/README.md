@@ -249,7 +249,7 @@ Claude: [Creates detailed persona]
         - Keyboard shortcuts essential
         - API access for automation
         - Integrate with PagerDuty/Slack
-```text
+```
 
 ### Example 2: Mapping a User Journey
 
@@ -296,7 +296,7 @@ Claude: [After context gathering]
         - Pre-populated runbook based on alert type
         - One-click war room setup (Slack channel, Zoom link)
         - Automatic customer-facing status page update
-```text
+```
 
 ### Example 3: Designing a Flow
 
@@ -358,7 +358,7 @@ Claude: [After context]
         - Templates for common alert patterns
         - Bulk configuration for similar metrics
         - Test alert before enabling
-```text
+```
 
 ## Complementary Skills
 
@@ -398,7 +398,7 @@ user-research-flows/
     ├── journey_mapping.md         Journey mapping techniques
     ├── flow_patterns.md           Flow types & optimization
     └── research_methods.md        Research methodologies
-```text
+```
 
 ## What Makes This Effective
 

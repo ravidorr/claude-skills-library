@@ -49,7 +49,7 @@ Generic → Specific
 "Save" → "Save Changes"
 "Go" → "Start Setup"
 "OK" → "Apply Settings"
-```text
+```
 
 **Guidelines**:
 
@@ -97,7 +97,7 @@ Generic → Specific
 "Not Now"
 "Maybe Later"
 "Remind Me Later"
-```text
+```
 
 **Guidelines**:
 
@@ -127,7 +127,7 @@ With Consequence:
 "Delete 24 Items"
 "Remove Access"
 "Permanently Delete"
-```text
+```
 
 **Guidelines**:
 
@@ -142,7 +142,7 @@ With Consequence:
 Generic: "Yes" / "No"
 Better: "Delete Account" / "Keep Account"
 Best: "Delete Permanently" / "Cancel"
-```text
+```
 
 ### Link Text Patterns
 
@@ -159,7 +159,7 @@ GOOD: "Read deployment guide"
 
 BAD: "Go to settings"
 GOOD: "Configure alert settings"
-```text
+```
 
 **Guidelines**:
 
@@ -181,7 +181,7 @@ GOOD: "Configure alert settings"
 "Save Changes" → "Saving..."
 "Deploy" → "Deploying..."
 "Send" → "Sending..."
-```text
+```
 
 **Disabled State**:
 
@@ -194,7 +194,7 @@ GOOD: "Configure alert settings"
 ```text
 "Save Changes" → "Saved" (briefly, then return)
 "Deploy" → "Deployed Successfully"
-```text
+```
 
 ## Label Patterns
 
@@ -212,7 +212,7 @@ Number input → "Quantity"
 Dropdown → "Country"
 Date picker → "Birth Date"
 Checkbox → "Remember me"
-```text
+```
 
 **Guidelines**:
 
@@ -229,7 +229,7 @@ Help: "Found in your account settings"
 
 Label: "Webhook URL"
 Help: "Endpoint to receive notifications"
-```text
+```
 
 ### Required vs Optional
 
@@ -241,7 +241,7 @@ Help: "Endpoint to receive notifications"
 Email Address *
 Password *
 Company Name (optional)
-```text
+```
 
 **If Most Fields Optional**:
 
@@ -249,7 +249,7 @@ Company Name (optional)
 Email Address
 Password
 Company Name (optional)
-```text
+```
 
 **Guidelines**:
 
@@ -273,7 +273,7 @@ State-oriented:
 "Notifications enabled"
 "Weekly reports active"
 "Team access allowed"
-```text
+```
 
 **Recommendation**: Use action-oriented for toggles users change frequently, state-oriented for settings that persist.
 
@@ -314,7 +314,7 @@ Disabled field:
 
 Keyboard shortcut:
 "Save (Cmd+S)"
-```text
+```
 
 ### Tooltip Structure
 
@@ -328,21 +328,21 @@ GOOD: "Delete"
 
 BAD: "Click to export data"
 GOOD: "Export to CSV"
-```text
+```
 
 **For Technical Terms**:
 
 ```text
 BAD: "RPO stands for Recovery Point Objective which is..."
 GOOD: "RPO: Maximum acceptable data loss measured in time"
-```text
+```
 
 **For Disabled Elements**:
 
 ```text
 BAD: "You can't do this because you don't have the right permissions"
 GOOD: "Requires admin permissions"
-```text
+```
 
 ## Status Indicator Patterns
 
@@ -366,7 +366,7 @@ With Context:
 With Progress:
 "Analyzing logs... 45% complete"
 "Uploading file... 2 of 5 MB"
-```text
+```
 
 **Guidelines**:
 
@@ -396,7 +396,7 @@ Detailed:
 "Alert configuration saved successfully"
 "Report sent to team@company.com"
 "User permissions updated"
-```text
+```
 
 **Guidelines**:
 
@@ -411,7 +411,7 @@ Detailed:
 "Deployment complete. [View Logs]"
 "Report generated. [Download] [Share]"
 "Invitation sent. [Send Another]"
-```text
+```
 
 ### Progress Indicators
 
@@ -431,7 +431,7 @@ Count:
 Time Remaining:
 "Backup in progress... 5 minutes remaining"
 "Download starting... 2:30 remaining"
-```text
+```
 
 **Guidelines**:
 
@@ -452,7 +452,7 @@ Time Remaining:
 Heading: [What's empty]
 Body: [Why empty / How to get started]
 Action: [Primary CTA button]
-```text
+```
 
 **Examples**:
 
@@ -462,7 +462,7 @@ Action: [Primary CTA button]
 Heading: "No dashboards yet"
 Body: "Create your first dashboard to visualize your metrics"
 Action: [Create Dashboard]
-```text
+```
 
 **No Items**:
 
@@ -470,7 +470,7 @@ Action: [Create Dashboard]
 Heading: "No alerts configured"
 Body: "Set up alerts to get notified about system issues"
 Action: [Add Alert]
-```text
+```
 
 **No Team Members**:
 
@@ -478,7 +478,7 @@ Action: [Add Alert]
 Heading: "You're the only team member"
 Body: "Invite colleagues to collaborate on projects"
 Action: [Invite Team]
-```text
+```
 
 ### Zero Results Empty States
 
@@ -492,7 +492,7 @@ Action: [Invite Team]
 Heading: "No alerts match your filters"
 Body: "Try adjusting your date range or severity level"
 Action: [Clear Filters]
-```text
+```
 
 **Search Results**:
 
@@ -500,7 +500,7 @@ Action: [Clear Filters]
 Heading: "No results for 'production-api'"
 Body: "Check spelling or try different keywords"
 Action: [Clear Search]
-```text
+```
 
 ### Error Empty States
 
@@ -514,7 +514,7 @@ Action: [Clear Search]
 Heading: "Unable to load dashboards"
 Body: "Connection to server failed. Check your network and try again."
 Action: [Retry]
-```text
+```
 
 **Permission Denied**:
 
@@ -522,7 +522,7 @@ Action: [Retry]
 Heading: "Access denied"
 Body: "You don't have permission to view this page. Contact your admin."
 Action: [Go to Home]
-```text
+```
 
 ### Success Empty States
 
@@ -536,7 +536,7 @@ Action: [Go to Home]
 Heading: "All caught up!"
 Body: "No new alerts in the last 24 hours"
 Action: [View History]
-```text
+```
 
 **Tasks Complete**:
 
@@ -544,7 +544,7 @@ Action: [View History]
 Heading: "All tasks complete"
 Body: "Great work! You've completed all pending tasks"
 Action: [View Archive]
-```text
+```
 
 ## Navigation & Menu Patterns
 
@@ -567,7 +567,7 @@ Actions (Verbs):
 "View All"
 "Export Data"
 "Manage Users"
-```text
+```
 
 **Guidelines**:
 
@@ -586,7 +586,7 @@ Actions (Verbs):
 Home > Projects > Website Redesign > Assets
 Dashboard > Alerts > Critical > Alert Details
 Settings > Team > User Permissions
-```text
+```
 
 **Guidelines**:
 
@@ -611,7 +611,7 @@ System Settings Tabs:
 
 Alert Details Tabs:
 "Overview" "History" "Related" "Logs"
-```text
+```
 
 **Guidelines**:
 
@@ -635,7 +635,7 @@ Alert Details Tabs:
 "Created By"
 "Alert Count"
 "Response Time (ms)"
-```text
+```
 
 **Guidelines**:
 
@@ -664,7 +664,7 @@ Numbers:
 Status:
 "Active" (not "is active")
 "Running" (not "currently running")
-```text
+```
 
 ### Empty Data Cells
 
@@ -699,7 +699,7 @@ Search:
 
 URL:
 "https://example.com" (protocol included)
-```text
+```
 
 **Guidelines**:
 
@@ -719,7 +719,7 @@ URL:
 "Search team members..."
 "Search documentation..."
 "Filter by name or email..."
-```text
+```
 
 ## Help Text Patterns
 
@@ -741,7 +741,7 @@ Help: "Found in Settings > API Access"
 Webhook URL:
 Label: "Webhook URL"
 Help: "Endpoint to receive real-time notifications"
-```text
+```
 
 **Guidelines**:
 
@@ -765,7 +765,7 @@ GOOD: "Password must be at least 8 characters"
 
 BAD: "Field required"
 GOOD: "Email address is required"
-```text
+```
 
 ## Modal Dialog Patterns
 
@@ -790,7 +790,7 @@ Information:
 "Deployment Details"
 "System Status"
 "Feature Preview"
-```text
+```
 
 **Guidelines**:
 
@@ -813,7 +813,7 @@ This action cannot be undone."
 Information:
 "Your session will expire in 5 minutes due to inactivity. 
 Would you like to extend your session?"
-```text
+```
 
 ### Modal Buttons
 
@@ -830,7 +830,7 @@ GOOD: "Save Changes" / "Discard"
 
 BAD: "Are you sure?"
 GOOD: "Continue" / "Go Back"
-```text
+```
 
 ## Notification Patterns
 
@@ -854,7 +854,7 @@ With Action:
 Error:
 "Failed to save changes [Retry]"
 "Connection lost [Reconnect]"
-```text
+```
 
 **Guidelines**:
 
@@ -880,7 +880,7 @@ Info:
 
 Error:
 "Connection lost. We'll retry automatically. [Retry Now]"
-```text
+```
 
 ## Microcopy Antipatterns
 
@@ -894,7 +894,7 @@ GOOD: "Email address"
 
 BAD: "Click the button below to continue"
 GOOD: [Continue Button]
-```text
+```
 
 **2. Apologetic Language**:
 
@@ -904,7 +904,7 @@ GOOD: "Email must include @ symbol"
 
 BAD: "Unfortunately, we couldn't save your changes"
 GOOD: "Changes not saved. Check connection and retry."
-```text
+```
 
 **3. Vague Instructions**:
 
@@ -914,7 +914,7 @@ GOOD: "View documentation"
 
 BAD: "Learn more"
 GOOD: "Read setup guide"
-```text
+```
 
 **4. Technical Jargon (Without Context)**:
 
@@ -924,7 +924,7 @@ GOOD: "Can't connect to server. Check connection and retry."
 
 BAD: "NullPointerException occurred"
 GOOD: "Something went wrong loading this data. [Retry]"
-```text
+```
 
 **5. Passive Voice**:
 
@@ -934,7 +934,7 @@ GOOD: "Changes saved"
 
 BAD: "The file has been uploaded"
 GOOD: "File uploaded"
-```text
+```
 
 ## Word Choice Guidelines
 

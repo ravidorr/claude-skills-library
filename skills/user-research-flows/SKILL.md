@@ -231,7 +231,7 @@ When designing flows:
 
 ```text
 Step 1 → Step 2 → Step 3 → Complete
-```text
+```
 
 - When: Simple, mandatory sequence
 - Example: Onboarding, checkout, setup wizard
@@ -242,7 +242,7 @@ Step 1 → Step 2 → Step 3 → Complete
 Step 1 → Decision Point
          ├─ Path A → Step 2A → Complete
          └─ Path B → Step 2B → Step 3B → Complete
-```text
+```
 
 - When: User choices affect path
 - Example: Configuration, troubleshooting, advanced vs simple mode
@@ -253,7 +253,7 @@ Step 1 → Decision Point
 Dashboard (hub) ↔ Feature 1
                 ↔ Feature 2
                 ↔ Feature 3
-```text
+```
 
 - When: Multiple independent tasks
 - Example: Admin dashboard, control panel
@@ -262,7 +262,7 @@ Dashboard (hub) ↔ Feature 1
 
 ```text
 Start → [Task A + Task B + Task C] → Sync Point → Complete
-```text
+```
 
 - When: Multiple actions can happen concurrently
 - Example: Bulk operations, multi-resource provisioning

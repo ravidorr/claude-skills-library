@@ -34,7 +34,7 @@ Description
 Requirements
 Common Failures
 How to Meet
-```text
+```
 
 **Quick Lookup**:
 
@@ -100,7 +100,7 @@ Provide text alternatives for non-text content.
 <div id="chart-desc">
   Detailed description of chart data...
 </div>
-```text
+```
 
 ### Guideline 1.2: Time-Based Media
 
@@ -175,7 +175,7 @@ Create content that can be presented in different ways without losing informatio
 <nav>...</nav>
 <main>...</main>
 <footer>...</footer>
-```text
+```
 
 #### 1.3.2: Meaningful Sequence - Level A
 
@@ -232,7 +232,7 @@ Create content that can be presented in different ways without losing informatio
 <input type="tel" 
        name="phone" 
        autocomplete="tel">
-```text
+```
 
 ### Guideline 1.4: Distinguishable
 
@@ -268,7 +268,7 @@ Make it easier for users to see and hear content.
 
 <!-- Chart: Pattern + color -->
 <!-- Add patterns/textures, not just colors -->
-```text
+```
 
 #### 1.4.3: Contrast (Minimum) - Level AA
 
@@ -442,7 +442,7 @@ element.addEventListener('keydown', (e) => {
 tooltip.addEventListener('mouseenter', () => {
   keepTooltipOpen();
 });
-```text
+```
 
 ## Principle 2: Operable
 
@@ -492,7 +492,7 @@ Make all functionality available from a keyboard.
      }}>
   Click me
 </div>
-```text
+```
 
 #### 2.1.2: No Keyboard Trap - Level A
 
@@ -530,7 +530,7 @@ function trapFocus(modal) {
     }
   });
 }
-```text
+```
 
 #### 2.1.4: Character Key Shortcuts - Level A (2.1)
 
@@ -599,7 +599,7 @@ Provide users enough time to read and use content.
   <button onClick={pauseUpdates}>Pause Updates</button>
   <div>Last updated: {timestamp}</div>
 </div>
-```text
+```
 
 ### Guideline 2.3: Seizures and Physical Reactions
 
@@ -649,7 +649,7 @@ Provide ways to help users navigate, find content, and determine where they are.
   top: 0;
 }
 </style>
-```text
+```
 
 #### 2.4.2: Page Titled - Level A
 
@@ -666,7 +666,7 @@ Provide ways to help users navigate, find content, and determine where they are.
 <!-- Avoid generic titles -->
 <title>Page</title> <!-- BAD -->
 <title>Home</title> <!-- BAD -->
-```text
+```
 
 #### 2.4.3: Focus Order - Level A
 
@@ -689,7 +689,7 @@ Provide ways to help users navigate, find content, and determine where they are.
 <a href="report.pdf">Click here</a>
 <a href="/docs">Learn more</a>
 <a href="/settings">Here</a>
-```text
+```
 
 **Good Examples**:
 
@@ -697,7 +697,7 @@ Provide ways to help users navigate, find content, and determine where they are.
 <a href="report.pdf">Download Q4 Financial Report (PDF)</a>
 <a href="/docs">Read API documentation</a>
 <a href="/settings">Configure alert settings</a>
-```text
+```
 
 #### 2.4.5: Multiple Ways - Level AA
 
@@ -726,7 +726,7 @@ Provide ways to help users navigate, find content, and determine where they are.
 <!-- Avoid generic -->
 <h2>Section 1</h2> <!-- BAD -->
 <h2>Items</h2> <!-- BAD -->
-```text
+```
 
 #### 2.4.7: Focus Visible - Level AA
 
@@ -747,7 +747,7 @@ input:focus {
 *:focus {
   outline: none; /* BAD - DON'T DO THIS */
 }
-```text
+```
 
 #### 2.4.11: Focus Not Obscured (Minimum) - Level AA (2.2)
 
@@ -802,7 +802,7 @@ Make it easier for users to operate functionality through various inputs beyond 
 
 <!-- BAD: Mismatch -->
 <button aria-label="Remove item">Delete</button>
-```text
+```
 
 #### 2.5.4: Motion Actuation - Level A (2.1)
 
@@ -853,7 +853,7 @@ Make text content readable and understandable.
 <html lang="en">
 <html lang="es">
 <html lang="fr">
-```text
+```
 
 #### 3.1.2: Language of Parts - Level AA
 
@@ -864,7 +864,7 @@ Make text content readable and understandable.
 ```html
 <p>The French phrase <span lang="fr">bon appétit</span> means...</p>
 <blockquote lang="es">El español es hermoso.</blockquote>
-```text
+```
 
 ### Guideline 3.2: Predictable
 
@@ -896,7 +896,7 @@ Make web pages appear and operate in predictable ways.
   <option>Select action</option>
 </select>
 <button onClick={executeAction}>Go</button>
-```text
+```
 
 #### 3.2.3: Consistent Navigation - Level AA
 
@@ -930,7 +930,7 @@ Help users avoid and correct mistakes.
 <span id="email-error" role="alert">
   Email must include @ symbol
 </span>
-```text
+```
 
 #### 3.3.2: Labels or Instructions - Level A
 
@@ -948,7 +948,7 @@ Help users avoid and correct mistakes.
 <label for="phone">Phone Number</label>
 <input id="phone" type="tel" placeholder="(555) 123-4567">
 <span>Format: (XXX) XXX-XXXX</span>
-```text
+```
 
 #### 3.3.3: Error Suggestion - Level AA
 
@@ -962,7 +962,7 @@ GOOD: "Email must include @ symbol (e.g., you@company.com)"
 
 BAD: "Date format error"
 GOOD: "Date format: MM/DD/YYYY (e.g., 01/15/2026)"
-```text
+```
 
 #### 3.3.4: Error Prevention (Legal, Financial, Data) - Level AA
 
@@ -1014,7 +1014,7 @@ Maximize compatibility with current and future user agents, including assistive 
      tabindex="0">
   Subscribe
 </div>
-```text
+```
 
 #### 4.1.3: Status Messages - Level AA (2.1)
 
@@ -1037,7 +1037,7 @@ Maximize compatibility with current and future user agents, including assistive 
 <div role="status" aria-live="polite" aria-busy="true">
   Loading dashboard...
 </div>
-```text
+```
 
 ## Quick Reference Tables
 

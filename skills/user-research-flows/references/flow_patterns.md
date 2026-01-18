@@ -58,7 +58,7 @@ Choose Location →
 Review Settings → 
 Install → 
 Complete
-```text
+```
 
 **When to Use**:
 
@@ -109,7 +109,7 @@ Select Deployment Type?
 ├─ Cloud → Select Provider → Configure Access
 └─ On-Premise → Specify Servers → Configure Network
 → (Converge) Install Monitoring → Complete
-```text
+```
 
 **Decision Types**:
 
@@ -169,7 +169,7 @@ Dashboard (Hub)
 └─ Billing
 
 Each spoke is independent, return to dashboard between tasks
-```text
+```
 
 **When to Use**:
 
@@ -219,7 +219,7 @@ Start Deployment
 ├─ Server 2: Provision → Configure → Deploy  
 └─ Server 3: Provision → Configure → Deploy
 → (All complete) Verify Health → Complete
-```text
+```
 
 **Synchronization Strategies**:
 
@@ -277,7 +277,7 @@ Respond →
 Resolve → 
 Document → 
 (back to Monitor)
-```text
+```
 
 **When to Use**:
 
@@ -331,7 +331,7 @@ Start at Dashboard
   - Export findings
   - Jump to related logs
 (No predetermined path)
-```text
+```
 
 **When to Use**:
 
@@ -372,7 +372,7 @@ Expanded:
 - Phone (optional)
 - Company
 - Custom fields
-```text
+```
 
 **Benefits**:
 
@@ -398,7 +398,7 @@ Expanded:
 Region: [us-east-1] (most common for this team)
 Instance Type: [t3.medium] (based on previous deploys)
 Auto-scaling: [Enabled] (company policy)
-```text
+```
 
 **Benefits**:
 
@@ -481,7 +481,7 @@ GOOD: "Password must be at least 8 characters"
 Normal: Click user → Edit → Change role → Save
 Shortcut: Select multiple users → Bulk change role → Save
 Power: API call to update roles via script
-```text
+```
 
 ## Flow States
 
@@ -502,7 +502,7 @@ Power: API call to update roles via script
 "No dashboards yet"
 [Create Your First Dashboard]
 Or import from template →
-```text
+```
 
 ### Loading State
 
@@ -522,7 +522,7 @@ Or import from template →
 [████████░░] 80% complete
 Estimated: 15 seconds remaining
 [Cancel]
-```text
+```
 
 ### Success State
 
@@ -541,7 +541,7 @@ Estimated: 15 seconds remaining
 [SUCCESS] Report uploaded successfully
 "Monthly_Report_Q4.pdf" (2.4 MB)
 [View Report] [Upload Another] [Done]
-```text
+```
 
 ### Error State
 
@@ -560,7 +560,7 @@ Estimated: 15 seconds remaining
 [ERROR] Upload failed
 The file is too large (max 10 MB)
 [Try a smaller file] [Compress file] [Contact support]
-```text
+```
 
 ### Partial State
 
@@ -584,7 +584,7 @@ The file is too large (max 10 MB)
   - invalid@: Invalid email format
 
 [Retry Failed] [Export Errors] [Done]
-```text
+```
 
 ## Flow Decision Framework
 
@@ -656,7 +656,7 @@ Ask these questions:
 → → Flow direction
 ├─ → Branch
 └─ → Branch
-```text
+```
 
 ### Example Flow Diagram
 
@@ -675,7 +675,7 @@ Ask these questions:
 ├─ View Report → [Load Report] → [Display]
 ├─ Edit Settings → [Show Form] → [Save] → [Refresh]
 └─ Logout → [Clear Session] → ((End))
-```text
+```
 
 ### Flow Specification Template
 
@@ -721,7 +721,7 @@ Ask these questions:
 - [What we measure]
 - [Success rate]
 - [Time to complete]
-```text
+```
 
 ## Common Flow Mistakes
 

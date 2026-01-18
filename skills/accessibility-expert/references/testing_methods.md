@@ -119,7 +119,7 @@ pa11y --standard WCAG2AA https://example.com
 
 # Test multiple pages
 pa11y-ci --sitemap https://example.com/sitemap.xml
-```text
+```
 
 **Strengths**:
 
@@ -136,7 +136,7 @@ pa11y-ci --sitemap https://example.com/sitemap.xml
 Run: axe DevTools on key pages
 Fix: All critical and serious issues
 Verify: Rerun to confirm fixes
-```text
+```
 
 **Step 2: Comprehensive Scan**
 
@@ -144,7 +144,7 @@ Verify: Rerun to confirm fixes
 Run: Pa11y on all pages
 Document: All remaining issues
 Prioritize: By severity and impact
-```text
+```
 
 **Step 3: Continuous Monitoring**
 
@@ -152,7 +152,7 @@ Prioritize: By severity and impact
 Add: Pa11y to CI/CD pipeline
 Block: Deployments with critical issues
 Monitor: Accessibility score trends
-```text
+```
 
 ## Manual Testing
 
@@ -167,7 +167,7 @@ Monitor: Accessibility score trends
 ```text
 Force yourself to use keyboard only
 This reveals true keyboard accessibility
-```text
+```
 
 **Step 2: Tab Through Page**
 
@@ -178,7 +178,7 @@ Verify:
 - Focus order matches visual order
 - Focus indicator clearly visible
 - No focus traps
-```text
+```
 
 **Step 3: Test Standard Keys**
 
@@ -187,7 +187,7 @@ Enter: Activates buttons and links
 Space: Activates buttons, toggles checkboxes
 Arrow keys: Navigate menus, tabs, radio buttons
 Escape: Closes modals and menus
-```text
+```
 
 **Step 4: Test Custom Components**
 
@@ -196,7 +196,7 @@ Dropdowns: Arrow keys to navigate
 Tabs: Arrow keys to switch
 Radio buttons: Arrow keys to select
 Sliders: Arrow keys to adjust
-```text
+```
 
 **Keyboard Testing Checklist**:
 
@@ -248,7 +248,7 @@ NVDA + N: NVDA menu
 NVDA + Q: Quit NVDA
 NVDA + Space: Pass through (disable NVDA)
 NVDA = Insert or Caps Lock key
-```text
+```
 
 **Navigation**:
 
@@ -261,7 +261,7 @@ Shift + K: Previous link
 F: Next form field
 B: Next button
 T: Next table
-```text
+```
 
 **Reading**:
 
@@ -269,7 +269,7 @@ T: Next table
 NVDA + Down Arrow: Say all (read entire page)
 NVDA + Up Arrow: Read current line
 NVDA + Tab: Read focused element
-```text
+```
 
 **Testing Protocol**:
 
@@ -289,7 +289,7 @@ NVDA + Tab: Read focused element
 ```text
 Cmd + F5: Toggle VoiceOver
 VO = Ctrl + Option (hold together)
-```text
+```
 
 **Basic Controls**:
 
@@ -301,7 +301,7 @@ VO + Space: Activate element
 VO + H: Next heading
 VO + L: Next link
 VO + J: Next form control
-```text
+```
 
 **Testing Protocol**:
 
@@ -354,7 +354,7 @@ VO + J: Next form control
 URL: webaim.org/resources/contrastchecker/
 Input: Foreground and background colors
 Output: Contrast ratio and pass/fail
-```text
+```
 
 **Chrome DevTools Color Picker**:
 
@@ -364,7 +364,7 @@ Output: Contrast ratio and pass/fail
 3. View contrast ratio
 4. See AA/AAA status
 5. Get suggested colors
-```text
+```
 
 **Stark (Figma Plugin)**:
 
@@ -373,7 +373,7 @@ Install: Figma → Plugins → Stark
 Use: Select elements, check contrast
 Fix: Get accessible color suggestions
 Simulate: View as color blind
-```text
+```
 
 **Testing Protocol**:
 
@@ -397,7 +397,7 @@ Large text (18pt+ or 14pt+ bold):
 
 UI components & graphics:
 - AA: 3:1
-```text
+```
 
 ### Color Blindness Simulation
 
@@ -415,7 +415,7 @@ UI components & graphics:
    - Deuteranopia (green-blind)
    - Tritanopia (blue-blind)
    - Achromatopsia (no color)
-```text
+```
 
 **ColorOracle (Desktop App)**:
 
@@ -424,7 +424,7 @@ Install: colororacle.org
 Use: System-wide color blindness simulation
 Toggle: See your entire screen as color blind
 Types: Deuteranopia, Protanopia, Tritanopia
-```text
+```
 
 **Testing Checklist**:
 
@@ -450,7 +450,7 @@ Gestures:
 - Double-tap: Activate
 - Three-finger swipe: Scroll
 - Two-finger swipe up: Read all
-```text
+```
 
 **Android TalkBack Testing**:
 
@@ -461,7 +461,7 @@ Gestures:
 - Swipe left: Previous
 - Double-tap: Activate
 - Swipe down then right: Read from top
-```text
+```
 
 **Mobile Testing Checklist**:
 
@@ -506,7 +506,7 @@ Gestures:
 10 min: Background questions
 35 min: Task testing
 10 min: Open feedback
-```text
+```
 
 **Task Examples**:
 
@@ -518,7 +518,7 @@ Gestures:
 5. Navigate to specific page
 6. Use search functionality
 7. Recover from an error
-```text
+```
 
 **Observation Focus**:
 
@@ -557,7 +557,7 @@ Gestures:
 - Run axe DevTools on all key pages
 - Fix critical and serious issues
 - Rerun to verify fixes
-```text
+```
 
 **Day 3-5: Comprehensive**
 
@@ -565,7 +565,7 @@ Gestures:
 - Run WAVE on all pages
 - Document remaining issues
 - Create remediation plan
-```text
+```
 
 ### Phase 2: Manual (Week 2)
 
@@ -575,7 +575,7 @@ Gestures:
 - Test all pages keyboard-only
 - Fix keyboard access issues
 - Fix focus indicators
-```text
+```
 
 **Day 8-9: Screen Reader**
 
@@ -583,7 +583,7 @@ Gestures:
 - Test with NVDA/VoiceOver
 - Fix ARIA issues
 - Fix reading order
-```text
+```
 
 **Day 10: Visual**
 
@@ -591,7 +591,7 @@ Gestures:
 - Check all contrast
 - Test color blindness simulation
 - Fix visual issues
-```text
+```
 
 ### Phase 3: User Testing (Week 3)
 
@@ -601,7 +601,7 @@ Gestures:
 - 5-8 participants
 - 2 sessions per day
 - Record and note issues
-```text
+```
 
 **Day 15: Analysis & Planning**
 
@@ -609,7 +609,7 @@ Gestures:
 - Analyze findings
 - Prioritize issues
 - Plan remediations
-```text
+```
 
 ## Testing Frequency
 
@@ -653,7 +653,7 @@ Expected: [What should happen]
 Actual: [What happens]
 Fix: [Remediation steps]
 Status: Open/In Progress/Fixed/Verified
-```text
+```
 
 ### Test Report Template
 
@@ -685,7 +685,7 @@ Recommendations:
 
 Next Steps:
 - [Action with owner and date]
-```text
+```
 
 ## Resources
 

@@ -31,7 +31,7 @@ Each pattern includes:
 <main id="main-content" tabindex="-1">
   ...
 </main>
-```text
+```
 
 **CSS**:
 
@@ -49,7 +49,7 @@ Each pattern includes:
 .skip-link:focus {
   top: 0;
 }
-```text
+```
 
 **Keyboard**: Tab (reveals link), Enter (skips to content)
 
@@ -66,7 +66,7 @@ Each pattern includes:
            aria-current="page">Widgets</a></li>
   </ol>
 </nav>
-```text
+```
 
 **Key Points**:
 
@@ -86,7 +86,7 @@ Each pattern includes:
   <a href="?page=3" aria-label="Go to page 3">3</a>
   <a href="?page=3" aria-label="Next page">Next</a>
 </nav>
-```text
+```
 
 **Key Points**:
 
@@ -110,7 +110,7 @@ Each pattern includes:
 <span id="email-help">
   We'll never share your email
 </span>
-```text
+```
 
 **With Error**:
 
@@ -123,7 +123,7 @@ Each pattern includes:
 <span id="email-error" role="alert">
   Email must include @ symbol
 </span>
-```text
+```
 
 **Key Points**:
 
@@ -146,7 +146,7 @@ Each pattern includes:
 <span id="agree-help">
   You must agree to continue
 </span>
-```text
+```
 
 **Tri-state (Indeterminate)**:
 
@@ -165,7 +165,7 @@ Each pattern includes:
   <input type="checkbox" id="item2">
   <label for="item2">Item 2</label>
 </div>
-```text
+```
 
 ### Radio Buttons
 
@@ -187,7 +187,7 @@ Each pattern includes:
          value="express">
   <label for="express">Express (2-3 days)</label>
 </fieldset>
-```text
+```
 
 **Keyboard**:
 
@@ -206,7 +206,7 @@ Each pattern includes:
   <option value="us">United States</option>
   <option value="ca">Canada</option>
 </select>
-```text
+```
 
 **Custom Dropdown**:
 
@@ -224,7 +224,7 @@ Each pattern includes:
   <li role="option">United States</li>
   <li role="option">Canada</li>
 </ul>
-```text
+```
 
 **Keyboard**:
 
@@ -243,7 +243,7 @@ Each pattern includes:
 <button type="submit">
   Save Changes
 </button>
-```text
+```
 
 **Icon Button**:
 
@@ -251,7 +251,7 @@ Each pattern includes:
 <button aria-label="Delete">
   <svg aria-hidden="true">...</svg>
 </button>
-```text
+```
 
 **With Loading State**:
 
@@ -260,7 +260,7 @@ Each pattern includes:
   <span aria-hidden="true">⏳</span>
   Saving...
 </button>
-```text
+```
 
 **Key Points**:
 
@@ -284,7 +284,7 @@ Each pattern includes:
         aria-label="Unmute audio">
   <svg aria-hidden="true"><!-- sound off icon --></svg>
 </button>
-```text
+```
 
 **Key Points**:
 
@@ -312,7 +312,7 @@ Each pattern includes:
   <button onClick={handleCancel}>Cancel</button>
   <button onClick={handleDelete}>Delete Account</button>
 </div>
-```text
+```
 
 **Focus Management**:
 
@@ -348,7 +348,7 @@ function closeModal() {
   modal.remove();
   trigger.focus(); // Return focus
 }
-```text
+```
 
 **Keyboard**:
 
@@ -375,7 +375,7 @@ function closeModal() {
   <button>Discard</button>
   <button>Cancel</button>
 </div>
-```text
+```
 
 **Key Difference**: role="alertdialog" announces immediately
 
@@ -419,7 +419,7 @@ function closeModal() {
     Security content...
   </div>
 </div>
-```text
+```
 
 **Keyboard**:
 
@@ -453,7 +453,7 @@ tablist.addEventListener('keydown', (e) => {
     tabs[nextIndex].focus();
   }
 });
-```text
+```
 
 ## Accordion Patterns
 
@@ -491,7 +491,7 @@ tablist.addEventListener('keydown', (e) => {
     Content for section 2...
   </div>
 </div>
-```text
+```
 
 **Keyboard**:
 
@@ -508,7 +508,7 @@ button.addEventListener('click', () => {
   const panel = document.getElementById(button.getAttribute('aria-controls'));
   panel.hidden = expanded;
 });
-```text
+```
 
 ## Menu Patterns
 
@@ -537,7 +537,7 @@ button.addEventListener('click', () => {
     <button>Export</button>
   </li>
 </ul>
-```text
+```
 
 **Keyboard**:
 
@@ -578,7 +578,7 @@ menu.addEventListener('keydown', (e) => {
     items[nextIndex].focus();
   }
 });
-```text
+```
 
 ## Notification Patterns
 
@@ -592,7 +592,7 @@ menu.addEventListener('keydown', (e) => {
      aria-atomic="true">
   Changes saved successfully
 </div>
-```text
+```
 
 **For Errors**:
 
@@ -602,7 +602,7 @@ menu.addEventListener('keydown', (e) => {
      aria-atomic="true">
   Error: Connection lost. Retrying...
 </div>
-```text
+```
 
 **Auto-dismiss**:
 
@@ -621,7 +621,7 @@ function showToast(message, type = 'status') {
     toast.remove();
   }, 5000);
 }
-```text
+```
 
 ### Alert Banner
 
@@ -632,7 +632,7 @@ function showToast(message, type = 'status') {
   <strong>System Maintenance:</strong> Scheduled downtime tonight at midnight.
   <button aria-label="Dismiss alert">×</button>
 </div>
-```text
+```
 
 **Key Points**:
 
@@ -664,7 +664,7 @@ function showToast(message, type = 'status') {
     </tr>
   </tbody>
 </table>
-```text
+```
 
 **With Sortable Columns**:
 
@@ -675,7 +675,7 @@ function showToast(message, type = 'status') {
     <span aria-hidden="true">▲</span>
   </button>
 </th>
-```text
+```
 
 **Key Points**:
 
@@ -697,7 +697,7 @@ function showToast(message, type = 'status') {
      aria-valuemax="100">
   <div style="width: 45%">45%</div>
 </div>
-```text
+```
 
 **Indeterminate**:
 
@@ -707,7 +707,7 @@ function showToast(message, type = 'status') {
      aria-valuetext="Loading, please wait">
   <div class="spinner"></div>
 </div>
-```text
+```
 
 **Live Updates**:
 
@@ -716,7 +716,7 @@ function updateProgress(value) {
   progressbar.setAttribute('aria-valuenow', value);
   progressbar.setAttribute('aria-valuetext', `${value}% complete`);
 }
-```text
+```
 
 ## Interactive Patterns
 
@@ -731,7 +731,7 @@ function updateProgress(value) {
        max="100" 
        value="50"
        aria-labelledby="volume-label">
-```text
+```
 
 **Custom Slider**:
 
@@ -746,7 +746,7 @@ function updateProgress(value) {
      tabindex="0">
   <div class="slider-thumb" style="left: 50%"></div>
 </div>
-```text
+```
 
 **Keyboard**:
 
@@ -771,7 +771,7 @@ function updateProgress(value) {
      hidden>
   Click for assistance
 </div>
-```text
+```
 
 **Show/Hide**:
 
@@ -798,7 +798,7 @@ button.addEventListener('keydown', (e) => {
     tooltip.hidden = true;
   }
 });
-```text
+```
 
 ## Best Practices Summary
 

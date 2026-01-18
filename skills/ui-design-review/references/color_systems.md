@@ -313,7 +313,7 @@ Comprehensive guide to functional color usage for web and enterprise application
 --color-success
 --color-error
 --color-warning
-```text
+```
 
 **By Shade (Material Design style)**:
 
@@ -322,7 +322,7 @@ Comprehensive guide to functional color usage for web and enterprise application
 --color-primary-100
 ...
 --color-primary-900
-```text
+```
 
 **By Usage**:
 
@@ -331,7 +331,7 @@ Comprehensive guide to functional color usage for web and enterprise application
 --color-text-secondary
 --color-background-default
 --color-border-default
-```text
+```
 
 ### Avoid
 
@@ -430,7 +430,7 @@ Comprehensive guide to functional color usage for web and enterprise application
   --color-background: var(--color-white);
   --color-border: var(--color-gray-200);
 }
-```text
+```
 
 ### Alpha Transparency
 
@@ -443,7 +443,7 @@ Comprehensive guide to functional color usage for web and enterprise application
 .text-secondary {
   color: rgba(0, 0, 0, 0.6); /* 60% opacity */
 }
-```text
+```
 
 ## Color Checklist
 

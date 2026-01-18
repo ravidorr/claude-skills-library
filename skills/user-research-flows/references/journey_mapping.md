@@ -179,7 +179,7 @@ OVERALL INSIGHTS:
 - Major Pain Points: [Top issues]
 - Quick Wins: [Easy improvements]
 - Strategic Opportunities: [Bigger changes]
-```text
+```
 
 ## Journey Mapping Process
 
@@ -247,7 +247,7 @@ Satisfaction
     |                    
     └─────────────────────→ Time
       Stage 1  Stage 2  Stage 3
-```text
+```
 
 ### Step 5: Analyze & Synthesize
 

@@ -93,7 +93,7 @@ Systematic approach to error copy:
 ```text
 "Can't save changes: File name contains invalid characters. 
 Remove special characters and try again."
-```text
+```
 
 **Error Types Covered**:
 
@@ -202,7 +202,7 @@ Alternatives:
 
 Recommendation: Use "Create Account" - it tells users 
 exactly what will happen when they click.
-```text
+```
 
 ### Example 2: Error Message
 
@@ -229,7 +229,7 @@ splitting it into smaller parts."
 Recommendation: Use "Clear" version for most contexts. 
 It tells users what happened, what the limit is, and 
 what to do next.
-```text
+```
 
 ### Example 3: Empty State Copy
 
@@ -257,7 +257,7 @@ Action: [View Details]
 Recommendation: Choose based on context. Use "First Use" 
 for new users, "All clear" for dashboards, "Success State" 
 for status pages.
-```text
+```
 
 ### Example 4: Tone of Voice Definition
 
@@ -297,7 +297,7 @@ We Are / We Are Not:
 - We ARE technical, not dumbed-down
 - We ARE NOT robotic or cold
 - We ARE NOT overly casual or jokey
-```text
+```
 
 ## Complementary Skills
 
@@ -349,7 +349,7 @@ microcopy-content-design/
     ├── error_messages.md          Error message frameworks
     ├── tone_voice.md              Tone definition frameworks
     └── content_design.md          Content design principles
-```text
+```
 
 ## What Makes This Effective
 

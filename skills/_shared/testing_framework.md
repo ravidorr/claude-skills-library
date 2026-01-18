@@ -28,7 +28,7 @@ skill-name/
     ├── test_analysis.md       # Analysis workflow tests
     └── expected_outputs/      # Reference outputs for comparison
         └── dashboard_review.md
-```text
+```
 
 ## Test Case Format
 
@@ -66,7 +66,7 @@ Each test case should include:
 - [ ] All expected behaviors observed
 - [ ] Output structure complete
 - [ ] No hallucinated features or incorrect assumptions
-```text
+```
 
 ## Test Categories
 
@@ -153,7 +153,7 @@ Tests are manual and document-based. To test a skill:
 ## Recommendations
 
 [Any suggested improvements based on testing]
-```text
+```
 
 ## When to Test
 

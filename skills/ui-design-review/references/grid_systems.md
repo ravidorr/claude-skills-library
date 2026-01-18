@@ -216,7 +216,7 @@ Comprehensive guide to modern grid systems for web and mobile interfaces. Refere
 
 ```text
 Gutter width = (Total width - Margin × 2 - Column widths) / (Number of columns - 1)
-```text
+```
 
 **Example (12-column, 1440px container, 48px margins, 32px gutters)**:
 
@@ -225,7 +225,7 @@ Available space = 1440 - (48 × 2) = 1344px
 Space for gutters = 32 × 11 = 352px
 Space for columns = 1344 - 352 = 992px
 Column width = 992 / 12 = 82.67px
-```text
+```
 
 ## Margin Systems
 
@@ -262,7 +262,7 @@ Generally avoid unless intentional design choice.
 
 ```text
 [Sidebar: 3 cols] [Main: 6 cols] [Details: 3 cols]
-```text
+```
 
 - Sidebar: Navigation, filters
 - Main: Primary content, data viz
@@ -272,7 +272,7 @@ Generally avoid unless intentional design choice.
 
 ```text
 [Sidebar: 2-3 cols] [Main: 9-10 cols]
-```text
+```
 
 - Sidebar: Persistent navigation
 - Main: Full-width workspace
@@ -282,7 +282,7 @@ Generally avoid unless intentional design choice.
 ```text
 [Card: 4 cols] [Card: 4 cols] [Card: 4 cols]
 [Card: 6 cols] [Card: 6 cols]
-```text
+```
 
 - Flexible card sizing
 - Responsive stacking
@@ -299,7 +299,7 @@ Generally avoid unless intentional design choice.
 
 ```text
 [Filters: 3 cols] [Table: 9 cols]
-```text
+```
 
 - Filters in sidebar
 - Table has room for 6-8 columns
@@ -316,7 +316,7 @@ Generally avoid unless intentional design choice.
 
 ```text
 [Label + Input: 6 cols] [Label + Input: 6 cols]
-```text
+```
 
 - Related fields side-by-side
 - Tablets stack to single column
@@ -327,7 +327,7 @@ Generally avoid unless intentional design choice.
 
 ```text
 [Content: 8 cols] [Sidebar: 4 cols]
-```text
+```
 
 - 2:1 ratio (common)
 - Content has priority
@@ -336,7 +336,7 @@ Generally avoid unless intentional design choice.
 
 ```text
 [Content: 9 cols] [Sidebar: 3 cols]
-```text
+```
 
 - 3:1 ratio (more content focus)
 
@@ -392,7 +392,7 @@ Generally avoid unless intentional design choice.
 .span-6 {
   grid-column: span 6;
 }
-```text
+```
 
 ### Flexbox Grid
 
@@ -406,7 +406,7 @@ Generally avoid unless intentional design choice.
   flex: 0 0 50%;
   padding: 0 12px; /* gutter */
 }
-```text
+```
 
 ### Design Tool Setup
 
