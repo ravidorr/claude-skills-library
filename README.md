@@ -35,32 +35,52 @@ Skills are modular, self-contained packages that transform Claude from a general
 
 ### Cursor IDE
 
-#### Option 1: Global Installation (Recommended)
-
-Install skills globally so they're available in all Cursor windows:
+Clone the skill library:
 
 ```bash
-# Clone the library
 git clone https://github.com/ravidorr/claude-skills-library.git ~/claude-skills-library
+```
 
-# Create symlinks to ~/.codex/skills (creates directory if needed)
-mkdir -p ~/.codex/skills
+Create symlinks to ~/.cursor/skills (Cursor's personal skills location):
+
+```bash
+mkdir -p ~/.cursor/skills
 for skill in ~/claude-skills-library/skills/*/; do
-  ln -s "$skill" ~/.codex/skills/
+  skill_name=$(basename "$skill")
+  # Skip internal folders (starting with _ or .)
+  [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
+  ln -s "$skill" ~/.cursor/skills/
 done
 ```
 
-**Updating:** Just pull the latest changes:
+**Updating:** Pull the latest changes:
 
 ```bash
 cd ~/claude-skills-library && git pull
 ```
 
-Since skills are symlinked, updates are immediately available - no reinstall needed.
+Existing skills update automatically via symlinks. If new skills were added, re-run the symlink command:
 
-#### Option 2: Workspace-Only Installation
+```bash
+for skill in ~/claude-skills-library/skills/*/; do
+  skill_name=$(basename "$skill")
+  [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
+  ln -s "$skill" ~/.cursor/skills/ 2>/dev/null
+done
+```
 
-For project-specific skills, add them to **Cursor Settings > Rules and Commands > Agent Requestable Workspace Rules** pointing to your cloned repo.
+### Codex CLI
+
+For OpenAI's Codex CLI, use `~/.codex/skills` instead:
+
+```bash
+mkdir -p ~/.codex/skills
+for skill in ~/claude-skills-library/skills/*/; do
+  skill_name=$(basename "$skill")
+  [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
+  ln -s "$skill" ~/.codex/skills/
+done
+```
 
 #### Using the Skills
 
@@ -139,15 +159,20 @@ All skills in this library must:
 
 ### Skills Not Triggering
 
-1. Verify the skill is installed: `ls ~/.codex/skills/`
+1. Verify the skill is installed:
+   - Cursor: `ls ~/.cursor/skills/`
+   - Codex: `ls ~/.codex/skills/`
 2. Restart Cursor/your IDE
 3. Try referencing the skill directly with `@`
 
 ### Permission Errors
 
 ```bash
-mkdir -p ~/.codex/skills
-chmod 755 ~/.codex/skills
+# For Cursor
+mkdir -p ~/.cursor/skills && chmod 755 ~/.cursor/skills
+
+# For Codex
+mkdir -p ~/.codex/skills && chmod 755 ~/.codex/skills
 ```
 
 ## Recommended User Rules
