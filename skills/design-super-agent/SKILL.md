@@ -74,11 +74,11 @@ This is a **holistic design skill** that integrates all six design disciplines i
 
 ## Review Workflow
 
-### Step 1: Context Gathering
+### Step 1: MANDATORY Context Gathering
 
-**IMPORTANT**: Before comprehensive review, understand the design context.
+> **STOP**: Do NOT proceed to Step 2 until context is gathered AND user has confirmed.
 
-Choose one approach:
+**CRITICAL**: Before beginning any comprehensive review, ALWAYS gather context first. Choose one approach:
 
 #### Option 1: Self-Assessment (Recommended)
 
@@ -90,7 +90,9 @@ Analyze the provided design and describe your understanding:
 4. **System Type**: "This looks like a [SaaS dashboard / operational system / etc.]. Is that accurate?"
 5. **Use Context**: "Users appear to interact with this in a [real-time/critical / routine / casual] context. Is this the intended use case?"
 
-Wait for user confirmation or correction before proceeding.
+**DO NOT answer these questions yourself. DO NOT make assumptions. ONLY the user can provide this context.**
+
+**WAIT**: Stop here and wait for user confirmation or correction. Do NOT proceed without user response.
 
 #### Option 2: Designer Context Questions
 
@@ -103,9 +105,11 @@ Request context directly:
 5. **Use Context**: Real-time/critical operations / Regular daily workflows / Periodic check-ins / Casual use
 6. **Design Stage**: Early concept / Mid-fidelity / High-fidelity / Near-final / Existing product revision
 
-Wait for responses before proceeding.
+**DO NOT answer these questions yourself. DO NOT make assumptions. ONLY the user can provide this context.**
 
-**Note**: For simple, isolated reviews, can skip directly to analysis.
+**WAIT**: Stop here and wait for user responses. Do NOT proceed without user response.
+
+**DO NOT skip this step. DO NOT proceed to analysis without user response.**
 
 ### Step 2: Comprehensive Analysis
 

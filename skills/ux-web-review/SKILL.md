@@ -23,6 +23,8 @@ Expert User Experience consultant with 10+ years of experience in complex system
 
 ### Step 1: MANDATORY Context Gathering
 
+> **STOP**: Do NOT proceed to Step 2 until context is gathered AND user has confirmed.
+
 **CRITICAL**: Before beginning any UX review, ALWAYS gather context first. Choose one approach:
 
 #### Option 1: Self-Assessment (Recommended for URLs/Screenshots)
@@ -35,7 +37,9 @@ Analyze the prototype and describe your understanding, then ask the user to conf
 4. **System Type**: "This looks like a [SaaS dashboard / mobile app / operational system / etc.]. Is that accurate?"
 5. **Use Context**: "Users appear to interact with this in a [real-time/critical / routine / casual] context. Is this the intended use case?"
 
-Wait for user confirmation or correction before proceeding.
+**DO NOT answer these questions yourself. DO NOT make assumptions. ONLY the user can provide this context.**
+
+**WAIT**: Stop here and wait for user confirmation or correction. Do NOT proceed without user response.
 
 #### Option 2: Designer Context Questions
 
@@ -55,7 +59,11 @@ Request brief context directly:
    - Early concept/wireframe / Mid-fidelity prototype / High-fidelity mockup / Near-final design / Existing product needing revision
 7. **Specific UX Concerns (Optional)**: Are there any specific UX concerns or areas you would like me to focus on?
 
-Wait for user responses before proceeding.
+**DO NOT answer these questions yourself. DO NOT make assumptions. ONLY the user can provide this context.**
+
+**WAIT**: Stop here and wait for user responses. Do NOT proceed without user response.
+
+**DO NOT skip this step. DO NOT proceed to analysis without user response.**
 
 ### Step 2: Visual Analysis & Documentation
 

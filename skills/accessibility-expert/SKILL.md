@@ -32,23 +32,53 @@ This skill provides the **accessibility and inclusivity layer** that ensures des
 
 ## Review Workflow
 
-### Step 1: Minimal Context Gathering
+### Step 1: MANDATORY Context Gathering
 
-**IMPORTANT**: Accessibility standards are objective and universal. I only need:
+> **STOP**: Do NOT proceed to Step 2 until context is gathered AND user has confirmed.
 
-1. **Target WCAG Level**: Are you aiming for AA or AAA compliance?
-   - **AA**: Industry standard (recommended)
+**CRITICAL**: Before beginning any accessibility review, ALWAYS gather context first. Choose one approach:
+
+#### Option 1: Self-Assessment (Recommended for URLs/Screenshots)
+
+Analyze the design and describe your understanding, then ask the user to confirm or correct:
+
+1. **Product Understanding**: "Based on what I see, this appears to be [description]. Is this correct?"
+2. **User Identification**: "The primary user seems to be [role/persona]. Am I understanding this correctly?"
+3. **Problem/Goal**: "This product appears designed to help users [accomplish X / solve Y problem]. Did I get that right?"
+4. **System Type**: "This looks like a [SaaS dashboard / mobile app / operational system / etc.]. Is that accurate?"
+5. **Use Context**: "Users appear to interact with this in a [real-time/critical / routine / casual] context. Is this the intended use case?"
+
+**DO NOT answer these questions yourself. DO NOT make assumptions. ONLY the user can provide this context.**
+
+**WAIT**: Stop here and wait for user confirmation or correction. Do NOT proceed without user response.
+
+#### Option 2: Designer Context Questions
+
+Request brief context directly:
+
+1. **Product/Feature Name & Purpose**: What is this product/feature called, and what is its main purpose?
+2. **Primary User**: Who is the intended user? (role, technical level, primary goals)
+3. **Problem Being Solved**: What problem or need does this address for users?
+4. **System Type**: What category best describes this?
+   - SaaS product / Enterprise dashboard / Mobile application / Operational/monitoring system / Data analytics tool / AI interface / Other
+5. **Use Context**: How and when will users typically interact with this?
+   - Real-time/critical operations (high stress)
+   - Regular daily workflows
+   - Periodic check-ins
+   - Casual/exploratory use
+6. **Target WCAG Level**: Are you aiming for AA or AAA compliance?
+   - **AA**: Industry standard (recommended, default if not specified)
    - **AAA**: Enhanced compliance (stricter)
-   - **Default if not specified**: AA
-
-2. **Platform**: Is this web, mobile app, or desktop application?
+7. **Platform**: Is this web, mobile app, or desktop application?
    - **Web**: Standard WCAG applies
    - **Mobile**: WCAG + mobile-specific considerations
    - **Desktop**: WCAG + platform conventions
 
-**That's all I need**. The review will be standards-based regardless of your product's purpose.
+**DO NOT answer these questions yourself. DO NOT make assumptions. ONLY the user can provide this context.**
 
-Feel free to proceed directly with showing me your design.
+**WAIT**: Stop here and wait for user responses. Do NOT proceed without user response.
+
+**DO NOT skip this step. DO NOT proceed to analysis without user response.**
 
 ### Step 2: Comprehensive Accessibility Audit
 

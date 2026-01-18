@@ -44,9 +44,10 @@ Skills work excellently in Cursor as project rules or workspace context. There a
 #### Option 1: Clone This Repository (Best for Multiple Skills)
 
 1. Clone this repository to your local machine
-2. In Cursor, go to **Settings > Rules**
-3. Add the path to the skill's `SKILL.md` file under **Agent Requestable Workspace Rules**
-4. The skill will be available to Claude in your Cursor conversations
+2. In Cursor, go to **Cursor > Settings... > Cursor Settings**
+3. In the Cursor Settings tab click on **Rules and Commands**
+4. Add the path to the skill's `SKILL.md` file under **Agent Requestable Workspace Rules**
+5. The skill will be available to Claude in your Cursor conversations
 
 #### Option 2: Copy SKILL.md to Your Project
 
@@ -90,6 +91,195 @@ Once configured, skills provide Claude with specialized expertise. For example:
 - Say "Full design review" - triggers `design-super-agent`
 
 Each skill's README contains specific trigger phrases and usage examples.
+
+# Installing Claude Skills from GitHub
+
+This guide explains how to install and update Claude skills from the [claude-skills-library](https://github.com/ravidorr/claude-skills-library) repository for use in Cursor IDE.
+
+## Prerequisites
+
+- Git installed on your system
+- Cursor IDE
+- Terminal access
+
+## Available Skills
+
+| Skill | Description |
+|-------|-------------|
+| `accessibility-expert` | WCAG 2.1/2.2 accessibility audits (AA/AAA) |
+| `design-super-agent` | Comprehensive design review combining all areas |
+| `microcopy-content-design` | Microcopy and content design specialist |
+| `ui-design-review` | Expert UI design review for visual interfaces |
+| `user-research-flows` | User research, personas, journeys, and flow design |
+| `ux-web-review` | Expert UX review and analysis of web applications |
+
+## Installation
+
+### Option 1: Install All Skills (Recommended)
+
+Run this command to install all skills at once:
+
+```bash
+cd ~/.codex/skills && \
+git clone --depth 1 --filter=blob:none --sparse \
+  https://github.com/ravidorr/claude-skills-library.git _temp_skills && \
+cd _temp_skills && \
+git sparse-checkout set \
+  skills/accessibility-expert \
+  skills/design-super-agent \
+  skills/microcopy-content-design \
+  skills/ui-design-review \
+  skills/user-research-flows \
+  skills/ux-web-review && \
+cp -r skills/* ../ && \
+cd .. && \
+rm -rf _temp_skills
+```
+
+### Option 2: Install a Single Skill
+
+To install just one skill (e.g., `ux-web-review`):
+
+```bash
+cd ~/.codex/skills && \
+git clone --depth 1 --filter=blob:none --sparse \
+  https://github.com/ravidorr/claude-skills-library.git _temp_skill && \
+cd _temp_skill && \
+git sparse-checkout set skills/ux-web-review && \
+cp -r skills/ux-web-review ../ && \
+cd .. && \
+rm -rf _temp_skill
+```
+
+Replace `ux-web-review` with the skill name you want to install.
+
+### Option 3: Clone Entire Repository
+
+If you want all skills and plan to contribute or stay updated easily:
+
+```bash
+git clone https://github.com/ravidorr/claude-skills-library.git ~/.codex/skills-library
+```
+
+Then symlink the skills you want:
+
+```bash
+ln -s ~/.codex/skills-library/skills/ux-web-review ~/.codex/skills/ux-web-review
+```
+
+## Updating Skills
+
+### Update All Installed Skills
+
+To update skills to the latest version, remove and reinstall:
+
+```bash
+# Remove existing skills (keeps .system folder)
+cd ~/.codex/skills && \
+rm -rf accessibility-expert design-super-agent microcopy-content-design \
+  ui-design-review user-research-flows ux-web-review
+
+# Reinstall (run the installation command from Option 1)
+```
+
+### Update a Single Skill
+
+```bash
+# Remove the old version
+rm -rf ~/.codex/skills/ux-web-review
+
+# Reinstall (run the single skill installation command)
+```
+
+### Update via Full Clone (Option 3)
+
+If you cloned the entire repository:
+
+```bash
+cd ~/.codex/skills-library
+git pull origin main
+```
+
+## Verification
+
+After installation, verify skills are installed:
+
+```bash
+ls -la ~/.codex/skills/
+```
+
+You should see directories for each installed skill.
+
+## Using Skills in Cursor
+
+### Automatic Triggering
+
+Once installed, skills trigger automatically based on your requests:
+
+- "Give me UX feedback on this page" - triggers `ux-web-review`
+- "Review the accessibility" - triggers `accessibility-expert`
+- "Full design review" - triggers `design-super-agent`
+- "Review this error message copy" - triggers `microcopy-content-design`
+- "Create a user persona" - triggers `user-research-flows`
+- "Check the visual design" - triggers `ui-design-review`
+
+### Manual Reference
+
+You can also reference skills directly in Cursor chat:
+
+```
+@~/.codex/skills/ux-web-review/SKILL.md Review this component
+```
+
+### Restart Cursor
+
+After installing new skills, restart Cursor to ensure they are picked up.
+
+## Troubleshooting
+
+### Skills Not Triggering
+
+1. Verify the skill is installed: `ls ~/.codex/skills/`
+2. Restart Cursor
+3. Try referencing the skill directly with `@`
+
+### Permission Errors
+
+If you get permission errors during installation:
+
+```bash
+mkdir -p ~/.codex/skills
+chmod 755 ~/.codex/skills
+```
+
+### SSL Certificate Errors (macOS)
+
+If Python scripts fail with SSL errors, use the git-based installation methods shown above instead of Python installers.
+
+## Skill Directory Structure
+
+Each skill follows this structure:
+
+```
+skill-name/
+├── SKILL.md          # Core instructions (required)
+├── references/       # Additional documentation (optional)
+│   ├── topic1.md
+│   └── topic2.md
+├── scripts/          # Executable code (optional)
+└── assets/           # Templates, images (optional)
+```
+
+## Creating Custom Skills
+
+See the [skill-creator documentation](https://github.com/ravidorr/claude-skills-library#creating-your-own-skills) for guidance on creating your own skills.
+
+## Resources
+
+- [Skills Library Repository](https://github.com/ravidorr/claude-skills-library)
+- [Anthropic Skills Documentation](https://docs.anthropic.com)
+- [Cursor IDE](https://cursor.sh)
+
 
 ## Creating Your Own Skills
 

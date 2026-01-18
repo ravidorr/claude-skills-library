@@ -32,6 +32,8 @@ This skill provides the **content and communication layer** that brings design t
 
 ### Step 1: MANDATORY Context Gathering
 
+> **STOP**: Do NOT proceed to Step 2 until context is gathered AND user has confirmed.
+
 **CRITICAL**: Before any microcopy review or writing, ALWAYS gather context first. Choose one approach:
 
 #### Option 1: Self-Assessment (Recommended)
@@ -44,7 +46,9 @@ Analyze the provided content and describe your understanding:
 4. **System Type**: "This looks like a [SaaS dashboard / operational system / etc.]. Is that accurate?"
 5. **Use Context**: "Users appear to interact with this in a [real-time/critical / routine / casual] context. Is this the intended use case?"
 
-Wait for user confirmation or correction before proceeding.
+**DO NOT answer these questions yourself. DO NOT make assumptions. ONLY the user can provide this context.**
+
+**WAIT**: Stop here and wait for user confirmation or correction. Do NOT proceed without user response.
 
 #### Option 2: Designer Context Questions
 
@@ -66,7 +70,11 @@ Request brief context directly:
    - Professional & formal / Professional but friendly / Technical & precise / Conversational
 8. **Brand Voice Guidelines (Optional)**: Are there any brand voice guidelines I should be aware of?
 
-Wait for user responses before proceeding.
+**DO NOT answer these questions yourself. DO NOT make assumptions. ONLY the user can provide this context.**
+
+**WAIT**: Stop here and wait for user responses. Do NOT proceed without user response.
+
+**DO NOT skip this step. DO NOT proceed to analysis without user response.**
 
 ### Step 2: Determine Scope
 
