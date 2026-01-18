@@ -15,6 +15,40 @@ The standard context gathering protocol used by all design skills. Contains:
 
 **Used by**: All 6 design skills
 
+### analysis_standards.md
+
+Common analysis principles, tone guidelines, and quality standards. Contains:
+
+- Tone and approach guidelines
+- Quality standards for recommendations
+- Severity level definitions
+- Cross-skill handoff guidelines
+- Skill-specific standards summary
+
+**Used by**: All 6 design skills
+
+### testing_framework.md
+
+The testing methodology for validating skill behavior. Contains:
+
+- Test case structure and format
+- Test categories (triggers, context, analysis, edge cases)
+- How to run tests
+- Results template
+
+**Used by**: Any skill that needs testing
+
+### mcp_browser_integration.md
+
+Examples of using cursor-ide-browser MCP tools for design reviews. Contains:
+
+- Available browser tools overview
+- Common workflows (page review, responsive testing, flow testing)
+- Skill-specific usage examples
+- Best practices and troubleshooting
+
+**Used by**: Skills that review live web applications
+
 ## Maintenance Guidelines
 
 ### When Updating Shared Content

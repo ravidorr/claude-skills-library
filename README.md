@@ -33,45 +33,20 @@ Skills are modular, self-contained packages that transform Claude from a general
 3. Click "Upload Skill" and select the file
 4. Confirm installation
 
-### Cursor IDE (Recommended)
+### Cursor IDE
 
-**Option 1: Add as Workspace Rules**
+1. Clone the library:
 
-1. Clone this repository or copy skill folders to your project
-2. Go to **Cursor > Settings > Cursor Settings > Rules and Commands**
-3. Add the path to `SKILL.md` under **Agent Requestable Workspace Rules**
+   ```bash
+   git clone https://github.com/ravidorr/claude-skills-library.git
+   ```
 
-**Option 2: Reference Directly**
+2. Add skills to **Cursor Settings > Rules and Commands > Agent Requestable Workspace Rules**
 
-In Cursor chat, use `@` to reference skill files:
-
-```
-@skills/ux-web-review/SKILL.md Review this component
-```
-
-**Option 3: Install to Codex Skills**
-
-Install all skills to `~/.codex/skills/`:
-
-```bash
-cd ~/.codex/skills && \
-git clone --depth 1 --filter=blob:none --sparse \
-  https://github.com/ravidorr/claude-skills-library.git _temp_skills && \
-cd _temp_skills && \
-git sparse-checkout set skills && \
-cp -r skills/* ../ && \
-cd .. && rm -rf _temp_skills
-```
-
-Or install a single skill:
-
-```bash
-cd ~/.codex/skills && \
-git clone --depth 1 --filter=blob:none --sparse \
-  https://github.com/ravidorr/claude-skills-library.git _temp && \
-cd _temp && git sparse-checkout set skills/ux-web-review && \
-cp -r skills/ux-web-review ../ && cd .. && rm -rf _temp
-```
+3. Done. Just ask naturally:
+   - "Review the UX of this page"
+   - "Check accessibility"
+   - "Improve this microcopy"
 
 ### Other IDEs
 

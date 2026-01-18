@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/ravidorr/claude-skills-library/schemas/skill-metadata.schema.json",
+  "title": "Claude Skill Metadata Schema",
+  "description": "JSON Schema for validating SKILL.md YAML frontmatter",
+  "type": "object",
+  "required": ["name", "version", "description"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Unique identifier for the skill (kebab-case)",
+      "pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
+      "examples": ["ux-web-review", "accessibility-expert", "design-super-agent"]
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version of the skill",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "examples": ["1.0.0", "1.2.3", "2.0.0"]
+    },
+    "description": {
+      "type": "string",
+      "description": "Comprehensive description including expertise, use cases, and trigger phrases. Should be under 500 characters for optimal display.",
+      "minLength": 50,
+      "maxLength": 1000
+    },
+    "dependencies": {
+      "type": "array",
+      "description": "List of skill names this skill depends on or integrates with",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$"
+      },
+      "uniqueItems": true,
+      "examples": [
+        ["ux-web-review", "ui-design-review", "accessibility-expert"]
+      ]
+    },
+    "triggers": {
+      "type": "array",
+      "description": "Explicit list of trigger phrases that activate this skill",
+      "items": {
+        "type": "string",
+        "minLength": 5
+      },
+      "minItems": 1,
+      "examples": [
+        ["Give me UX feedback", "Review this web app", "Analyze the UX"]
+      ]
+    },
+    "category": {
+      "type": "string",
+      "description": "Category for organizing skills",
+      "enum": ["design", "development", "research", "testing", "documentation", "other"]
+    },
+    "author": {
+      "type": "string",
+      "description": "Author or maintainer of the skill"
+    },
+    "license": {
+      "type": "string",
+      "description": "License for the skill",
+      "default": "MIT"
+    }
+  },
+  "additionalProperties": false
+}

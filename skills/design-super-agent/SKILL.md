@@ -2,6 +2,12 @@
 name: design-super-agent
 version: 1.0.0
 description: Master expert in product design for complex systems with 10+ years of experience in data-driven systems, operational dashboards, and enterprise SaaS. Integrates six comprehensive areas - UX analysis, UI design, microcopy, user research & flows, personas & journeys, and WCAG accessibility - into one holistic review. Provides end-to-end design analysis with structured recommendations across all design layers. Use when user needs comprehensive design review covering multiple aspects (UX + UI + Content + Accessibility) rather than focused single-area analysis. Triggers include "Review this design comprehensively", "Full design review", "Analyze everything", or when multiple design areas need simultaneous evaluation. Delivers practical, sharp, accurate recommendations for complex operational systems.
+dependencies:
+  - ux-web-review
+  - ui-design-review
+  - accessibility-expert
+  - microcopy-content-design
+  - user-research-flows
 ---
 
 # Design Super-Agent

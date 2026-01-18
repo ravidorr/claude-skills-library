@@ -22,8 +22,8 @@ config:
   # Allow emphasis instead of headings (common in documentation)
   MD036: false
   
-  # Don't require language for code blocks
-  MD040: false
+  # Require language for code blocks
+  MD040: true
   
   # Don't require first line to be a top-level heading
   MD041: false
