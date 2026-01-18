@@ -142,6 +142,72 @@ npm run lint           # Check for issues
 npm run lint:fix       # Auto-fix issues
 ```
 
+## Contributing
+
+### Updating an Existing Skill
+
+1. **Edit the source files**
+
+   ```bash
+   # Edit the main skill file
+   code skills/ux-web-review/SKILL.md
+
+   # Edit reference files if needed
+   code skills/ux-web-review/references/ux_patterns.md
+   ```
+
+2. **Rebuild the .skill file** (for Claude.ai distribution)
+
+   ```bash
+   npm run build ux-web-review   # Single skill
+   npm run build                  # All skills
+   ```
+
+3. **Validate and lint**
+
+   ```bash
+   npm run validate
+   npm run lint
+   ```
+
+4. **Commit and push**
+
+   ```bash
+   git add skills/ux-web-review/
+   git commit -m "Update ux-web-review: [description of changes]"
+   git push
+   ```
+
+Users with symlinked installations will receive updates on their next `git pull`.
+
+### Creating a New Skill
+
+1. Create the skill directory structure:
+
+   ```bash
+   mkdir -p skills/my-new-skill/references
+   ```
+
+2. Create `SKILL.md` with required frontmatter:
+
+   ```markdown
+   ---
+   name: my-new-skill
+   version: 1.0.0
+   description: Brief description of what this skill does and when to use it.
+   ---
+
+   # My New Skill
+
+   [Skill instructions here]
+   ```
+
+3. Create `README.md` with usage documentation
+
+4. Build, validate, and commit as above
+
+5. Update the "Available Skills" table in this README
+
 ## Quality Standards
 
 All skills in this library must:
