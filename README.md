@@ -61,7 +61,7 @@ The `SKILL.md` files are standard Markdown with YAML frontmatter. They work in a
 
 Each skill follows this structure:
 
-```
+```text
 skill-name/
 ├── SKILL.md              # Required: Core instructions and metadata
 ├── README.md             # Required: Documentation for users

@@ -466,7 +466,7 @@ GOOD: Reviewed quarterly, adjusted with new learning
 - [How we should design for them]
 - [Features they need]
 - [What to avoid]
-```
+```text
 
 ## Example Personas
 

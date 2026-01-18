@@ -42,14 +42,14 @@ Comprehensive guide to common UI microcopy patterns for buttons, labels, tooltip
 
 **Examples**:
 
-```
+```text
 Generic → Specific
 "Submit" → "Create Account"
 "Send" → "Send Message"
 "Save" → "Save Changes"
 "Go" → "Start Setup"
 "OK" → "Apply Settings"
-```
+```text
 
 **Guidelines**:
 
@@ -90,14 +90,14 @@ Generic → Specific
 
 **Examples**:
 
-```
+```text
 "Cancel" (standard)
 "Go Back"
 "Skip for Now"
 "Not Now"
 "Maybe Later"
 "Remind Me Later"
-```
+```text
 
 **Guidelines**:
 
@@ -112,7 +112,7 @@ Generic → Specific
 
 **Examples**:
 
-```
+```text
 Simple:
 "Delete"
 "Remove"
@@ -127,7 +127,7 @@ With Consequence:
 "Delete 24 Items"
 "Remove Access"
 "Permanently Delete"
-```
+```text
 
 **Guidelines**:
 
@@ -138,11 +138,11 @@ With Consequence:
 
 **Confirmation Dialog Buttons**:
 
-```
+```text
 Generic: "Yes" / "No"
 Better: "Delete Account" / "Keep Account"
 Best: "Delete Permanently" / "Cancel"
-```
+```text
 
 ### Link Text Patterns
 
@@ -150,7 +150,7 @@ Best: "Delete Permanently" / "Cancel"
 
 **Examples**:
 
-```
+```text
 ❌ "Click here for more information"
 ✅ "View pricing details"
 
@@ -159,7 +159,7 @@ Best: "Delete Permanently" / "Cancel"
 
 ❌ "Go to settings"
 ✅ "Configure alert settings"
-```
+```text
 
 **Guidelines**:
 
@@ -177,11 +177,11 @@ Best: "Delete Permanently" / "Cancel"
 
 **Loading State**:
 
-```
+```text
 "Save Changes" → "Saving..."
 "Deploy" → "Deploying..."
 "Send" → "Sending..."
-```
+```text
 
 **Disabled State**:
 
@@ -191,10 +191,10 @@ Best: "Delete Permanently" / "Cancel"
 
 **Success State** (if shown):
 
-```
+```text
 "Save Changes" → "Saved" (briefly, then return)
 "Deploy" → "Deployed Successfully"
-```
+```text
 
 ## Label Patterns
 
@@ -204,7 +204,7 @@ Best: "Delete Permanently" / "Cancel"
 
 **Examples**:
 
-```
+```text
 Input Type → Label
 Text input → "Email Address"
 Text input → "Full Name"
@@ -212,7 +212,7 @@ Number input → "Quantity"
 Dropdown → "Country"
 Date picker → "Birth Date"
 Checkbox → "Remember me"
-```
+```text
 
 **Guidelines**:
 
@@ -223,13 +223,13 @@ Checkbox → "Remember me"
 
 **Label + Help Text Pattern**:
 
-```
+```text
 Label: "API Key"
 Help: "Found in your account settings"
 
 Label: "Webhook URL"
 Help: "Endpoint to receive notifications"
-```
+```text
 
 ### Required vs Optional
 
@@ -237,19 +237,19 @@ Help: "Endpoint to receive notifications"
 
 **If Most Fields Required**:
 
-```
+```text
 Email Address *
 Password *
 Company Name (optional)
-```
+```text
 
 **If Most Fields Optional**:
 
-```
+```text
 Email Address
 Password
 Company Name (optional)
-```
+```text
 
 **Guidelines**:
 
@@ -263,7 +263,7 @@ Company Name (optional)
 
 **Examples**:
 
-```
+```text
 Action-oriented:
 "Enable notifications"
 "Send weekly reports"
@@ -273,7 +273,7 @@ State-oriented:
 "Notifications enabled"
 "Weekly reports active"
 "Team access allowed"
-```
+```text
 
 **Recommendation**: Use action-oriented for toggles users change frequently, state-oriented for settings that persist.
 
@@ -302,7 +302,7 @@ State-oriented:
 
 **Examples**:
 
-```
+```text
 Icon tooltip:
 "Delete alert" (not "Delete this alert")
 
@@ -314,7 +314,7 @@ Disabled field:
 
 Keyboard shortcut:
 "Save (Cmd+S)"
-```
+```text
 
 ### Tooltip Structure
 
@@ -322,27 +322,27 @@ Keyboard shortcut:
 
 **For Icons**:
 
-```
+```text
 ❌ "This icon allows you to delete"
 ✅ "Delete"
 
 ❌ "Click to export data"
 ✅ "Export to CSV"
-```
+```text
 
 **For Technical Terms**:
 
-```
+```text
 ❌ "RPO stands for Recovery Point Objective which is..."
 ✅ "RPO: Maximum acceptable data loss measured in time"
-```
+```text
 
 **For Disabled Elements**:
 
-```
+```text
 ❌ "You can't do this because you don't have the right permissions"
 ✅ "Requires admin permissions"
-```
+```text
 
 ## Status Indicator Patterns
 
@@ -352,7 +352,7 @@ Keyboard shortcut:
 
 **Examples**:
 
-```
+```text
 Short:
 "Loading..."
 "Processing..."
@@ -366,7 +366,7 @@ With Context:
 With Progress:
 "Analyzing logs... 45% complete"
 "Uploading file... 2 of 5 MB"
-```
+```text
 
 **Guidelines**:
 
@@ -381,7 +381,7 @@ With Progress:
 
 **Examples**:
 
-```
+```text
 Minimal:
 "Saved"
 "Sent"
@@ -396,7 +396,7 @@ Detailed:
 "Alert configuration saved successfully"
 "Report sent to team@company.com"
 "User permissions updated"
-```
+```text
 
 **Guidelines**:
 
@@ -407,11 +407,11 @@ Detailed:
 
 **With Next Action**:
 
-```
+```text
 "Deployment complete. [View Logs]"
 "Report generated. [Download] [Share]"
 "Invitation sent. [Send Another]"
-```
+```text
 
 ### Progress Indicators
 
@@ -419,7 +419,7 @@ Detailed:
 
 **Examples**:
 
-```
+```text
 Percentage:
 "Installing updates... 45%"
 "Analyzing data... 67% complete"
@@ -431,7 +431,7 @@ Count:
 Time Remaining:
 "Backup in progress... 5 minutes remaining"
 "Download starting... 2:30 remaining"
-```
+```text
 
 **Guidelines**:
 
@@ -448,37 +448,37 @@ Time Remaining:
 
 **Structure**:
 
-```
+```text
 Heading: [What's empty]
 Body: [Why empty / How to get started]
 Action: [Primary CTA button]
-```
+```text
 
 **Examples**:
 
 **No Content Yet**:
 
-```
+```text
 Heading: "No dashboards yet"
 Body: "Create your first dashboard to visualize your metrics"
 Action: [Create Dashboard]
-```
+```text
 
 **No Items**:
 
-```
+```text
 Heading: "No alerts configured"
 Body: "Set up alerts to get notified about system issues"
 Action: [Add Alert]
-```
+```text
 
 **No Team Members**:
 
-```
+```text
 Heading: "You're the only team member"
 Body: "Invite colleagues to collaborate on projects"
 Action: [Invite Team]
-```
+```text
 
 ### Zero Results Empty States
 
@@ -488,19 +488,19 @@ Action: [Invite Team]
 
 **Filtered Results**:
 
-```
+```text
 Heading: "No alerts match your filters"
 Body: "Try adjusting your date range or severity level"
 Action: [Clear Filters]
-```
+```text
 
 **Search Results**:
 
-```
+```text
 Heading: "No results for 'production-api'"
 Body: "Check spelling or try different keywords"
 Action: [Clear Search]
-```
+```text
 
 ### Error Empty States
 
@@ -510,19 +510,19 @@ Action: [Clear Search]
 
 **Failed to Load**:
 
-```
+```text
 Heading: "Unable to load dashboards"
 Body: "Connection to server failed. Check your network and try again."
 Action: [Retry]
-```
+```text
 
 **Permission Denied**:
 
-```
+```text
 Heading: "Access denied"
 Body: "You don't have permission to view this page. Contact your admin."
 Action: [Go to Home]
-```
+```text
 
 ### Success Empty States
 
@@ -532,19 +532,19 @@ Action: [Go to Home]
 
 **Inbox Zero**:
 
-```
+```text
 Heading: "All caught up!"
 Body: "No new alerts in the last 24 hours"
 Action: [View History]
-```
+```text
 
 **Tasks Complete**:
 
-```
+```text
 Heading: "All tasks complete"
 Body: "Great work! You've completed all pending tasks"
 Action: [View Archive]
-```
+```text
 
 ## Navigation & Menu Patterns
 
@@ -554,7 +554,7 @@ Action: [View Archive]
 
 **Examples**:
 
-```
+```text
 Navigation (Nouns):
 "Dashboard"
 "Alerts"
@@ -567,7 +567,7 @@ Actions (Verbs):
 "View All"
 "Export Data"
 "Manage Users"
-```
+```text
 
 **Guidelines**:
 
@@ -582,11 +582,11 @@ Actions (Verbs):
 
 **Examples**:
 
-```
+```text
 Home > Projects > Website Redesign > Assets
 Dashboard > Alerts > Critical > Alert Details
 Settings > Team > User Permissions
-```
+```text
 
 **Guidelines**:
 
@@ -602,7 +602,7 @@ Settings > Team > User Permissions
 
 **Examples**:
 
-```
+```text
 User Profile Tabs:
 "Profile" "Security" "Notifications" "Billing"
 
@@ -611,7 +611,7 @@ System Settings Tabs:
 
 Alert Details Tabs:
 "Overview" "History" "Related" "Logs"
-```
+```text
 
 **Guidelines**:
 
@@ -628,14 +628,14 @@ Alert Details Tabs:
 
 **Examples**:
 
-```
+```text
 "Name"
 "Status"
 "Last Updated"
 "Created By"
 "Alert Count"
 "Response Time (ms)"
-```
+```text
 
 **Guidelines**:
 
@@ -650,7 +650,7 @@ Alert Details Tabs:
 
 **Examples**:
 
-```
+```text
 Timestamps:
 "2 minutes ago"
 "Jan 15, 2026"
@@ -664,7 +664,7 @@ Numbers:
 Status:
 "Active" (not "is active")
 "Running" (not "currently running")
-```
+```text
 
 ### Empty Data Cells
 
@@ -672,12 +672,12 @@ Status:
 
 **Examples**:
 
-```
+```text
 Preferred: "—" (em dash)
 Alternative: "N/A"
 Avoid: Empty cell
 Avoid: "None"
-```
+```text
 
 ## Placeholder Text Patterns
 
@@ -687,7 +687,7 @@ Avoid: "None"
 
 **Examples**:
 
-```
+```text
 Email Input:
 "you@company.com" (example format)
 
@@ -699,7 +699,7 @@ Search:
 
 URL:
 "https://example.com" (protocol included)
-```
+```text
 
 **Guidelines**:
 
@@ -714,12 +714,12 @@ URL:
 
 **Examples**:
 
-```
+```text
 "Search alerts..."
 "Search team members..."
 "Search documentation..."
 "Filter by name or email..."
-```
+```text
 
 ## Help Text Patterns
 
@@ -729,7 +729,7 @@ URL:
 
 **Examples**:
 
-```
+```text
 Password Field:
 Label: "Password"
 Help: "Must be at least 8 characters"
@@ -741,7 +741,7 @@ Help: "Found in Settings > API Access"
 Webhook URL:
 Label: "Webhook URL"
 Help: "Endpoint to receive real-time notifications"
-```
+```text
 
 **Guidelines**:
 
@@ -756,7 +756,7 @@ Help: "Endpoint to receive real-time notifications"
 
 **Examples**:
 
-```
+```text
 ❌ "Invalid email"
 ✅ "Email must include @ symbol"
 
@@ -765,7 +765,7 @@ Help: "Endpoint to receive real-time notifications"
 
 ❌ "Field required"
 ✅ "Email address is required"
-```
+```text
 
 ## Modal Dialog Patterns
 
@@ -775,7 +775,7 @@ Help: "Endpoint to receive real-time notifications"
 
 **Examples**:
 
-```
+```text
 Confirmation:
 "Delete Account?"
 "Discard Changes?"
@@ -790,7 +790,7 @@ Information:
 "Deployment Details"
 "System Status"
 "Feature Preview"
-```
+```text
 
 **Guidelines**:
 
@@ -805,7 +805,7 @@ Information:
 
 **Examples**:
 
-```
+```text
 Destructive Action:
 "This will permanently delete your account and all associated data. 
 This action cannot be undone."
@@ -813,7 +813,7 @@ This action cannot be undone."
 Information:
 "Your session will expire in 5 minutes due to inactivity. 
 Would you like to extend your session?"
-```
+```text
 
 ### Modal Buttons
 
@@ -821,7 +821,7 @@ Would you like to extend your session?"
 
 **Examples**:
 
-```
+```text
 ❌ "Yes" / "No"
 ✅ "Delete Account" / "Cancel"
 
@@ -830,7 +830,7 @@ Would you like to extend your session?"
 
 ❌ "Are you sure?"
 ✅ "Continue" / "Go Back"
-```
+```text
 
 ## Notification Patterns
 
@@ -840,7 +840,7 @@ Would you like to extend your session?"
 
 **Examples**:
 
-```
+```text
 Success:
 "Changes saved"
 "Message sent"
@@ -854,7 +854,7 @@ With Action:
 Error:
 "Failed to save changes [Retry]"
 "Connection lost [Reconnect]"
-```
+```text
 
 **Guidelines**:
 
@@ -869,7 +869,7 @@ Error:
 
 **Examples**:
 
-```
+```text
 Warning:
 "Your trial ends in 3 days. [Upgrade Now]"
 "Storage is 90% full. [Manage Storage]"
@@ -880,7 +880,7 @@ Info:
 
 Error:
 "Connection lost. We'll retry automatically. [Retry Now]"
-```
+```text
 
 ## Microcopy Antipatterns
 
@@ -888,53 +888,53 @@ Error:
 
 **1. Redundant Words**:
 
-```
+```text
 ❌ "Please enter your email address"
 ✅ "Email address"
 
 ❌ "Click the button below to continue"
 ✅ [Continue Button]
-```
+```text
 
 **2. Apologetic Language**:
 
-```
+```text
 ❌ "Sorry, but you must enter a valid email"
 ✅ "Email must include @ symbol"
 
 ❌ "Unfortunately, we couldn't save your changes"
 ✅ "Changes not saved. Check connection and retry."
-```
+```text
 
 **3. Vague Instructions**:
 
-```
+```text
 ❌ "Click here"
 ✅ "View documentation"
 
 ❌ "Learn more"
 ✅ "Read setup guide"
-```
+```text
 
 **4. Technical Jargon (Without Context)**:
 
-```
+```text
 ❌ "Error: ECONNREFUSED"
 ✅ "Can't connect to server. Check connection and retry."
 
 ❌ "NullPointerException occurred"
 ✅ "Something went wrong loading this data. [Retry]"
-```
+```text
 
 **5. Passive Voice**:
 
-```
+```text
 ❌ "Your changes have been saved"
 ✅ "Changes saved"
 
 ❌ "The file has been uploaded"
 ✅ "File uploaded"
-```
+```text
 
 ## Word Choice Guidelines
 

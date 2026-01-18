@@ -107,13 +107,13 @@ Every issue references specific WCAG criteria:
 
 **Example**:
 
-```
+```text
 Issue: Button has insufficient contrast
 WCAG: 1.4.3 Contrast (Minimum) - Level AA
 Current: 3.2:1
 Required: 4.5:1
 Solution: Change #999 to #666 (achieves 5.7:1)
-```
+```text
 
 ### Prioritized Issues
 
@@ -228,7 +228,7 @@ Highest level. May not be achievable for all content.
 
 ### Example 1: Dashboard Accessibility Audit
 
-```
+```text
 You: Review the accessibility of this monitoring dashboard.
      Target: WCAG AA, Web platform.
 
@@ -274,11 +274,11 @@ RECOMMENDATIONS
 Immediate: Fix critical contrast and keyboard issues
 Short-term: Add ARIA labels, improve focus indicators
 Long-term: Implement keyboard shortcuts, enhance patterns
-```
+```text
 
 ### Example 2: Form Accessibility Review
 
-```
+```text
 You: Check this registration form for accessibility.
      WCAG AA, web.
 
@@ -310,11 +310,11 @@ CRITICAL ISSUES
    </span>
 
 [... continues with all issues and solutions ...]
-```
+```text
 
 ### Example 3: Quick Component Check
 
-```
+```text
 You: Is this modal dialog accessible?
 
 Claude: [Analyzes modal]
@@ -357,7 +357,7 @@ CODE EXAMPLE:
   <button onClick={cancel}>Cancel</button>
   <button onClick={confirm}>Confirm</button>
 </div>
-```
+```text
 
 ## Complementary Skills
 
@@ -400,12 +400,12 @@ This skill works powerfully with all design skills:
 
 ## Skill Structure
 
-```
+```text
 accessibility-expert/
 ├── SKILL.md (28 KB)               Core instructions
 ├── README.md                       This file
 └── accessibility-expert.skill     Packaged skill
-```
+```text
 
 ## What Makes This Effective
 

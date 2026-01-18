@@ -128,7 +128,7 @@ Creates comprehensive reports with:
 
 ### Example 1: Quick Review
 
-```
+```text
 You: Give me UX feedback on https://example.com/dashboard
 
 Claude: [Asks context questions first]
@@ -138,35 +138,35 @@ Claude: Based on what I see, this appears to be a SaaS analytics
 You: Yes, that's right.
 
 Claude: [Navigates, captures screenshots, provides detailed analysis]
-```
+```text
 
 ### Example 2: Focused Review
 
-```
+```text
 You: Review the checkout flow on this e-commerce site, focus on 
      mobile experience and conversion optimization
 
 Claude: [Context gathering, then mobile-focused analysis]
-```
+```text
 
 ### Example 3: Screenshot Review
 
-```
+```text
 You: [Uploads screenshot] Analyze the UX of this dashboard design
 
 Claude: [Asks clarifying questions, then provides analysis based 
         on available visual information]
-```
+```text
 
 ### Example 4: Accessibility Audit
 
-```
+```text
 You: Do a full accessibility audit of our app including WCAG 
      compliance
 
 Claude: [Comprehensive accessibility review with specific WCAG 
         criteria, contrast ratios, keyboard nav, screen reader support]
-```
+```text
 
 ## Review Approach
 
@@ -204,7 +204,7 @@ Claude: [Comprehensive accessibility review with specific WCAG
 
 ## Skill Structure
 
-```
+```text
 ux-web-review/
 ├── SKILL.md                      # Core instructions (8 KB)
 ├── README.md                     # This file
@@ -213,7 +213,7 @@ ux-web-review/
     ├── ux_patterns.md           # Common UX patterns (8.5 KB)
     ├── accessibility.md         # WCAG guidelines (13 KB)
     └── review_checklist.md      # Systematic checklist (14 KB)
-```
+```text
 
 ## Progressive Disclosure
 

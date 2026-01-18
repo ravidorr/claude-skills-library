@@ -330,7 +330,7 @@ Comprehensive guide to typography systems for web and enterprise applications. R
 ```css
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
              "Helvetica Neue", Arial, sans-serif;
-```
+```text
 
 - Fast loading (no download)
 - Native feel per OS
@@ -342,7 +342,7 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 ```css
 font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", 
              Consolas, monospace;
-```
+```text
 
 ### Web Fonts
 
@@ -390,7 +390,7 @@ font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono",
 .content {
   max-width: 65ch; /* ch unit = character width */
 }
-```
+```text
 
 ### Text Contrast
 
@@ -450,7 +450,7 @@ font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono",
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 }
-```
+```text
 
 ### Responsive Typography
 
@@ -471,7 +471,7 @@ body {
     font-size: 16px; /* Tablet/Desktop */
   }
 }
-```
+```text
 
 ## Type Patterns for Specific Contexts
 

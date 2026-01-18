@@ -169,14 +169,14 @@ Choose 3-5 characteristics that fit the product and users:
 
 **Example Framework**:
 
-```
+```text
 Voice: Professional, technical, helpful
 Tone varies by context:
 - Normal: Direct and clear
 - Error: Helpful and guiding
 - Success: Confident and brief
 - Critical: Calm and specific
-```
+```text
 
 **3. Provide Examples**
 
@@ -214,24 +214,24 @@ Every error message should answer:
 
 **Pattern 1: Action + Reason + Solution**
 
-```
+```text
 "Can't save changes: File name contains invalid characters. 
 Remove special characters and try again."
-```
+```text
 
 **Pattern 2: Problem + Solution**
 
-```
+```text
 "Email address already exists. 
 Use a different email or log in."
-```
+```text
 
 **Pattern 3: Critical + Action**
 
-```
+```text
 "Connection lost. 
 Reconnecting automatically..."
-```
+```text
 
 **3. Error Types & Tone**
 
@@ -275,11 +275,11 @@ When writing status messages:
 
 **Examples**:
 
-```
+```text
 Short: "Loading..."
 Clear: "Loading dashboard..."
 Detailed: "Loading 24 widgets... This may take 30 seconds"
-```
+```text
 
 **Success States**:
 
@@ -289,11 +289,11 @@ Detailed: "Loading 24 widgets... This may take 30 seconds"
 
 **Examples**:
 
-```
+```text
 Short: "Saved"
 Clear: "Changes saved successfully"
 Detailed: "Alert configuration saved. All team members will be notified."
-```
+```text
 
 **Progress Indicators**:
 
@@ -303,10 +303,10 @@ Detailed: "Alert configuration saved. All team members will be notified."
 
 **Examples**:
 
-```
+```text
 "Deploying to 8 servers... 3 of 8 complete"
 "Analyzing 10,000 logs... 45% complete"
-```
+```text
 
 #### E. Empty States
 
@@ -322,35 +322,35 @@ When writing empty state copy:
 
 **First Use** (user hasn't created anything):
 
-```
+```text
 Heading: No dashboards yet
 Body: Create your first dashboard to start monitoring your system
 Action: [Create Dashboard]
-```
+```text
 
 **Zero State** (filtered results empty):
 
-```
+```text
 Heading: No alerts match your filters
 Body: Try adjusting your date range or severity level
 Action: [Clear Filters]
-```
+```text
 
 **Error State** (failed to load):
 
-```
+```text
 Heading: Unable to load dashboards
 Body: We couldn't connect to the server. Check your connection and try again.
 Action: [Retry]
-```
+```text
 
 **Success State** (intentionally empty):
 
-```
+```text
 Heading: All caught up!
 Body: No new alerts in the last 24 hours
 Action: [View History]
-```
+```text
 
 **3. Empty State Principles**
 
@@ -374,28 +374,28 @@ When writing button copy:
 
 **Primary Actions**:
 
-```
+```text
 Generic: "Submit" → Specific: "Create Alert"
 Generic: "OK" → Specific: "Save Changes"
 Generic: "Go" → Specific: "Start Deployment"
-```
+```text
 
 **Secondary Actions**:
 
-```
+```text
 "Cancel" (standard)
 "Go Back" (navigation)
 "Skip" (optional steps)
 "Not Now" (deferred actions)
-```
+```text
 
 **Destructive Actions**:
 
-```
+```text
 "Delete" (simple)
 "Delete Account" (specific)
 "Remove Access" (clear consequence)
-```
+```text
 
 **3. Button Copy Don'ts**
 

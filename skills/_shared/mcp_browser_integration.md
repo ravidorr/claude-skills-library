@@ -36,17 +36,17 @@ These tools are particularly useful for design skills that review live web appli
 
 Navigate to a URL and capture the initial state:
 
-```
+```text
 1. browser_navigate: url="https://example.com/dashboard"
 2. browser_take_screenshot: fullPage=true, filename="dashboard-full.png"
 3. Analyze the screenshot for UX/UI issues
-```
+```text
 
 ### 2. Responsive Testing
 
 Test different viewport sizes:
 
-```
+```text
 1. browser_navigate: url="https://example.com"
 2. browser_resize: width=1920, height=1080  # Desktop
 3. browser_take_screenshot: filename="desktop.png"
@@ -54,53 +54,53 @@ Test different viewport sizes:
 5. browser_take_screenshot: filename="tablet.png"
 6. browser_resize: width=375, height=812    # Mobile
 7. browser_take_screenshot: filename="mobile.png"
-```
+```text
 
 ### 3. Interactive Flow Testing
 
 Test a user flow by interacting with elements:
 
-```
+```text
 1. browser_navigate: url="https://example.com/login"
 2. browser_snapshot  # Get element refs
 3. browser_type: element="email input", ref="[ref=...]", text="test@example.com"
 4. browser_type: element="password input", ref="[ref=...]", text="password"
 5. browser_click: element="login button", ref="[ref=...]"
 6. browser_take_screenshot: filename="after-login.png"
-```
+```text
 
 ### 4. Accessibility Keyboard Testing
 
 Test keyboard navigation:
 
-```
+```text
 1. browser_navigate: url="https://example.com"
 2. browser_press_key: key="Tab"  # First focusable element
 3. browser_take_screenshot: filename="focus-1.png"
 4. browser_press_key: key="Tab"  # Next element
 5. browser_take_screenshot: filename="focus-2.png"
 6. Repeat to verify focus order and visibility
-```
+```text
 
 ### 5. Error State Capture
 
 Capture error states for review:
 
-```
+```text
 1. browser_navigate: url="https://example.com/form"
 2. browser_click: element="submit button", ref="[ref=...]"  # Submit empty form
 3. browser_take_screenshot: filename="validation-errors.png"
-```
+```text
 
 ### 6. Console and Network Monitoring
 
 Check for JavaScript errors or API issues:
 
-```
+```text
 1. browser_navigate: url="https://example.com"
 2. browser_console_messages  # Check for errors
 3. browser_network_requests  # Review API calls
-```
+```text
 
 ## Skill-Specific Usage
 
@@ -118,7 +118,7 @@ When reviewing a live web application:
 4. Test responsive behavior at common breakpoints
 5. Check console for JavaScript errors
 6. Document findings with screenshots
-```
+```text
 
 ### UI Design Review
 
@@ -132,7 +132,7 @@ When reviewing visual design:
    - Mobile viewport
 3. Capture hover states and interactive elements
 4. Document spacing, alignment, and visual issues
-```
+```text
 
 ### Accessibility Expert
 
@@ -147,7 +147,7 @@ When conducting accessibility audit:
 3. Capture screenshots of focus states
 4. Check console for ARIA errors
 5. Test at different zoom levels (browser_resize)
-```
+```text
 
 ### Design Super-Agent
 
@@ -160,7 +160,7 @@ For comprehensive review:
 4. Verify keyboard accessibility
 5. Check for console errors
 6. Document all findings with screenshots
-```
+```text
 
 ## Best Practices
 

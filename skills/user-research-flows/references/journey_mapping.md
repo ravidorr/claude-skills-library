@@ -151,7 +151,7 @@ For each stage, detail:
 
 ## Journey Map Template
 
-```
+```text
 JOURNEY: [Name of journey]
 PERSONA: [Which persona]
 TRIGGER: [What starts this journey]
@@ -179,7 +179,7 @@ OVERALL INSIGHTS:
 - Major Pain Points: [Top issues]
 - Quick Wins: [Easy improvements]
 - Strategic Opportunities: [Bigger changes]
-```
+```text
 
 ## Journey Mapping Process
 
@@ -238,7 +238,7 @@ OVERALL INSIGHTS:
 
 **Emotional Curve**:
 
-```
+```text
 Satisfaction
     ↑
     |     ╱╲
@@ -247,7 +247,7 @@ Satisfaction
     |                    
     └─────────────────────→ Time
       Stage 1  Stage 2  Stage 3
-```
+```text
 
 ### Step 5: Analyze & Synthesize
 

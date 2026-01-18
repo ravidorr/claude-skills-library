@@ -42,19 +42,19 @@ Comprehensive guide to writing effective error messages that help users recover 
 
 **Template**:
 
-```
+```text
 [What went wrong]: [Why it happened]. [What to do next].
-```
+```text
 
 **Examples**:
 
-```
+```text
 "Can't save changes: Connection timeout. Check connection and retry."
 
 "Invalid email address: Must include @ symbol. Enter a valid email."
 
 "Upload failed: File size exceeds 5 MB limit. Choose a smaller file."
-```
+```text
 
 ### Short Form (When Space Limited)
 
@@ -62,11 +62,11 @@ Comprehensive guide to writing effective error messages that help users recover 
 
 **Examples**:
 
-```
+```text
 "Email must include @"
 "Password too short (min 8 characters)"
 "File must be under 5 MB"
-```
+```text
 
 ## Error Types & Handling
 
@@ -80,34 +80,34 @@ Comprehensive guide to writing effective error messages that help users recover 
 
 **Empty Required Field**:
 
-```
+```text
 ❌ "This field is required"
 ✅ "Email address is required"
-```
+```text
 
 **Invalid Format**:
 
-```
+```text
 ❌ "Invalid input"
 ✅ "Email must include @ symbol (e.g., you@company.com)"
 
 ❌ "Wrong format"
 ✅ "Date format: MM/DD/YYYY (e.g., 01/15/2026)"
-```
+```text
 
 **Out of Range**:
 
-```
+```text
 ❌ "Value too high"
 ✅ "Quantity must be between 1 and 100"
 
 ❌ "Invalid number"
 ✅ "Port number must be 1-65535"
-```
+```text
 
 **Password Requirements**:
 
-```
+```text
 ❌ "Password doesn't meet requirements"
 ✅ "Password must be at least 8 characters and include one number"
 
@@ -116,17 +116,17 @@ Better:
    • At least 8 characters
    • One number
    • One special character"
-```
+```text
 
 **Character Limitations**:
 
-```
+```text
 ❌ "Invalid characters"
 ✅ "Project name can only contain letters, numbers, and hyphens"
 
 ❌ "Too long"
 ✅ "Description must be under 500 characters (currently 547)"
-```
+```text
 
 ### System Errors
 
@@ -138,40 +138,40 @@ Better:
 
 **Connection Failures**:
 
-```
+```text
 ❌ "Error: ECONNREFUSED"
 ✅ "Can't connect to server. Check your connection or try again later."
 
 ❌ "Network error"
 ✅ "Connection lost. Reconnecting automatically..."
-```
+```text
 
 **Timeout Errors**:
 
-```
+```text
 ❌ "Request timed out"
 ✅ "Request took too long. Simplify your query or try again."
 
 ❌ "Timeout"
 ✅ "Loading timed out after 30 seconds. [Retry] or [Cancel]"
-```
+```text
 
 **Server Errors**:
 
-```
+```text
 ❌ "500 Internal Server Error"
 ✅ "Something went wrong on our end. Try refreshing the page."
 
 ❌ "Error occurred"
 ✅ "Unable to process request. Our team has been notified. [Retry]"
-```
+```text
 
 **Service Unavailable**:
 
-```
+```text
 ❌ "503 Service Unavailable"
 ✅ "Service temporarily unavailable. Try again in a few minutes."
-```
+```text
 
 ### Permission Errors
 
@@ -183,30 +183,30 @@ Better:
 
 **Access Denied**:
 
-```
+```text
 ❌ "Access denied"
 ✅ "You don't have permission to view this page. Contact your admin for access."
 
 ❌ "Forbidden"
 ✅ "This feature requires admin privileges. Contact support@company.com."
-```
+```text
 
 **Feature Restricted**:
 
-```
+```text
 ❌ "Not available"
 ✅ "Advanced analytics requires Pro plan. [View Plans]"
 
 ❌ "Upgrade required"
 ✅ "This feature is available on the Enterprise plan. [Contact Sales]"
-```
+```text
 
 **Read-Only Mode**:
 
-```
+```text
 ❌ "Cannot edit"
 ✅ "This document is read-only. Request edit access from the owner."
-```
+```text
 
 ### Resource Not Found
 
@@ -218,23 +218,23 @@ Better:
 
 **404 Errors**:
 
-```
+```text
 ❌ "404 Not Found"
 ✅ "Page not found. The link may be broken or the page moved. [Go to Home]"
 
 ❌ "Page doesn't exist"
 ✅ "We can't find that page. Try searching or browse from home."
-```
+```text
 
 **Item Not Found**:
 
-```
+```text
 ❌ "Not found"
 ✅ "Dashboard not found. It may have been deleted or you don't have access."
 
 ❌ "Item doesn't exist"
 ✅ "User 'john@company.com' not found. Check spelling or [Invite User]"
-```
+```text
 
 ### Rate Limiting
 
@@ -246,20 +246,20 @@ Better:
 
 **API Rate Limit**:
 
-```
+```text
 ❌ "Too many requests"
 ✅ "Rate limit exceeded. Wait 60 seconds before trying again."
 
 ❌ "429 Error"
 ✅ "You've made 1,000 requests this hour (limit: 1,000/hour). Resets at 3:00 PM."
-```
+```text
 
 **Login Attempts**:
 
-```
+```text
 ❌ "Locked out"
 ✅ "Too many failed login attempts. Try again in 15 minutes or [Reset Password]"
-```
+```text
 
 ### Validation Errors
 
@@ -271,33 +271,33 @@ Better:
 
 **Duplicate Entry**:
 
-```
+```text
 ❌ "Already exists"
 ✅ "Email address already in use. Use a different email or [Sign In]"
 
 ❌ "Duplicate"
 ✅ "Project name 'website-redesign' already exists. Choose a different name."
-```
+```text
 
 **Dependency Conflict**:
 
-```
+```text
 ❌ "Cannot delete"
 ✅ "Can't delete user with active projects. Reassign projects first."
 
 ❌ "Conflict"
 ✅ "This alert is used by 3 dashboards. Remove from dashboards before deleting."
-```
+```text
 
 **Business Rule Violation**:
 
-```
+```text
 ❌ "Invalid operation"
 ✅ "Can't schedule deployment during maintenance window (2-4 AM EST)."
 
 ❌ "Not allowed"
 ✅ "Projects require at least one admin. Assign another admin before removing yourself."
-```
+```text
 
 ## Error Severity Levels
 
@@ -309,13 +309,13 @@ Better:
 
 **Examples**:
 
-```
+```text
 "Service outage: All systems unavailable. Check status.company.com for updates."
 
 "Account suspended: Payment failed. Update billing to restore access."
 
 "Session expired: Sign in again to continue."
-```
+```text
 
 ### High Priority Errors (Significant Impact)
 
@@ -325,11 +325,11 @@ Better:
 
 **Examples**:
 
-```
+```text
 "Export failed: File generation timed out. Try fewer records or smaller date range."
 
 "Unable to save: Changes not synced to server. Check connection and retry."
-```
+```text
 
 ### Medium Priority Errors (Inconvenience)
 
@@ -339,11 +339,11 @@ Better:
 
 **Examples**:
 
-```
+```text
 "Avatar upload failed: Image must be under 2 MB."
 
 "Can't load preview: Refresh to try again."
-```
+```text
 
 ### Low Priority Errors (Warning)
 
@@ -353,11 +353,11 @@ Better:
 
 **Examples**:
 
-```
+```text
 "Storage 90% full: Delete unused files or upgrade plan."
 
 "Password expires in 7 days: Update in Settings > Security."
-```
+```text
 
 ## Error Message Location
 
@@ -369,10 +369,10 @@ Better:
 
 **Example**:
 
-```
+```text
 [Email field with red border]
 ⚠️ Email must include @ symbol
-```
+```text
 
 ### Banner Errors (Page-Level)
 
@@ -382,10 +382,10 @@ Better:
 
 **Example**:
 
-```
+```text
 [Red banner at top]
 ⚠️ Unable to load dashboard: Connection failed. [Retry]
-```
+```text
 
 ### Modal Errors (Blocking)
 
@@ -395,7 +395,7 @@ Better:
 
 **Example**:
 
-```
+```text
 [Modal Dialog]
 ❌ Deployment Failed
 
@@ -404,7 +404,7 @@ Deployment to production failed after 2 of 8 servers.
 Error: Connection timeout on servers 3-8.
 
 [Rollback] [Retry] [View Logs]
-```
+```text
 
 ### Toast Errors (Temporary)
 
@@ -414,10 +414,10 @@ Error: Connection timeout on servers 3-8.
 
 **Example**:
 
-```
+```text
 [Toast notification]
 ❌ Auto-save failed [Retry]
-```
+```text
 
 ## Progressive Error Messages
 
@@ -425,25 +425,25 @@ Error: Connection timeout on servers 3-8.
 
 **Show**: Brief, friendly
 
-```
+```text
 "Email must include @ symbol"
-```
+```text
 
 ### Repeated Error
 
 **Show**: More detail, stronger guidance
 
-```
+```text
 "Email must include @ symbol
 
 Valid format: you@company.com"
-```
+```text
 
 ### Multiple Failures
 
 **Show**: Comprehensive help, contact option
 
-```
+```text
 "Email validation failed 3 times
 
 Required format: username@domain.com
@@ -452,7 +452,7 @@ Examples:
 • sarah.smith@example.org
 
 [Need help? Contact Support]"
-```
+```text
 
 ## Error Recovery Actions
 
@@ -460,42 +460,42 @@ Examples:
 
 **Provide**: Quick action to fix
 
-```
+```text
 "Can't load data [Retry Now]"
 "Connection lost [Reconnect]"
 "Changes not saved [Save Again]"
-```
+```text
 
 ### Alternative Path
 
 **Provide**: Different way to proceed
 
-```
+```text
 "Import failed [Try Manual Entry] or [Contact Support]"
 "Upload timed out [Reduce File Size] or [Upload to Drive]"
-```
+```text
 
 ### Workaround
 
 **Provide**: Temporary solution
 
-```
+```text
 "Real-time sync unavailable. Changes save locally and sync when connection restores."
-```
+```text
 
 ### Support Contact
 
 **Provide**: Human help option
 
-```
+```text
 "If this persists, contact support@company.com with error code: ERR_DB_4521"
-```
+```text
 
 ## Error Message Patterns by Context
 
 ### E-commerce/Checkout
 
-```
+```text
 Payment Declined:
 "Payment declined by bank. Verify card details or try different payment method."
 
@@ -504,11 +504,11 @@ Inventory Issue:
 
 Promo Code:
 "Promo code 'SAVE20' expired. Browse current offers."
-```
+```text
 
 ### Authentication
 
-```
+```text
 Login Failed:
 "Email or password incorrect. [Forgot Password?]"
 
@@ -517,11 +517,11 @@ Account Locked:
 
 Session Timeout:
 "Session expired for security. Sign in to continue."
-```
+```text
 
 ### File Operations
 
-```
+```text
 Upload Failed:
 "Upload failed: File 'report.pdf' exceeds 10 MB limit. Compress file or upload to Drive."
 
@@ -530,11 +530,11 @@ Delete Failed:
 
 Permission Issue:
 "Can't edit: File is read-only. Request edit access from owner."
-```
+```text
 
 ### API/Integration
 
-```
+```text
 API Error:
 "API request failed: Invalid API key. Check key in Settings > API Access."
 
@@ -543,11 +543,11 @@ Rate Limit:
 
 Webhook Failed:
 "Webhook delivery failed to https://api.example.com. Retry or check endpoint."
-```
+```text
 
 ### Data Operations
 
-```
+```text
 Query Timeout:
 "Query timed out after 30 seconds. Add filters to narrow results."
 
@@ -556,7 +556,7 @@ Export Too Large:
 
 Import Error:
 "Import failed: Row 247 missing required field 'email'. Fix CSV and retry."
-```
+```text
 
 ## Error Message Anti-Patterns
 
@@ -564,52 +564,52 @@ Import Error:
 
 **1. Blame the User**:
 
-```
+```text
 ❌ "You entered invalid data"
 ✅ "Email must include @ symbol"
-```
+```text
 
 **2. Use Technical Jargon Alone**:
 
-```
+```text
 ❌ "NullPointerException at line 247"
 ✅ "Something went wrong loading this data [Retry]"
 
 ❌ "ERR_CONNECTION_REFUSED"
 ✅ "Can't connect to server. Check connection and retry."
-```
+```text
 
 **3. Be Vague**:
 
-```
+```text
 ❌ "Error occurred"
 ✅ "Can't save changes: Connection timed out"
 
 ❌ "Invalid input"
 ✅ "Password must be at least 8 characters"
-```
+```text
 
 **4. Over-Apologize**:
 
-```
+```text
 ❌ "We're terribly sorry for the inconvenience this has caused..."
 ✅ "Changes not saved. Check connection and retry."
-```
+```text
 
 **5. Use ALL CAPS**:
 
-```
+```text
 ❌ "ERROR: FILE NOT FOUND"
 ✅ "File not found"
-```
+```text
 
 **6. Multiple Errors at Once (If Avoidable)**:
 
-```
+```text
 ❌ "Email invalid, password too short, name required"
 ✅ "Email must include @ symbol"
     [Fix this first, then validate others]
-```
+```text
 
 ## Error Message Checklist
 
@@ -646,13 +646,13 @@ Before Publishing, Verify:
 
 **How to Include**:
 
-```
+```text
 User-Friendly + Code:
 "Can't load data. Try refreshing the page. (Error: DB_TIMEOUT_001)"
 
 Technical Users:
 "Connection failed: ERR_SSL_HANDSHAKE_FAILED. Verify SSL certificate."
-```
+```text
 
 **Where to Put Codes**:
 

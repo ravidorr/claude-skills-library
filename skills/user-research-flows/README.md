@@ -200,7 +200,7 @@ This ensures relevant, grounded work tailored to your situation.
 
 ### Example 1: Creating a Persona
 
-```
+```text
 You: I'm building a monitoring tool for DevOps engineers. 
      Can you help me create a persona?
 
@@ -249,11 +249,11 @@ Claude: [Creates detailed persona]
         - Keyboard shortcuts essential
         - API access for automation
         - Integrate with PagerDuty/Slack
-```
+```text
 
 ### Example 2: Mapping a User Journey
 
-```
+```text
 You: Map the user journey for responding to a production 
      incident
 
@@ -296,11 +296,11 @@ Claude: [After context gathering]
         - Pre-populated runbook based on alert type
         - One-click war room setup (Slack channel, Zoom link)
         - Automatic customer-facing status page update
-```
+```text
 
 ### Example 3: Designing a Flow
 
-```
+```text
 You: Design the flow for configuring alert thresholds
 
 Claude: [After context]
@@ -358,7 +358,7 @@ Claude: [After context]
         - Templates for common alert patterns
         - Bulk configuration for similar metrics
         - Test alert before enabling
-```
+```text
 
 ## Complementary Skills
 
@@ -388,7 +388,7 @@ This skill works beautifully with:
 
 ## Skill Structure
 
-```
+```text
 user-research-flows/
 ├── SKILL.md (18 KB)               Core instructions
 ├── README.md                       This file
@@ -398,7 +398,7 @@ user-research-flows/
     ├── journey_mapping.md         Journey mapping techniques
     ├── flow_patterns.md           Flow types & optimization
     └── research_methods.md        Research methodologies
-```
+```text
 
 ## What Makes This Effective
 

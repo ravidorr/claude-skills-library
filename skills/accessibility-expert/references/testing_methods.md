@@ -119,7 +119,7 @@ pa11y --standard WCAG2AA https://example.com
 
 # Test multiple pages
 pa11y-ci --sitemap https://example.com/sitemap.xml
-```
+```text
 
 **Strengths**:
 
@@ -132,27 +132,27 @@ pa11y-ci --sitemap https://example.com/sitemap.xml
 
 **Step 1: Initial Scan**
 
-```
+```text
 Run: axe DevTools on key pages
 Fix: All critical and serious issues
 Verify: Rerun to confirm fixes
-```
+```text
 
 **Step 2: Comprehensive Scan**
 
-```
+```text
 Run: Pa11y on all pages
 Document: All remaining issues
 Prioritize: By severity and impact
-```
+```text
 
 **Step 3: Continuous Monitoring**
 
-```
+```text
 Add: Pa11y to CI/CD pipeline
 Block: Deployments with critical issues
 Monitor: Accessibility score trends
-```
+```text
 
 ## Manual Testing
 
@@ -164,39 +164,39 @@ Monitor: Accessibility score trends
 
 **Step 1: Unplug Mouse**
 
-```
+```text
 Force yourself to use keyboard only
 This reveals true keyboard accessibility
-```
+```text
 
 **Step 2: Tab Through Page**
 
-```
+```text
 Press Tab repeatedly
 Verify:
 - All interactive elements receive focus
 - Focus order matches visual order
 - Focus indicator clearly visible
 - No focus traps
-```
+```text
 
 **Step 3: Test Standard Keys**
 
-```
+```text
 Enter: Activates buttons and links
 Space: Activates buttons, toggles checkboxes
 Arrow keys: Navigate menus, tabs, radio buttons
 Escape: Closes modals and menus
-```
+```text
 
 **Step 4: Test Custom Components**
 
-```
+```text
 Dropdowns: Arrow keys to navigate
 Tabs: Arrow keys to switch
 Radio buttons: Arrow keys to select
 Sliders: Arrow keys to adjust
-```
+```text
 
 **Keyboard Testing Checklist**:
 
@@ -243,16 +243,16 @@ Sliders: Arrow keys to adjust
 
 **Basic Controls**:
 
-```
+```text
 NVDA + N: NVDA menu
 NVDA + Q: Quit NVDA
 NVDA + Space: Pass through (disable NVDA)
 NVDA = Insert or Caps Lock key
-```
+```text
 
 **Navigation**:
 
-```
+```text
 Arrow Down/Up: Next/previous item
 H: Next heading
 Shift + H: Previous heading
@@ -261,15 +261,15 @@ Shift + K: Previous link
 F: Next form field
 B: Next button
 T: Next table
-```
+```text
 
 **Reading**:
 
-```
+```text
 NVDA + Down Arrow: Say all (read entire page)
 NVDA + Up Arrow: Read current line
 NVDA + Tab: Read focused element
-```
+```text
 
 **Testing Protocol**:
 
@@ -286,14 +286,14 @@ NVDA + Tab: Read focused element
 
 **Activation**:
 
-```
+```text
 Cmd + F5: Toggle VoiceOver
 VO = Ctrl + Option (hold together)
-```
+```text
 
 **Basic Controls**:
 
-```
+```text
 VO + A: Start reading
 VO + Right Arrow: Next item
 VO + Left Arrow: Previous item
@@ -301,7 +301,7 @@ VO + Space: Activate element
 VO + H: Next heading
 VO + L: Next link
 VO + J: Next form control
-```
+```text
 
 **Testing Protocol**:
 
@@ -350,30 +350,30 @@ VO + J: Next form control
 
 **WebAIM Contrast Checker**:
 
-```
+```text
 URL: webaim.org/resources/contrastchecker/
 Input: Foreground and background colors
 Output: Contrast ratio and pass/fail
-```
+```text
 
 **Chrome DevTools Color Picker**:
 
-```
+```text
 1. Inspect element
 2. Click color swatch in Styles panel
 3. View contrast ratio
 4. See AA/AAA status
 5. Get suggested colors
-```
+```text
 
 **Stark (Figma Plugin)**:
 
-```
+```text
 Install: Figma → Plugins → Stark
 Use: Select elements, check contrast
 Fix: Get accessible color suggestions
 Simulate: View as color blind
-```
+```text
 
 **Testing Protocol**:
 
@@ -386,7 +386,7 @@ Simulate: View as color blind
 
 **Contrast Requirements**:
 
-```
+```text
 Normal text (< 18pt or 14pt bold):
 - AA: 4.5:1
 - AAA: 7:1
@@ -397,7 +397,7 @@ Large text (18pt+ or 14pt+ bold):
 
 UI components & graphics:
 - AA: 3:1
-```
+```text
 
 ### Color Blindness Simulation
 
@@ -407,7 +407,7 @@ UI components & graphics:
 
 **Chrome DevTools**:
 
-```
+```text
 1. DevTools → Rendering tab
 2. Emulate vision deficiencies
 3. Select type:
@@ -415,16 +415,16 @@ UI components & graphics:
    - Deuteranopia (green-blind)
    - Tritanopia (blue-blind)
    - Achromatopsia (no color)
-```
+```text
 
 **ColorOracle (Desktop App)**:
 
-```
+```text
 Install: colororacle.org
 Use: System-wide color blindness simulation
 Toggle: See your entire screen as color blind
 Types: Deuteranopia, Protanopia, Tritanopia
-```
+```text
 
 **Testing Checklist**:
 
@@ -442,7 +442,7 @@ Types: Deuteranopia, Protanopia, Tritanopia
 
 **iOS VoiceOver Testing**:
 
-```
+```text
 Enable: Settings → Accessibility → VoiceOver
 Gestures:
 - Swipe right: Next element
@@ -450,18 +450,18 @@ Gestures:
 - Double-tap: Activate
 - Three-finger swipe: Scroll
 - Two-finger swipe up: Read all
-```
+```text
 
 **Android TalkBack Testing**:
 
-```
+```text
 Enable: Settings → Accessibility → TalkBack
 Gestures:
 - Swipe right: Next
 - Swipe left: Previous
 - Double-tap: Activate
 - Swipe down then right: Read from top
-```
+```text
 
 **Mobile Testing Checklist**:
 
@@ -501,16 +501,16 @@ Gestures:
 
 **Session Structure** (60 minutes):
 
-```
+```text
 5 min: Introduction and consent
 10 min: Background questions
 35 min: Task testing
 10 min: Open feedback
-```
+```text
 
 **Task Examples**:
 
-```
+```text
 1. Find and read an article
 2. Create an account
 3. Complete a purchase
@@ -518,7 +518,7 @@ Gestures:
 5. Navigate to specific page
 6. Use search functionality
 7. Recover from an error
-```
+```text
 
 **Observation Focus**:
 
@@ -553,63 +553,63 @@ Gestures:
 
 **Day 1-2: Initial Scan**
 
-```
+```text
 - Run axe DevTools on all key pages
 - Fix critical and serious issues
 - Rerun to verify fixes
-```
+```text
 
 **Day 3-5: Comprehensive**
 
-```
+```text
 - Run WAVE on all pages
 - Document remaining issues
 - Create remediation plan
-```
+```text
 
 ### Phase 2: Manual (Week 2)
 
 **Day 6-7: Keyboard**
 
-```
+```text
 - Test all pages keyboard-only
 - Fix keyboard access issues
 - Fix focus indicators
-```
+```text
 
 **Day 8-9: Screen Reader**
 
-```
+```text
 - Test with NVDA/VoiceOver
 - Fix ARIA issues
 - Fix reading order
-```
+```text
 
 **Day 10: Visual**
 
-```
+```text
 - Check all contrast
 - Test color blindness simulation
 - Fix visual issues
-```
+```text
 
 ### Phase 3: User Testing (Week 3)
 
 **Day 11-14: Testing**
 
-```
+```text
 - 5-8 participants
 - 2 sessions per day
 - Record and note issues
-```
+```text
 
 **Day 15: Analysis & Planning**
 
-```
+```text
 - Analyze findings
 - Prioritize issues
 - Plan remediations
-```
+```text
 
 ## Testing Frequency
 
@@ -638,7 +638,7 @@ Gestures:
 
 ### Issue Tracking Template
 
-```
+```text
 Issue: [Brief description]
 WCAG: [Criterion number]
 Level: [A/AA/AAA]
@@ -653,11 +653,11 @@ Expected: [What should happen]
 Actual: [What happens]
 Fix: [Remediation steps]
 Status: Open/In Progress/Fixed/Verified
-```
+```text
 
 ### Test Report Template
 
-```
+```text
 Accessibility Test Report
 Product: [Name]
 Date: [Date]
@@ -685,7 +685,7 @@ Recommendations:
 
 Next Steps:
 - [Action with owner and date]
-```
+```text
 
 ## Resources
 

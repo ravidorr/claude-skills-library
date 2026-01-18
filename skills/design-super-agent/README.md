@@ -192,7 +192,7 @@ This skill consolidates expertise from all five specialized skills. For deep-div
 
 ### Example 1: Complete Dashboard Review
 
-```
+```text
 You: Give me a full design review of this dashboard
      [uploads screenshot]
 
@@ -263,21 +263,21 @@ Claude: [Provides comprehensive six-dimension analysis]
         Medium-term:
         1. Add customizable dashboard layouts
         2. Implement saved filter presets
-```
+```text
 
 ### Example 2: Focused Comprehensive Review
 
-```
+```text
 You: Full design review, but focus more on accessibility
      and microcopy - those are our weak areas
 
 Claude: [After context gathering, provides full review
         with expanded accessibility and microcopy sections]
-```
+```text
 
 ### Example 3: Flow-Focused Review
 
-```
+```text
 You: Comprehensive review of this onboarding flow
      [uploads 5 screens]
 
@@ -295,7 +295,7 @@ Claude: [Reviews all screens as connected flow]
         - Can't go back from step 4
         
         [Continues with UI, copy, accessibility for each screen]
-```
+```text
 
 ## Specialized Context Expertise
 
@@ -333,12 +333,12 @@ Claude: [Reviews all screens as connected flow]
 
 ## Skill Structure
 
-```
+```text
 design-super-agent/
 ├── SKILL.md (21 KB)               Core instructions
 ├── README.md                       This file
 └── design-super-agent.skill       Packaged skill
-```
+```text
 
 ## What Makes This Effective
 

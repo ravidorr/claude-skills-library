@@ -15,7 +15,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
      onclick="..." onkeydown="...">
   Click Me
 </div>
-```
+```text
 
 ## When to Use ARIA
 
@@ -51,7 +51,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <div role="alert">Error: Connection lost</div>
 <div role="navigation">...</div>
 <div role="tabpanel">...</div>
-```
+```text
 
 ### States
 
@@ -79,7 +79,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <input type="text" 
        aria-invalid="true" 
        aria-describedby="error">
-```
+```text
 
 ### Properties
 
@@ -106,7 +106,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <input aria-required="true" 
        aria-describedby="help-text">
 <span id="help-text">Format: MM/DD/YYYY</span>
-```
+```text
 
 ## ARIA Labeling
 
@@ -126,7 +126,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <!-- Search input (if placeholder not sufficient) -->
 <input type="search" 
        aria-label="Search products">
-```
+```text
 
 **Don't**: Use on elements that shouldn't have labels
 
@@ -136,7 +136,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 
 <!-- BAD: Heading already has text -->
 <h1 aria-label="Welcome">Welcome</h1>
-```
+```text
 
 ### aria-labelledby
 
@@ -160,7 +160,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
   <h2 id="dialog-title">Confirm Action</h2>
   ...
 </div>
-```
+```text
 
 **Priority**: aria-labelledby overrides aria-label and element's text
 
@@ -193,7 +193,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <div id="info-tooltip" role="tooltip">
   Learn more about this feature
 </div>
-```
+```text
 
 ## Live Regions
 
@@ -217,7 +217,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <div aria-live="assertive">
   Connection lost! Reconnecting...
 </div>
-```
+```text
 
 ### role="alert"
 
@@ -228,7 +228,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <div role="alert">
   Error: Form submission failed
 </div>
-```
+```text
 
 ### role="status"
 
@@ -243,7 +243,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <div role="status">
   3 new messages
 </div>
-```
+```text
 
 ### aria-atomic
 
@@ -260,7 +260,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <div aria-live="polite" aria-atomic="false">
   Items added: <span id="count">3</span>
 </div>
-```
+```text
 
 ### aria-relevant
 
@@ -277,7 +277,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <div aria-live="polite" aria-relevant="additions removals">
   <ul id="task-list">...</ul>
 </div>
-```
+```text
 
 ## Common ARIA Patterns
 
@@ -287,7 +287,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 
 ```html
 <button onClick={handleClick}>Click Me</button>
-```
+```text
 
 **Custom Button** (when absolutely necessary):
 
@@ -303,7 +303,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
      }}>
   Click Me
 </div>
-```
+```text
 
 **Toggle Button**:
 
@@ -316,7 +316,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <button aria-pressed="true">
   Mute
 </button>
-```
+```text
 
 ### Checkbox
 
@@ -325,7 +325,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 ```html
 <input type="checkbox" id="agree">
 <label for="agree">I agree</label>
-```
+```text
 
 **Custom Checkbox**:
 
@@ -340,7 +340,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
      }}>
   I agree
 </div>
-```
+```text
 
 **Tri-state Checkbox** (parent with children):
 
@@ -350,7 +350,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
      tabindex="0">
   Select All
 </div>
-```
+```text
 
 ### Dialog/Modal
 
@@ -368,7 +368,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
   <button>Cancel</button>
   <button>Delete</button>
 </div>
-```
+```text
 
 **Key Requirements**:
 
@@ -409,7 +409,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
      hidden>
   Security content...
 </div>
-```
+```text
 
 **Key Requirements**:
 
@@ -438,7 +438,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
     Content...
   </div>
 </div>
-```
+```text
 
 **Key Requirements**:
 
@@ -469,7 +469,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
     <button>Export</button>
   </li>
 </ul>
-```
+```text
 
 **Key Requirements**:
 
@@ -501,7 +501,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
     Result 2
   </li>
 </ul>
-```
+```text
 
 **Key Requirements**:
 
@@ -523,7 +523,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
      id="tooltip-1">
   Click for assistance
 </div>
-```
+```text
 
 **Key Requirements**:
 
@@ -538,7 +538,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <div role="alert" aria-live="assertive">
   <strong>Error:</strong> Connection lost
 </div>
-```
+```text
 
 **Key Requirements**:
 
@@ -556,7 +556,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
      aria-label="Upload progress">
   45%
 </div>
-```
+```text
 
 **Indeterminate Progress**:
 
@@ -566,7 +566,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
      aria-valuetext="Loading, please wait">
   <div class="spinner"></div>
 </div>
-```
+```text
 
 ### Slider
 
@@ -580,7 +580,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
      aria-orientation="horizontal"
      tabindex="0">
 </div>
-```
+```text
 
 **Key Requirements**:
 
@@ -605,7 +605,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <button>Click</button>
 <nav>...</nav>
 <input>
-```
+```text
 
 ### Don't Break Native Semantics
 
@@ -617,7 +617,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <!-- GOOD: Use correctly -->
 <h1>Heading</h1>
 <button>Button</button>
-```
+```text
 
 ### Don't Use aria-label on Containers
 
@@ -632,7 +632,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
   <h2>Content Area</h2>
   <p>Content...</p>
 </div>
-```
+```text
 
 ### Don't Forget Focus Management
 
@@ -642,7 +642,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 
 <!-- GOOD: Keyboard accessible -->
 <div role="button" tabindex="0">Click</div>
-```
+```text
 
 ### Don't Use aria-hidden on Focusable Elements
 
@@ -654,7 +654,7 @@ Comprehensive guide to ARIA (Accessible Rich Internet Applications) - when to us
 <button hidden>Click</button>
 <!-- OR -->
 <button aria-hidden="true" tabindex="-1">Click</button>
-```
+```text
 
 ## ARIA Testing
 

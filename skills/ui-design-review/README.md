@@ -168,7 +168,7 @@ No vague advice like "improve the design" - only concrete, implementable changes
 
 ### Example 1: Dashboard Layout Review
 
-```
+```text
 You: Review the UI design of this dashboard
      [uploads screenshot]
 
@@ -181,11 +181,11 @@ You: Yes, that's right.
 Claude: [Provides systematic six-dimension analysis with specific 
         recommendations for grid alignment, typography hierarchy, 
         color usage, etc.]
-```
+```text
 
 ### Example 2: Typography Check
 
-```
+```text
 You: Check the typography and hierarchy in this interface
 
 Claude: [After context gathering]
@@ -203,11 +203,11 @@ Claude: Typography Analysis:
         - H3: 20px, weight 600
         - Body: 16px, weight 400
         - Line height: 1.6 for body text
-```
+```text
 
 ### Example 3: Grid Precision Review
 
-```
+```text
 You: Analyze the grid system and alignment precision
 
 Claude: [Analyzes structure]
@@ -222,11 +222,11 @@ Claude: Grid Issues:
         - Sidebar: Span columns 1-3 (3 cols)
         - Main content: Span columns 4-12 (9 cols)
         - Align all cards to column boundaries
-```
+```text
 
 ### Example 4: Color & Accessibility
 
-```
+```text
 You: Review color usage and check WCAG compliance
 
 Claude: Color Analysis:
@@ -244,7 +244,7 @@ Claude: Color Analysis:
         - Status colors well-chosen
         - Recommend reducing decorative color usage
         - Apply 60-30-10 rule more strictly
-```
+```text
 
 ## Review Approach
 
@@ -282,7 +282,7 @@ Claude: Color Analysis:
 
 ## Skill Structure
 
-```
+```text
 ui-design-review/
 ├── SKILL.md                        # Core instructions (12 KB)
 ├── README.md                       # This file
@@ -292,7 +292,7 @@ ui-design-review/
     ├── typography_scales.md       # Type scales (13 KB)
     ├── color_systems.md           # Color patterns (11 KB)
     └── layout_patterns.md         # Layout patterns (11 KB)
-```
+```text
 
 ## What Makes This Effective
 

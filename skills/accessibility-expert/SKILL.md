@@ -249,13 +249,13 @@ For each issue found, reference specific WCAG criteria:
 
 **Example Format**:
 
-```
+```text
 Issue: Button text "Click here" has insufficient contrast
 WCAG: 1.4.3 Contrast (Minimum) - Level AA
 Current: 3.2:1
 Required: 4.5:1
 Solution: Change text color from #999 to #666 (5.7:1)
-```
+```text
 
 ### Step 4: Structured Deliverable
 

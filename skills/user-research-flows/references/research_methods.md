@@ -136,7 +136,7 @@ Comprehensive guide to user research methodologies for enterprise, B2B, and tech
 
 **Interview Guide Template**:
 
-```
+```text
 Introduction (5 min)
 - Explain purpose
 - Request permission to record
@@ -163,7 +163,7 @@ Wrap-up (5 min)
 - Additional thoughts
 - Thank you
 - Next steps
-```
+```text
 
 **Question Types**:
 
@@ -352,7 +352,7 @@ Wrap-up (5 min)
 
 **Sample Survey Structure**:
 
-```
+```text
 Introduction
 - Purpose of survey
 - Time estimate
@@ -373,7 +373,7 @@ Demographics (if needed)
 Thank You
 - What happens next
 - Contact info (if needed)
-```
+```text
 
 ### Analytics Analysis
 
@@ -556,7 +556,7 @@ Thank You
 - X participants completed
 - Key questions answered
 - Actionable insights generated
-```
+```text
 
 ## Research Synthesis
 
@@ -571,12 +571,12 @@ Thank You
 
 **Example**:
 
-```
+```text
 [14:23] 
 Observation: User opened three different tabs to find API documentation
 Interpretation: Information architecture may not be clear
 Question: Is this common? What would make it easier?
-```
+```text
 
 ### Analysis Process
 
@@ -608,13 +608,13 @@ Question: Is this common? What would make it easier?
 
 ### Insight Template
 
-```
+```text
 **Finding**: [What we observed]
 **Evidence**: [Quotes, data points]
 **Implication**: [What it means for design]
 **Recommendation**: [What we should do]
 **Priority**: [Critical / High / Medium / Low]
-```
+```text
 
 ### Research Deliverables
 

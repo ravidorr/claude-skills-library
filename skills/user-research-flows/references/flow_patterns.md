@@ -51,14 +51,14 @@ Comprehensive guide to designing user flows for complex systems, enterprise soft
 
 **Example**: Software Installation
 
-```
+```text
 Welcome → 
 Select Components → 
 Choose Location → 
 Review Settings → 
 Install → 
 Complete
-```
+```text
 
 **When to Use**:
 
@@ -103,13 +103,13 @@ Complete
 
 **Example**: System Configuration
 
-```
+```text
 Start → 
 Select Deployment Type?
 ├─ Cloud → Select Provider → Configure Access
 └─ On-Premise → Specify Servers → Configure Network
 → (Converge) Install Monitoring → Complete
-```
+```text
 
 **Decision Types**:
 
@@ -160,7 +160,7 @@ Select Deployment Type?
 
 **Example**: Admin Dashboard
 
-```
+```text
 Dashboard (Hub)
 ├─ User Management
 ├─ System Settings
@@ -169,7 +169,7 @@ Dashboard (Hub)
 └─ Billing
 
 Each spoke is independent, return to dashboard between tasks
-```
+```text
 
 **When to Use**:
 
@@ -213,13 +213,13 @@ Each spoke is independent, return to dashboard between tasks
 
 **Example**: Multi-Server Deployment
 
-```
+```text
 Start Deployment
 ├─ Server 1: Provision → Configure → Deploy
 ├─ Server 2: Provision → Configure → Deploy  
 └─ Server 3: Provision → Configure → Deploy
 → (All complete) Verify Health → Complete
-```
+```text
 
 **Synchronization Strategies**:
 
@@ -270,14 +270,14 @@ Start Deployment
 
 **Example**: Incident Management
 
-```
+```text
 Monitor → 
 Detect Issue → 
 Respond → 
 Resolve → 
 Document → 
 (back to Monitor)
-```
+```text
 
 **When to Use**:
 
@@ -321,7 +321,7 @@ Document →
 
 **Example**: Log Analysis
 
-```
+```text
 Start at Dashboard
 → User might:
   - Search for specific terms
@@ -331,7 +331,7 @@ Start at Dashboard
   - Export findings
   - Jump to related logs
 (No predetermined path)
-```
+```text
 
 **When to Use**:
 
@@ -362,7 +362,7 @@ Start at Dashboard
 
 **Example**: Form Design
 
-```
+```text
 Basic Form:
 - Name
 - Email
@@ -372,7 +372,7 @@ Expanded:
 - Phone (optional)
 - Company
 - Custom fields
-```
+```text
 
 **Benefits**:
 
@@ -394,11 +394,11 @@ Expanded:
 
 **Example**: Deployment Configuration
 
-```
+```text
 Region: [us-east-1] (most common for this team)
 Instance Type: [t3.medium] (based on previous deploys)
 Auto-scaling: [Enabled] (company policy)
-```
+```text
 
 **Benefits**:
 
@@ -477,11 +477,11 @@ GOOD: "Password must be at least 8 characters"
 
 **Example**: Admin Actions
 
-```
+```text
 Normal: Click user → Edit → Change role → Save
 Shortcut: Select multiple users → Bulk change role → Save
 Power: API call to update roles via script
-```
+```text
 
 ## Flow States
 
@@ -498,11 +498,11 @@ Power: API call to update roles via script
 
 **Example**: New Dashboard
 
-```
+```text
 "No dashboards yet"
 [Create Your First Dashboard]
 Or import from template →
-```
+```text
 
 ### Loading State
 
@@ -517,12 +517,12 @@ Or import from template →
 
 **Example**: Processing Data
 
-```
+```text
 "Analyzing 10,000 records..."
 [████████░░] 80% complete
 Estimated: 15 seconds remaining
 [Cancel]
-```
+```text
 
 ### Success State
 
@@ -537,11 +537,11 @@ Estimated: 15 seconds remaining
 
 **Example**: File Uploaded
 
-```
+```text
 [SUCCESS] Report uploaded successfully
 "Monthly_Report_Q4.pdf" (2.4 MB)
 [View Report] [Upload Another] [Done]
-```
+```text
 
 ### Error State
 
@@ -556,11 +556,11 @@ Estimated: 15 seconds remaining
 
 **Example**: Upload Failed
 
-```
+```text
 [ERROR] Upload failed
 The file is too large (max 10 MB)
 [Try a smaller file] [Compress file] [Contact support]
-```
+```text
 
 ### Partial State
 
@@ -575,7 +575,7 @@ The file is too large (max 10 MB)
 
 **Example**: Bulk User Import
 
-```
+```text
 8 of 10 users imported successfully
 
 [OK] 8 users created
@@ -584,7 +584,7 @@ The file is too large (max 10 MB)
   - invalid@: Invalid email format
 
 [Retry Failed] [Export Errors] [Done]
-```
+```text
 
 ## Flow Decision Framework
 
@@ -649,18 +649,18 @@ Ask these questions:
 
 ### Flow Diagram Notation
 
-```
+```text
 [Action] → Rectangle
 <Decision> → Diamond
 ((Start/End)) → Rounded Rectangle
 → → Flow direction
 ├─ → Branch
 └─ → Branch
-```
+```text
 
 ### Example Flow Diagram
 
-```
+```text
 ((Start))
     ↓
 [Load User Data]
@@ -675,7 +675,7 @@ Ask these questions:
 ├─ View Report → [Load Report] → [Display]
 ├─ Edit Settings → [Show Form] → [Save] → [Refresh]
 └─ Logout → [Clear Session] → ((End))
-```
+```text
 
 ### Flow Specification Template
 
@@ -721,7 +721,7 @@ Ask these questions:
 - [What we measure]
 - [Success rate]
 - [Time to complete]
-```
+```text
 
 ## Common Flow Mistakes
 

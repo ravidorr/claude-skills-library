@@ -36,16 +36,16 @@ Comprehensive guide to content design principles, readability, cognitive load ma
 
 **Company-Focused (Bad)**:
 
-```
+```text
 "Our advanced AI-powered analytics platform leverages machine 
 learning to provide actionable insights..."
-```
+```text
 
 **User-Focused (Good)**:
 
-```
+```text
 "Spot trends in your data automatically."
-```
+```text
 
 **Apply This**:
 
@@ -69,15 +69,15 @@ learning to provide actionable insights..."
 
 **Clever (Bad)**:
 
-```
+```text
 "Embark on your journey to data enlightenment!"
-```
+```text
 
 **Clear (Good)**:
 
-```
+```text
 "Start analyzing your data."
-```
+```text
 
 **Apply This**:
 
@@ -101,26 +101,26 @@ learning to provide actionable insights..."
 
 **Wordy (Bad)**:
 
-```
+```text
 "In order to complete the process of creating your account, 
 you will need to click on the button below."
-```
+```text
 
 **Concise (Good)**:
 
-```
+```text
 "Create your account."
-```
+```text
 
 **Common Word Bloat**:
 
-```
+```text
 "In order to" → "To"
 "At this point in time" → "Now"
 "Due to the fact that" → "Because"
 "In the event that" → "If"
 "Please be advised that" → [Delete entirely]
-```
+```text
 
 ### Principle 4: Scannable Structure
 
@@ -138,24 +138,24 @@ you will need to click on the button below."
 
 **Wall of Text (Bad)**:
 
-```
+```text
 Before you can begin using the system you need to make sure 
 that you have configured your settings properly including 
 your notification preferences, security settings, and team 
 permissions which can all be found in the settings menu 
 under your profile.
-```
+```text
 
 **Scannable (Good)**:
 
-```
+```text
 Before you begin, configure:
 • Notification preferences
 • Security settings  
 • Team permissions
 
 Find these in Settings > Profile.
-```
+```text
 
 **F-Pattern Reading**:
 
@@ -179,7 +179,7 @@ Find these in Settings > Profile.
 
 **All at Once (Bad)**:
 
-```
+```text
 Configure webhook:
 - URL endpoint
 - HTTP method (GET/POST/PUT/DELETE)
@@ -189,15 +189,15 @@ Configure webhook:
 - SSL verification
 - Rate limiting
 [20 more options...]
-```
+```text
 
 **Progressive (Good)**:
 
-```
+```text
 Webhook URL: [           ]
 
 [Advanced Options ▼]
-```
+```text
 
 **Apply This**:
 
@@ -244,23 +244,23 @@ Webhook URL: [           ]
 
 **Too Long (Bad)**:
 
-```
+```text
 In order to successfully complete the deployment process to 
 your production environment, you will need to ensure that 
 all of the required environment variables have been properly 
 configured and that your database migrations have been run 
 without any errors. (48 words)
-```
+```text
 
 **Right Length (Good)**:
 
-```
+```text
 Before deploying to production:
 1. Configure environment variables
 2. Run database migrations
 
 Both must complete without errors. (18 words total)
-```
+```text
 
 ### Paragraph Length
 
@@ -280,7 +280,7 @@ Both must complete without errors. (18 words total)
 
 **Prefer Simple Words**:
 
-```
+```text
 utilize → use
 commence → start  
 terminate → end
@@ -289,7 +289,7 @@ assist → help
 attempt → try
 subsequently → then
 approximately → about
-```
+```text
 
 **Avoid These Patterns**:
 
@@ -316,13 +316,13 @@ approximately → about
 
 **Bad (7 items)**:
 
-```
+```text
 Enter: name, email, password, company, role, phone, location
-```
+```text
 
 **Good (2 chunks)**:
 
-```
+```text
 Step 1: Personal Info
 • Name
 • Email  
@@ -331,7 +331,7 @@ Step 1: Personal Info
 Step 2: Company Info
 • Company name
 • Role
-```
+```text
 
 **Magic Number**: 7±2 items per group (Miller's Law)
 
@@ -339,59 +339,59 @@ Step 2: Company Info
 
 **Inconsistent (Bad)**:
 
-```
+```text
 Button 1: "Save Changes"
 Button 2: "Click to Update"
 Button 3: "Submit"
-```
+```text
 
 **Consistent (Good)**:
 
-```
+```text
 Button 1: "Save Changes"
 Button 2: "Update Profile"
 Button 3: "Save Settings"
-```
+```text
 
 **Technique 3: Clear Hierarchy**
 
 **Flat Hierarchy (Bad)**:
 
-```
+```text
 Settings:
 [50 options in one long list]
-```
+```text
 
 **Clear Hierarchy (Good)**:
 
-```
+```text
 Settings
 ├── Account
 ├── Security
 ├── Notifications
 ├── Integrations
 └── Advanced
-```
+```text
 
 **Technique 4: Default Values**
 
 **Empty (Bad)**:
 
-```
+```text
 Timeout: [     ] seconds
 Retry attempts: [     ]
 Retry delay: [     ] seconds
-```
+```text
 
 **Smart Defaults (Good)**:
 
-```
+```text
 Timeout: [30] seconds
 Retry attempts: [3]
 Retry delay: [5] seconds
 
 [Use recommended settings] or [Customize]
-```
+```text
 
 ### Working Memory Considerations
 
@@ -410,13 +410,13 @@ Retry delay: [5] seconds
 
 **Example - Multi-Step Form**:
 
-```
+```text
 Step 3 of 5: Team Settings
 
 ← Back to Security Settings
 
 [Show summary of previous steps]
-```
+```text
 
 ## Information Architecture for Content
 
@@ -424,21 +424,21 @@ Step 3 of 5: Team Settings
 
 **Inverted Pyramid Structure**:
 
-```
+```text
 Most Important (What/Conclusion)
      ↓
 Supporting Details (How/Why)
      ↓
 Background Info (Context)
-```
+```text
 
 **Example - Alert Description**:
 
-```
+```text
 Level 1: "API Gateway down - 1,200 users affected"
 Level 2: "Error rate: 100% for /api/v2 endpoints"
 Level 3: "Started at 2:45 PM EST. Investigating."
-```
+```text
 
 ### Content Organization Patterns
 
@@ -446,7 +446,7 @@ Level 3: "Started at 2:45 PM EST. Investigating."
 
 Organize by what users want to do.
 
-```
+```text
 Good:
 • Create Dashboard
 • Add Team Members
@@ -458,13 +458,13 @@ Avoid:
 • Administration  
 • Management
 • Settings
-```
+```text
 
 **Pattern 2: Audience-Based**
 
 Organize by user type when needs differ significantly.
 
-```
+```text
 For Developers:
 • API Documentation
 • Webhook Setup
@@ -474,13 +474,13 @@ For Admins:
 • User Management
 • Billing Settings
 • Audit Logs
-```
+```text
 
 **Pattern 3: Frequency-Based**
 
 Most-used items first.
 
-```
+```text
 Dashboard (daily):
 • Active Alerts
 • System Health
@@ -490,23 +490,23 @@ Settings (rare):
 • Advanced Configuration
 • API Keys
 • Audit Logs
-```
+```text
 
 ### Navigation Labels
 
 **Be Specific**:
 
-```
+```text
 Vague: "Manage"
 Specific: "Manage Team Members"
 
 Vague: "Settings"
 Specific: "Account Settings"
-```
+```text
 
 **Use Parallel Structure**:
 
-```
+```text
 Good:
 • Create Dashboard
 • Edit Dashboard
@@ -516,7 +516,7 @@ Avoid:
 • Create Dashboard
 • Dashboard Editing
 • Remove
-```
+```text
 
 ## Content for Different Contexts
 
@@ -538,7 +538,7 @@ Avoid:
 
 **Example - Incident Response**:
 
-```
+```text
 Priority:
 • What: Service down
 • Impact: 1,200 users
@@ -548,7 +548,7 @@ Details:
 • Started: 2:45 PM
 • Duration: 5 minutes
 • Affected: /api/v2/*
-```
+```text
 
 ### First-Time Use
 
@@ -568,7 +568,7 @@ Details:
 
 **Example - Onboarding**:
 
-```
+```text
 Step 1 of 3: Create Your First Dashboard
 
 Dashboards help you monitor key metrics at a glance.
@@ -578,7 +578,7 @@ Start simple:
 • Add more later as needed
 
 [Select Metrics] or [Use Template]
-```
+```text
 
 ### Expert/Power Users
 
@@ -598,7 +598,7 @@ Start simple:
 
 **Example - Advanced Settings**:
 
-```
+```text
 Query Optimization:
 • Cache TTL: 300s
 • Max connections: 100
@@ -606,7 +606,7 @@ Query Optimization:
 • Retry policy: exponential backoff
 
 [Apply] [Reset to Defaults]
-```
+```text
 
 ## Localization Considerations
 
@@ -622,19 +622,19 @@ Query Optimization:
 
 **Bad for Translation**:
 
-```
+```text
 "Hit the ground running" (idiom)
 "This rocks!" (slang)
 "Piece of cake" (colloquialism)
-```
+```text
 
 **Good for Translation**:
 
-```
+```text
 "Get started quickly"
 "This is excellent"
 "Easy to do"
-```
+```text
 
 ### Text Expansion
 
@@ -760,43 +760,43 @@ Before Publishing, Verify:
 
 ### Welcome Message
 
-```
+```text
 Template:
 "Welcome to [Product]. [Main benefit or use case]."
 
 Example:
 "Welcome to MetricsHub. Track your most important KPIs in one place."
-```
+```text
 
 ### Empty State
 
-```
+```text
 Template:
 "No [items] yet. [How to create first one]."
 
 Example:
 "No dashboards yet. Create your first dashboard to visualize metrics."
-```
+```text
 
 ### Confirmation
 
-```
+```text
 Template:
 "[Action completed]. [Next step or additional info]."
 
 Example:
 "Team member invited. They'll receive an email with instructions."
-```
+```text
 
 ### Loading
 
-```
+```text
 Template:
 "[Action]-ing... [Additional context if helpful]"
 
 Example:
 "Deploying to 8 servers... This may take 2-3 minutes."
-```
+```text
 
 ## Content Design Tools
 

@@ -90,10 +90,10 @@ Systematic approach to error copy:
 
 **Example**:
 
-```
+```text
 "Can't save changes: File name contains invalid characters. 
 Remove special characters and try again."
-```
+```text
 
 **Error Types Covered**:
 
@@ -187,7 +187,7 @@ Complete tone framework:
 
 ### Example 1: Button Copy Improvement
 
-```
+```text
 You: Improve this button copy: "Submit"
 
 Claude: [After context gathering]
@@ -202,11 +202,11 @@ Alternatives:
 
 Recommendation: Use "Create Account" - it tells users 
 exactly what will happen when they click.
-```
+```text
 
 ### Example 2: Error Message
 
-```
+```text
 You: Write an error message for when a file upload fails 
      because it's too large
 
@@ -229,11 +229,11 @@ splitting it into smaller parts."
 Recommendation: Use "Clear" version for most contexts. 
 It tells users what happened, what the limit is, and 
 what to do next.
-```
+```text
 
 ### Example 3: Empty State Copy
 
-```
+```text
 You: Write empty state copy for a dashboard with no alerts
 
 Claude: Empty State Options:
@@ -257,11 +257,11 @@ Action: [View Details]
 Recommendation: Choose based on context. Use "First Use" 
 for new users, "All clear" for dashboards, "Success State" 
 for status pages.
-```
+```text
 
 ### Example 4: Tone of Voice Definition
 
-```
+```text
 You: Help me define the tone of voice for a DevOps 
      monitoring tool
 
@@ -297,7 +297,7 @@ We Are / We Are Not:
 - We ARE technical, not dumbed-down
 - We ARE NOT robotic or cold
 - We ARE NOT overly casual or jokey
-```
+```text
 
 ## Complementary Skills
 
@@ -339,7 +339,7 @@ This skill works powerfully with:
 
 ## Skill Structure
 
-```
+```text
 microcopy-content-design/
 ├── SKILL.md (25 KB)               Core instructions
 ├── README.md                       This file
@@ -349,7 +349,7 @@ microcopy-content-design/
     ├── error_messages.md          Error message frameworks
     ├── tone_voice.md              Tone definition frameworks
     └── content_design.md          Content design principles
-```
+```text
 
 ## What Makes This Effective
 
