@@ -26,15 +26,15 @@ Skills are modular, self-contained packages that transform Claude from a general
 
 ## Installation
 
-### Cursor IDE
-
-Clone the skill library:
+### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/ravidorr/claude-skills-library.git ~/claude-skills-library
 ```
 
-Create symlinks to ~/.cursor/skills (Cursor's personal skills location):
+### Step 2: Install Skills Globally
+
+Create symlinks to `~/.cursor/skills/` (Cursor's global skills location):
 
 ```bash
 mkdir -p ~/.cursor/skills
@@ -42,11 +42,17 @@ for skill in ~/claude-skills-library/skills/*/; do
   skill_name=$(basename "$skill")
   # Skip internal folders (starting with _ or .)
   [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
-  ln -s "$skill" ~/.cursor/skills/
+  ln -sf "$skill" ~/.cursor/skills/
 done
 ```
 
-**Updating:** Pull the latest changes:
+### Step 3: Restart Cursor
+
+Close and reopen Cursor (or open a new window) for the skills to be recognized.
+
+### Updating Skills
+
+Pull the latest changes:
 
 ```bash
 cd ~/claude-skills-library && git pull
@@ -58,11 +64,13 @@ Existing skills update automatically via symlinks. If new skills were added, re-
 for skill in ~/claude-skills-library/skills/*/; do
   skill_name=$(basename "$skill")
   [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
-  ln -s "$skill" ~/.cursor/skills/ 2>/dev/null
+  ln -sf "$skill" ~/.cursor/skills/ 2>/dev/null
 done
 ```
 
-**Using the Skills:** Once installed, just ask naturally:
+### Using the Skills
+
+Once installed globally, just ask naturally in any Cursor window:
 
 - "Review the UX of this page"
 - "Check accessibility"
@@ -226,13 +234,60 @@ All skills in this library must:
 
 ## Troubleshooting
 
+### Skills Not Available in Other Cursor Windows
+
+**Problem:** Skills work when you have this repo open, but not in other Cursor windows.
+
+**Cause:** Without global installation, skills are workspace-specific. They only load when the workspace containing them is open.
+
+**Solution:** Install the skills globally using symlinks (see [Installation](#installation) above):
+
+```bash
+mkdir -p ~/.cursor/skills
+for skill in ~/claude-skills-library/skills/*/; do
+  skill_name=$(basename "$skill")
+  [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
+  ln -sf "$skill" ~/.cursor/skills/
+done
+```
+
+Then restart Cursor.
+
 ### Skills Not Triggering
 
-1. Verify the skill is installed:
-   - Cursor: `ls ~/.cursor/skills/`
-   - Codex: `ls ~/.codex/skills/`
-2. Restart Cursor/your IDE
-3. Try referencing the skill directly with `@`
+1. Verify the skills are installed globally:
+
+   ```bash
+   ls -la ~/.cursor/skills/
+   ```
+
+   You should see symlinks pointing to the skill folders.
+
+2. Restart Cursor (close all windows, then reopen)
+
+3. Try referencing the skill directly with `@skill-name`
+
+### Symlinks Not Working
+
+If skills still don't appear after creating symlinks:
+
+1. Verify symlinks are valid (not broken):
+
+   ```bash
+   ls -la ~/.cursor/skills/
+   # Should show -> pointing to actual folders
+   ```
+
+2. If symlinks are broken, remove and recreate them:
+
+   ```bash
+   rm -rf ~/.cursor/skills/*
+   for skill in ~/claude-skills-library/skills/*/; do
+     skill_name=$(basename "$skill")
+     [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
+     ln -sf "$skill" ~/.cursor/skills/
+   done
+   ```
 
 ### Permission Errors
 
