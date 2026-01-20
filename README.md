@@ -26,53 +26,61 @@ Skills are modular, self-contained packages that transform Claude from a general
 
 ## Installation
 
-### Quick Install (Recommended)
+### Prerequisites for Cursor IDE
 
-Clone the repository and run the install wizard:
+These skills can be used in other IDEs, but we wanted this README.md file to stay as simple as possible.
 
-```bash
-git clone https://github.com/ravidorr/claude-skills-library.git ~/Documents/Cursor/claude-skills-library
-cd ~/Documents/Cursor/claude-skills-library
-bash scripts/install.sh
+> **Note:** Agent Skills require **Cursor Nightly** build (Cursor > Settings... > Cursor Settings > Beta > Nightly).
+
+### Recommended User Rules
+
+For the best experience with skills that require context gathering or user input, add this rule to your IDE settings:
+
+**Cursor IDE**: Cursor > Settings... > Cursor Settings > Rules, Skills, Subagents, > In the Rules section > + New > User Rule > enter:
+
+```text
+When using skills that have context-gathering questions or require user input, ALWAYS ask me those questions and wait for my response before proceeding. NEVER assume defaults or answer on my behalf.
 ```
 
-The wizard will guide you through installing skills for Cursor, Codex CLI, and/or Claude Desktop.
+Click done. This ensures Claude will pause and ask you the skill's context questions rather than making assumptions about your project, users, or requirements.
+
+### Quick Install
+
+1. **Clone the repository** into your project folder:
+
+   ```bash
+   git clone https://github.com/ravidorr/claude-skills-library.git ~/Documents/Cursor/claude-skills-library
+   ```
+
+2. **Go into the project folder:**
+
+   ```bash
+   cd ~/Documents/Cursor/claude-skills-library
+   ```
+
+3. **Install skills** on Cursor IDE:
+
+   ```bash
+   bash scripts/install.sh
+   ```
+
+The wizard will guide you through installing skills.
 
 ### Updating Skills
 
-Pull the latest changes and run the wizard again:
+1. **Pull the latest changes:**
 
-```bash
-cd ~/Documents/Cursor/claude-skills-library && git pull
-bash scripts/install.sh
-```
+   ```bash
+   cd ~/Documents/Cursor/claude-skills-library && git pull
+   ```
 
-### Cursor IDE
+2. **Run the wizard:**
 
-> **Note:** Agent Skills require **Cursor Nightly**. To switch: Cursor Settings (Cmd+Shift+J) > Beta > set Update Access to **Nightly**.
+   ```bash
+   bash scripts/install.sh
+   ```
 
-#### Manual Installation
-
-If you prefer manual installation:
-
-```bash
-mkdir -p ~/.cursor/skills
-for skill in ~/Documents/Cursor/claude-skills-library/skills/*/; do
-  skill_name=$(basename "$skill")
-  [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
-  rm -rf ~/.cursor/skills/"$skill_name"
-  mkdir -p ~/.cursor/skills/"$skill_name"
-  cp -R "$skill"/* ~/.cursor/skills/"$skill_name"/
-done
-```
-
-> **Note:** Cursor does not follow symlinks. Skills must be copied, not symlinked.
-
-#### Verify Installation
-
-Open Cursor Settings (Cmd+Shift+J) > Rules, Skills, Subagents. Your skills should appear in the Skills section.
-
-#### Using the Skills
+### Using the Skills
 
 Once installed, skills are available in any Cursor window:
 
@@ -80,88 +88,15 @@ Once installed, skills are available in any Cursor window:
 - **Manual:** Type `/` in Agent chat and search for the skill name
 - **Via @:** Reference skills with `@skill-name` in chat
 
-### Claude.ai
-
-1. Download the `.skill` file from any skill folder
-2. Go to [Claude.ai](https://claude.ai) > Settings > Skills
-3. Click "Upload Skill" and select the file
-4. Confirm installation
-
-### Codex CLI
-
-For OpenAI's Codex CLI, use `~/.codex/skills` instead:
-
-```bash
-mkdir -p ~/.codex/skills
-for skill in ~/Documents/Cursor/claude-skills-library/skills/*/; do
-  skill_name=$(basename "$skill")
-  [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
-  ln -sf "$skill" ~/.codex/skills/
-done
-```
-
-### Other IDEs
-
-The `SKILL.md` files are standard Markdown with YAML frontmatter. They work in any tool that supports custom prompts:
-
-- **VS Code + Continue/Cody**: Add to custom commands or system prompts
-- **JetBrains AI Assistant**: Use as custom prompt templates
-- **Windsurf**: Add to workspace rules
-- **API Usage**: Include in system prompt when calling Claude API
-
-## Skill Structure
-
-Each skill follows this structure:
-
-```text
-skill-name/
-├── SKILL.md              # Required: Core instructions and metadata
-├── README.md             # Required: Documentation for users
-├── skill-name.skill      # Generated: Packaged skill for Claude.ai
-└── references/           # Optional: Supporting documentation
-    ├── topic1.md
-    └── topic2.md
-```
-
-### Progressive Disclosure
-
-Skills use a three-level loading system:
-
-1. **Metadata** - Always in context (name + description in frontmatter)
-2. **SKILL.md** - Loaded when skill triggers
-3. **References** - Loaded only when Claude needs specific guidance
-
-This keeps context usage efficient while providing deep expertise when needed.
-
-## Development
-
-### Building Skills
-
-Generate `.skill` files from source:
-
-```bash
-npm install
-npm run build          # Build all skills
-npm run build ux-web-review  # Build single skill
-```
-
-### Linting
-
-Check Markdown formatting:
-
-```bash
-npm run lint           # Check for issues
-npm run lint:fix       # Auto-fix issues
-```
-
 ## Contributing
 
 We welcome contributions! Here's how to get involved.
 
 ### How to Contribute
 
-1. **Fork the repository** on GitHub
-2. **Clone your fork**
+1. **Fork the repository** - On GitHub click the "Fork" button and follow the wizard
+
+2. **Clone the fork**
 
    ```bash
    git clone https://github.com/YOUR-USERNAME/claude-skills-library.git
@@ -177,53 +112,23 @@ We welcome contributions! Here's how to get involved.
 
 4. **Make your changes**
    - To update a skill: edit `skills/<skill-name>/SKILL.md` and any reference files
-   - To create a skill: see "Creating a New Skill" below
+   - To create a skill: Ask Cursor to create a skill (there is a skill for that) for this skill repository with a README.md file
 
 5. **Build, validate, and lint**
 
    ```bash
-   npm run build
-   npm run validate
-   npm run lint
+   npm run build && npm run validate && npm run lint
    ```
 
 6. **Commit and push** to your fork
 
    ```bash
    git add .
-   git commit -m "Improve ux-web-review: add mobile patterns"
+   git commit -m "<WRITE HERE WHAT YOU DID>"
    git push origin feature/improve-ux-review
    ```
 
 7. **Open a Pull Request** from your fork to this repository
-
-### Creating a New Skill
-
-1. Create the skill directory structure:
-
-   ```bash
-   mkdir -p skills/my-new-skill/references
-   ```
-
-2. Create `SKILL.md` with required frontmatter:
-
-   ```markdown
-   ---
-   name: my-new-skill
-   version: 1.0.0
-   description: Brief description of what this skill does and when to use it.
-   ---
-
-   # My New Skill
-
-   [Skill instructions here]
-   ```
-
-3. Create `README.md` with usage documentation
-
-4. Build, validate, and commit as above
-
-5. Update the "Available Skills" table in this README
 
 ## Quality Standards
 
@@ -233,7 +138,7 @@ All skills in this library must:
 - Include usage examples in README
 - Follow the progressive disclosure pattern
 - Be well-tested on real-world tasks
-- Include proper documentation
+- Include documentation
 - Be self-contained (all dependencies included)
 
 ## Troubleshooting
@@ -272,7 +177,7 @@ All skills in this library must:
 
 **Cause:** Without global installation, skills are workspace-specific.
 
-**Solution:** Copy skills to `~/.cursor/skills/` (see [Installation](#cursor-ide) above).
+**Solution:** Copy skills to `~/.cursor/skills/` (see [Quick Install](#quick-install) above).
 
 ### Skills Not Triggering
 
@@ -285,7 +190,6 @@ All skills in this library must:
    You should see skill folders (accessibility-expert, ux-web-review, etc.).
 
 2. Check Cursor Settings > Rules, Skills, Subagents - skills should be listed
-
 3. Try invoking manually with `/skill-name` in Agent chat
 
 ### Permission Errors
@@ -293,24 +197,6 @@ All skills in this library must:
 ```bash
 mkdir -p ~/.cursor/skills && chmod 755 ~/.cursor/skills
 ```
-
-## Recommended User Rules
-
-For the best experience with skills that require context gathering or user input, add this rule to your IDE settings:
-
-**Cursor IDE**: Settings > Rules for AI > User Rules
-
-```text
-When using skills that have context-gathering questions or require user input, ALWAYS ask me those questions and wait for my response before proceeding. NEVER assume defaults or answer on my behalf.
-```
-
-This ensures Claude will pause and ask you the skill's context questions rather than making assumptions about your project, users, or requirements.
-
-## Resources
-
-- [Anthropic Skills Documentation](https://docs.anthropic.com)
-- [Cursor IDE](https://cursor.sh)
-- [Claude.ai](https://claude.ai)
 
 ## License
 
