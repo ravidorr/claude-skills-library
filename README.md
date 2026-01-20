@@ -1,10 +1,10 @@
 # Skills Library
 
-A curated collection of high-quality skills that extend Claude's capabilities with specialized knowledge, workflows, and tool integrations.
+A collection of skills that extend Cursor's capabilities with specialized knowledge, workflows, and tool integrations.
 
 ## What are Skills?
 
-Skills are modular, self-contained packages that transform Claude from a general-purpose AI into a specialized agent equipped with domain-specific expertise. Think of them as "onboarding guides" that give Claude procedural knowledge for specific tasks.
+Skills are modular, self-contained packages that transform Cursor from a general-purpose AI into a specialized agent equipped with domain-specific expertise. Think of them as "onboarding guides" that give Cursor procedural knowledge for specific tasks.
 
 ### What Skills Provide
 
@@ -28,21 +28,21 @@ Skills are modular, self-contained packages that transform Claude from a general
 
 ### Prerequisites for Cursor IDE
 
-These skills can be used in other IDEs, but we wanted this README.md file to stay as simple as possible.
+Agent Skills require **Cursor Nightly** build (Cursor > Settings... > Cursor Settings > Beta > Nightly).
 
-> **Note:** Agent Skills require **Cursor Nightly** build (Cursor > Settings... > Cursor Settings > Beta > Nightly).
+Skills can work with other IDEs, but we want to keep this README.md simple.
 
 ### Recommended User Rules
 
-For the best experience with skills that require context gathering or user input, add this rule to your IDE settings:
+Some skills require context or input from the user. Add this rule to help Cursor to ask these questions:
 
-**Cursor IDE**: Cursor > Settings... > Cursor Settings > Rules, Skills, Subagents, > In the Rules section > + New > User Rule > enter:
+In Cursor > Settings... > Cursor Settings > Rules, Skills, Subagents, > Rules section > + New > User Rule > paste:
 
 ```text
 When using skills that have context-gathering questions or require user input, ALWAYS ask me those questions and wait for my response before proceeding. NEVER assume defaults or answer on my behalf.
 ```
 
-Click done. This ensures Claude will pause and ask you the skill's context questions rather than making assumptions about your project, users, or requirements.
+Click done.
 
 ### Quick Install
 
@@ -64,9 +64,9 @@ Click done. This ensures Claude will pause and ask you the skill's context quest
    bash scripts/install.sh
    ```
 
-The wizard will guide you through installing skills.
+The wizard will help you installing the skills.
 
-### Updating Skills
+### Updating Skills that were changed in the repository
 
 1. **Pull the latest changes:**
 
@@ -87,6 +87,8 @@ Once installed, skills are available in any Cursor window:
 - **Automatic:** Just ask naturally - "Review the UX of this page", "Check accessibility"
 - **Manual:** Type `/` in Agent chat and search for the skill name
 - **Via @:** Reference skills with `@skill-name` in chat
+
+You are good to go!
 
 ## Contributing
 
@@ -147,56 +149,11 @@ All skills in this library must:
 
 **Problem:** Skills don't appear in Cursor Settings > Rules, Skills, Subagents.
 
-**Possible causes and solutions:**
+**Cause:** The Cursor IDE is not a nightly build.
 
-1. **Not on Nightly build:** Skills require Cursor Nightly. Switch via Cursor Settings (Cmd+Shift+J) > Beta > Update Access > Nightly.
-
-2. **Using symlinks:** Cursor does not follow symlinks. Re-install using copies:
-
-   ```bash
-   rm -rf ~/.cursor/skills/*
-   for skill in ~/Documents/Cursor/claude-skills-library/skills/*/; do
-     skill_name=$(basename "$skill")
-     [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
-     mkdir -p ~/.cursor/skills/"$skill_name"
-     cp -R "$skill"/* ~/.cursor/skills/"$skill_name"/
-   done
-   ```
-
-3. **Wrong directory structure:** Each skill must be in its own folder with a `SKILL.md` file:
-
-   ```text
-   ~/.cursor/skills/
-   └── skill-name/
-       └── SKILL.md
-   ```
+**Solution:** Change the Cursor IDE settings (Cursor > Settings... > Cursor Settings > Beta > Nightly).
 
 ### Skills Not Available in Other Cursor Windows
-
-**Problem:** Skills work when you have this repo open, but not in other Cursor windows.
-
-**Cause:** Without global installation, skills are workspace-specific.
-
-**Solution:** Copy skills to `~/.cursor/skills/` (see [Quick Install](#quick-install) above).
-
-### Skills Not Triggering
-
-1. Verify skills are installed:
-
-   ```bash
-   ls ~/.cursor/skills/
-   ```
-
-   You should see skill folders (accessibility-expert, ux-web-review, etc.).
-
-2. Check Cursor Settings > Rules, Skills, Subagents - skills should be listed
-3. Try invoking manually with `/skill-name` in Agent chat
-
-### Permission Errors
-
-```bash
-mkdir -p ~/.cursor/skills && chmod 755 ~/.cursor/skills
-```
 
 ## License
 
