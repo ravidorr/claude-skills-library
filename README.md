@@ -26,55 +26,59 @@ Skills are modular, self-contained packages that transform Claude from a general
 
 ## Installation
 
-### Step 1: Clone the Repository
+### Quick Install (Recommended)
+
+Clone the repository and run the install wizard:
 
 ```bash
-git clone https://github.com/ravidorr/claude-skills-library.git ~/claude-skills-library
+git clone https://github.com/ravidorr/claude-skills-library.git ~/Documents/Cursor/claude-skills-library
+cd ~/Documents/Cursor/claude-skills-library
+bash scripts/install.sh
 ```
 
-### Step 2: Install Skills Globally
-
-Create symlinks to `~/.cursor/skills/` (Cursor's global skills location):
-
-```bash
-mkdir -p ~/.cursor/skills
-for skill in ~/claude-skills-library/skills/*/; do
-  skill_name=$(basename "$skill")
-  # Skip internal folders (starting with _ or .)
-  [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
-  ln -sf "$skill" ~/.cursor/skills/
-done
-```
-
-### Step 3: Restart Cursor
-
-Close and reopen Cursor (or open a new window) for the skills to be recognized.
+The wizard will guide you through installing skills for Cursor, Codex CLI, and/or Claude Desktop.
 
 ### Updating Skills
 
-Pull the latest changes:
+Pull the latest changes and run the wizard again:
 
 ```bash
-cd ~/claude-skills-library && git pull
+cd ~/Documents/Cursor/claude-skills-library && git pull
+bash scripts/install.sh
 ```
 
-Existing skills update automatically via symlinks. If new skills were added, re-run the symlink command:
+### Cursor IDE
+
+> **Note:** Agent Skills require **Cursor Nightly**. To switch: Cursor Settings (Cmd+Shift+J) > Beta > set Update Access to **Nightly**.
+
+#### Manual Installation
+
+If you prefer manual installation:
 
 ```bash
-for skill in ~/claude-skills-library/skills/*/; do
+mkdir -p ~/.cursor/skills
+for skill in ~/Documents/Cursor/claude-skills-library/skills/*/; do
   skill_name=$(basename "$skill")
   [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
-  ln -sf "$skill" ~/.cursor/skills/ 2>/dev/null
+  rm -rf ~/.cursor/skills/"$skill_name"
+  mkdir -p ~/.cursor/skills/"$skill_name"
+  cp -R "$skill"/* ~/.cursor/skills/"$skill_name"/
 done
 ```
 
-### Using the Skills
+> **Note:** Cursor does not follow symlinks. Skills must be copied, not symlinked.
 
-Once installed globally, just ask naturally in any Cursor window:
+#### Verify Installation
 
-- "Review the UX of this page"
-- "Check accessibility"
-- "Improve this microcopy"
+Open Cursor Settings (Cmd+Shift+J) > Rules, Skills, Subagents. Your skills should appear in the Skills section.
+
+#### Using the Skills
+
+Once installed, skills are available in any Cursor window:
+
+- **Automatic:** Just ask naturally - "Review the UX of this page", "Check accessibility"
+- **Manual:** Type `/` in Agent chat and search for the skill name
+- **Via @:** Reference skills with `@skill-name` in chat
 
 ### Claude.ai
 
@@ -89,10 +93,10 @@ For OpenAI's Codex CLI, use `~/.codex/skills` instead:
 
 ```bash
 mkdir -p ~/.codex/skills
-for skill in ~/claude-skills-library/skills/*/; do
+for skill in ~/Documents/Cursor/claude-skills-library/skills/*/; do
   skill_name=$(basename "$skill")
   [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
-  ln -s "$skill" ~/.codex/skills/
+  ln -sf "$skill" ~/.codex/skills/
 done
 ```
 
@@ -234,69 +238,60 @@ All skills in this library must:
 
 ## Troubleshooting
 
+### Skills Not Showing in Cursor Settings
+
+**Problem:** Skills don't appear in Cursor Settings > Rules, Skills, Subagents.
+
+**Possible causes and solutions:**
+
+1. **Not on Nightly build:** Skills require Cursor Nightly. Switch via Cursor Settings (Cmd+Shift+J) > Beta > Update Access > Nightly.
+
+2. **Using symlinks:** Cursor does not follow symlinks. Re-install using copies:
+
+   ```bash
+   rm -rf ~/.cursor/skills/*
+   for skill in ~/Documents/Cursor/claude-skills-library/skills/*/; do
+     skill_name=$(basename "$skill")
+     [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
+     mkdir -p ~/.cursor/skills/"$skill_name"
+     cp -R "$skill"/* ~/.cursor/skills/"$skill_name"/
+   done
+   ```
+
+3. **Wrong directory structure:** Each skill must be in its own folder with a `SKILL.md` file:
+
+   ```text
+   ~/.cursor/skills/
+   └── skill-name/
+       └── SKILL.md
+   ```
+
 ### Skills Not Available in Other Cursor Windows
 
 **Problem:** Skills work when you have this repo open, but not in other Cursor windows.
 
-**Cause:** Without global installation, skills are workspace-specific. They only load when the workspace containing them is open.
+**Cause:** Without global installation, skills are workspace-specific.
 
-**Solution:** Install the skills globally using symlinks (see [Installation](#installation) above):
-
-```bash
-mkdir -p ~/.cursor/skills
-for skill in ~/claude-skills-library/skills/*/; do
-  skill_name=$(basename "$skill")
-  [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
-  ln -sf "$skill" ~/.cursor/skills/
-done
-```
-
-Then restart Cursor.
+**Solution:** Copy skills to `~/.cursor/skills/` (see [Installation](#cursor-ide) above).
 
 ### Skills Not Triggering
 
-1. Verify the skills are installed globally:
+1. Verify skills are installed:
 
    ```bash
-   ls -la ~/.cursor/skills/
+   ls ~/.cursor/skills/
    ```
 
-   You should see symlinks pointing to the skill folders.
+   You should see skill folders (accessibility-expert, ux-web-review, etc.).
 
-2. Restart Cursor (close all windows, then reopen)
+2. Check Cursor Settings > Rules, Skills, Subagents - skills should be listed
 
-3. Try referencing the skill directly with `@skill-name`
-
-### Symlinks Not Working
-
-If skills still don't appear after creating symlinks:
-
-1. Verify symlinks are valid (not broken):
-
-   ```bash
-   ls -la ~/.cursor/skills/
-   # Should show -> pointing to actual folders
-   ```
-
-2. If symlinks are broken, remove and recreate them:
-
-   ```bash
-   rm -rf ~/.cursor/skills/*
-   for skill in ~/claude-skills-library/skills/*/; do
-     skill_name=$(basename "$skill")
-     [[ "$skill_name" == _* || "$skill_name" == .* ]] && continue
-     ln -sf "$skill" ~/.cursor/skills/
-   done
-   ```
+3. Try invoking manually with `/skill-name` in Agent chat
 
 ### Permission Errors
 
 ```bash
-# For Cursor
 mkdir -p ~/.cursor/skills && chmod 755 ~/.cursor/skills
-
-# For Codex
-mkdir -p ~/.codex/skills && chmod 755 ~/.codex/skills
 ```
 
 ## Recommended User Rules
