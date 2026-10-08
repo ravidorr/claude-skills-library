@@ -12,7 +12,9 @@
     "build": "bash scripts/build-skills.sh",
     "build:skill": "bash scripts/build-skills.sh",
     "validate": "bash scripts/validate-skills.sh",
-    "prepare": "husky"
+    "prepare": "husky",
+    "validate:security-policy": "node scripts/validate-security-policy-version.mjs",
+    "test:security-policy": "node --test scripts/validate-security-policy-version.test.mjs"
   },
   "devDependencies": {
     "husky": "^9.1.7",
