@@ -4,6 +4,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ravidorr/claude-skills-library/graphs/commit-activity)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Markdown skills](https://img.shields.io/badge/Markdown-skills-000000?logo=markdown&logoColor=white)](https://github.com/ravidorr/claude-skills-library)
+
 A collection of skills that extend Cursor's capabilities with specialized knowledge, workflows, and tool integrations.
 
 ## What are Skills?
