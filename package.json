@@ -8,7 +8,7 @@
     "lint:md": "markdownlint-cli2 \"**/*.md\"",
     "lint:fix": "markdownlint-cli2 --fix \"**/*.md\"",
     "lint:emdash": "! grep -rn '—' --include='*.md' . --exclude-dir=node_modules || (echo 'Error: Em dashes found. Use -- or - instead.' && exit 1)",
-    "lint:emoji": "result=$(find . -name '*.md' ! -path './node_modules/*' -exec grep -l '[😀-🙏🌀-🗿🚀-🛿✀-➿🤀-🧿❌✅🎯📋👥📊💡🧪📚🎨⚡⚙️🚫🔄🤝📝🔗]' {} \\; 2>/dev/null); [ -z \"$result\" ] || (echo \"Error: Emojis found in:\n$result\" && exit 1)",
+    "lint:emoji": "result=$(find . -name '*.md' ! -path './node_modules/*' -exec grep -l '[😀-🙏🌀-🗿🚀-🛿✀-✒✔-✗✙-➿🤀-🧿❌✅🎯📋👥📊💡🧪📚🎨⚡⚙️🚫🔄🤝📝🔗]' {} \\; 2>/dev/null); [ -z \"$result\" ] || (echo \"Error: Emojis found in:\n$result\" && exit 1)",
     "build": "bash scripts/build-skills.sh",
     "build:skill": "bash scripts/build-skills.sh",
     "validate": "bash scripts/validate-skills.sh",
