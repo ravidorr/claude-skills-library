@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Build script for Claude Skills Library
-# Generates .skill files (ZIP archives) from source SKILL.md and references/
+# Generates .skill files (ZIP archives) from source SKILL.md, references/, assets/, and scripts/
 
 set -e
 
@@ -54,10 +54,12 @@ build_skill() {
     # Copy SKILL.md
     cp "$skill_dir/SKILL.md" "$temp_dir/"
     
-    # Copy references/ if exists
-    if [[ -d "$skill_dir/references" ]]; then
-        cp -r "$skill_dir/references" "$temp_dir/"
-    fi
+    # Copy references/ and, for skills that ship templates or helper scripts, assets/ and scripts/
+    for bundled in references assets scripts; do
+        if [[ -d "$skill_dir/$bundled" ]]; then
+            cp -R "$skill_dir/$bundled" "$temp_dir/"
+        fi
+    done
     
     # Create ZIP archive (the .skill file)
     (cd "$temp_dir" && zip -rq "$skill_file" .)
