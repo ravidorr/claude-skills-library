@@ -88,7 +88,7 @@ Always (every kind):
 Conditional:
 
 | File | Create when |
-|---|---|
+| --- | --- |
 | `robots.txt`, `sitemap.xml` | Public web app or static site only. Skip for libraries, CLIs, backends, extensions. |
 | `lighthouserc.json` | Web app or static site (and extension options/popup pages only if served over http). Skip otherwise. |
 | `design-system/` | **Always.** Projects with UI get the full design system (`assets/design-system/`). Projects with no UI (libraries, CLIs, backends) get only `assets/design-system-no-ui/README.md` stating "no UI". Do not ask. |

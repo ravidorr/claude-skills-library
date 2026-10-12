@@ -4,7 +4,7 @@
 - Do not forget `"prepare": "husky"` so hooks install on `<pm> install`.
 
 | Hook | Scope | Budget |
-|---|---|---|
+| --- | --- | --- |
 | `pre-commit` | staged files: format/lint-staged, targeted tests, quick generated-file consistency | usually under 10 s |
 | `commit-msg` | minimum subject length; Jira-key prefix | instant |
 | `pre-push` | branch-wide: full lint, tests with 100% coverage gate (`test:coverage`), changelog presence, one SemVer bump per PR | may be slow |

@@ -84,8 +84,8 @@ If you identify content duplicated across multiple skills:
 
 ## Current Shared Patterns
 
-| Pattern | File | Used By |
-|---------|------|---------|
+| Pattern           | File                   | Used By      |
+| ----------------- | ---------------------- | ------------ |
 | Context Gathering | `context_gathering.md` | All 6 skills |
 
 ## Future Considerations

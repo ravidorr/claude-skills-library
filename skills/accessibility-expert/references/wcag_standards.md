@@ -1044,7 +1044,7 @@ Maximize compatibility with current and future user agents, including assistive 
 ### Contrast Requirements
 
 | Content Type | Level AA | Level AAA |
-|-------------|----------|-----------|
+| ------------- | ---------- | ----------- |
 | Normal text (< 18pt) | 4.5:1 | 7:1 |
 | Large text (18pt+) | 3:1 | 4.5:1 |
 | UI components | 3:1 | - |
@@ -1053,7 +1053,7 @@ Maximize compatibility with current and future user agents, including assistive 
 ### Touch Target Sizes
 
 | Standard | Minimum Size |
-|----------|--------------|
+| ---------- | -------------- |
 | WCAG 2.2 AA | 24x24 CSS pixels |
 | Mobile best practice | 44x44 CSS pixels |
 | Apple HIG | 44x44 points |
@@ -1062,7 +1062,7 @@ Maximize compatibility with current and future user agents, including assistive 
 ### Keyboard Shortcuts
 
 | Key | Common Use |
-|-----|------------|
+| ----- | ------------ |
 | Tab | Next focusable element |
 | Shift+Tab | Previous element |
 | Enter | Activate button/link |

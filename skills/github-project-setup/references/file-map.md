@@ -18,7 +18,7 @@ Placeholders: `{{PROJECT_NAME}}`, `{{PROJECT_DESCRIPTION}}`, `{{PM}}` (npm|pnpm)
 Note: `ci.yml` and `release.yml` use GitHub `${{ ... }}` expressions. Replace only the `{{UPPER_SNAKE}}` and `{{PM*}}` placeholders; leave `${{ github.* }}` untouched.
 
 | Template (under `assets/`) | Destination |
-|---|---|
+| --- | --- |
 | `.editorconfig` | `.editorconfig` |
 | `.npmrc` | `.npmrc` |
 | `.nvmrc` | `.nvmrc` |
