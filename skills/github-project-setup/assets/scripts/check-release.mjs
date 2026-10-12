@@ -92,11 +92,31 @@ export function validateTaggedRelease({
 }
 
 function readPackageVersion(ref) {
-  const packageJson = execFileSync('git', ['show', `${ref}:package.json`], {
-    encoding: 'utf8'
-  });
+  try {
+    const packageJson = execFileSync('git', ['show', `${ref}:package.json`], {
+      encoding: 'utf8'
+    });
 
-  return JSON.parse(packageJson).version;
+    return JSON.parse(packageJson).version;
+  } catch (error) {
+    try {
+      execFileSync('git', ['cat-file', '-e', `${ref}^{commit}`], {
+        stdio: 'ignore'
+      });
+    } catch {
+      throw error;
+    }
+
+    try {
+      execFileSync('git', ['cat-file', '-e', `${ref}:package.json`], {
+        stdio: 'ignore'
+      });
+    } catch {
+      return undefined;
+    }
+
+    throw error;
+  }
 }
 
 function readChangedFiles(baseRef) {
@@ -129,11 +149,13 @@ export function runReleaseGate({
     return;
   }
 
-  validateRelease(
-    readBasePackageVersion(baseRef),
-    readCurrentPackageJson().version,
-    readChangelog()
-  );
+  const baseVersion = readBasePackageVersion(baseRef);
+
+  if (baseVersion === undefined) {
+    return;
+  }
+
+  validateRelease(baseVersion, readCurrentPackageJson().version, readChangelog());
 }
 
 function runExtractReleaseNotes(version) {

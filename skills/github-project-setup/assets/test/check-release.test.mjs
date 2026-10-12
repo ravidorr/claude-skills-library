@@ -261,6 +261,32 @@ describe('runReleaseGate', () => {
     expect(localThis.baseVersionCalls).toBe(0);
   });
 
+  it('skips validation when the base branch has no package manifest', () => {
+    const localThis = {
+      packageJsonReads: 0,
+      changelogReads: 0,
+      result: undefined
+    };
+
+    localThis.result = runReleaseGate({
+      baseRef: 'origin/main',
+      readDiffFiles: () => ['package.json', 'src/index.ts'],
+      readBasePackageVersion: () => undefined,
+      readCurrentPackageJson: () => {
+        localThis.packageJsonReads += 1;
+        return { version: '0.1.0' };
+      },
+      readChangelog: () => {
+        localThis.changelogReads += 1;
+        return '## [0.1.0] - 2026-10-12\n\n- Initial release.\n';
+      }
+    });
+
+    expect(localThis.result).toBeUndefined();
+    expect(localThis.packageJsonReads).toBe(0);
+    expect(localThis.changelogReads).toBe(0);
+  });
+
   it('validates release metadata when package.json changes', () => {
     const localThis = {
       baseRefUsed: undefined,

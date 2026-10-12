@@ -13,8 +13,10 @@
     "build:skill": "bash scripts/build-skills.sh",
     "validate": "bash scripts/validate-skills.sh",
     "prepare": "husky",
+    "test": "npm run test:security-policy && npm run test:github-project-setup",
     "validate:security-policy": "node scripts/validate-security-policy-version.mjs",
-    "test:security-policy": "node --test scripts/validate-security-policy-version.test.mjs"
+    "test:security-policy": "node --test scripts/validate-security-policy-version.test.mjs",
+    "test:github-project-setup": "node --test skills/github-project-setup/scripts/verify-baseline.test.mjs"
   },
   "devDependencies": {
     "husky": "^9.1.7",

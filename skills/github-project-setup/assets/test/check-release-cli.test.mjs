@@ -28,10 +28,11 @@ function writeReleaseFixture(root, { version, changelog, releaseNotes }) {
   writeFileSync(join(root, 'release-notes.md'), releaseNotes);
 }
 
-function runCheckReleaseCli(root, cliArgs) {
+function runCheckReleaseCli(root, cliArgs, environment = {}) {
   try {
     execFileSync(process.execPath, [scriptPath, ...cliArgs], {
       cwd: root,
+      env: { ...process.env, ...environment },
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'pipe']
     });
@@ -45,6 +46,28 @@ function runCheckReleaseCli(root, cliArgs) {
 
     return { ok: false, stderr };
   }
+}
+
+function runGit(root, args) {
+  execFileSync('git', args, { cwd: root, stdio: 'ignore' });
+}
+
+function createInitialReleaseFixture(root) {
+  runGit(root, ['init', '--initial-branch=main']);
+  runGit(root, ['config', 'user.email', 'tests@example.com']);
+  runGit(root, ['config', 'user.name', 'Test User']);
+  writeFileSync(join(root, 'README.md'), '# Initial repository\n');
+  runGit(root, ['add', 'README.md']);
+  runGit(root, ['commit', '-m', 'initial repository']);
+  runGit(root, ['checkout', '-b', 'chore/project-baseline']);
+  writeReleaseFixture(root, {
+    version: '0.1.0',
+    changelog: '## [0.1.0] - 2026-10-12\n\n- Initial release.\n',
+    releaseNotes: ''
+  });
+  writeFileSync(join(root, 'src-index.js'), 'export {};\n');
+  runGit(root, ['add', 'package.json', 'CHANGELOG.md', 'release-notes.md', 'src-index.js']);
+  runGit(root, ['commit', '-m', 'add project baseline']);
 }
 
 describe('check-release CLI --tag integration', () => {
@@ -141,5 +164,19 @@ describe('check-release CLI --extract-release-notes integration', () => {
     });
 
     expect(localThis.notes).toBe('\n- Harden release gates.\n');
+  });
+});
+
+describe('check-release CLI base manifest handling', () => {
+  it('skips release validation when the base branch has no package manifest', () => {
+    const localThis = { result: undefined };
+
+    localThis.result = withTempDir((root) => {
+      createInitialReleaseFixture(root);
+
+      return runCheckReleaseCli(root, [], { BASE_REF: 'main' });
+    });
+
+    expect(localThis.result.ok).toBe(true);
   });
 });
