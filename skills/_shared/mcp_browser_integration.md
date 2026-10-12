@@ -17,7 +17,7 @@ These tools are particularly useful for design skills that review live web appli
 ## Available Tools
 
 | Tool | Purpose |
-|------|---------|
+| ------ | --------- |
 | `browser_navigate` | Go to a URL |
 | `browser_take_screenshot` | Capture page visuals |
 | `browser_snapshot` | Get page structure for interactions |
@@ -191,7 +191,7 @@ Use descriptive filenames:
 ## Common Viewport Sizes
 
 | Device | Width | Height |
-|--------|-------|--------|
+| -------- | ------- | -------- |
 | Desktop Large | 1920 | 1080 |
 | Desktop | 1440 | 900 |
 | Laptop | 1280 | 800 |

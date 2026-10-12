@@ -70,7 +70,7 @@ All skill reviews should include:
 Use consistent severity classification:
 
 | Level | Meaning | Action |
-|-------|---------|--------|
+| ------- | --------- | -------- |
 | **Critical** | Blocks users, breaks functionality, security/accessibility failure | Must fix before release |
 | **High** | Significant usability issue, major friction | Should fix soon |
 | **Medium** | Suboptimal experience, improvement opportunity | Plan to address |

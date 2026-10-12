@@ -9,7 +9,7 @@ Validates the YAML frontmatter in SKILL.md files.
 ### Required Fields
 
 | Field | Type | Description |
-|-------|------|-------------|
+| ------- | ------ | ------------- |
 | `name` | string | Unique skill identifier (kebab-case) |
 | `version` | string | Semantic version (X.Y.Z) |
 | `description` | string | Comprehensive description (50-1000 chars) |
@@ -17,7 +17,7 @@ Validates the YAML frontmatter in SKILL.md files.
 ### Optional Fields
 
 | Field | Type | Description |
-|-------|------|-------------|
+| ------- | ------ | ------------- |
 | `dependencies` | array | Skills this skill integrates with |
 | `triggers` | array | Explicit trigger phrases |
 | `category` | string | Skill category for organization |

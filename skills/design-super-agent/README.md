@@ -365,7 +365,7 @@ design-super-agent/
 This super-agent **integrates** the five specialized skills:
 
 | Specialized Skill | Super-Agent Coverage |
-|-------------------|---------------------|
+| ------------------- | --------------------- |
 | user-research-flows | Personas, journeys, flows (condensed) |
 | ux-web-review | UX analysis (condensed) |
 | ui-design-review | UI review (condensed) |
