@@ -20,14 +20,15 @@ Skills are modular, self-contained packages that transform Cursor from a general
 
 ## Available Skills
 
-| Skill                                                       | Description                                        | Triggers                                          |
-| ----------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------- |
-| [ux-web-review](skills/ux-web-review)                       | Expert UX review and analysis of web applications  | "Give me UX feedback", "Review this web app"      |
-| [ui-design-review](skills/ui-design-review)                 | Expert UI design review for visual interfaces      | "Review the UI design", "Critique this layout"    |
-| [accessibility-expert](skills/accessibility-expert)         | WCAG 2.1/2.2 accessibility audits (AA/AAA)         | "Review accessibility", "Check WCAG compliance"   |
-| [microcopy-content-design](skills/microcopy-content-design) | Microcopy and content design specialist            | "Improve this copy", "Write error message for..." |
-| [user-research-flows](skills/user-research-flows)           | User research, personas, journeys, and flow design | "Create a persona", "Map the user journey"        |
-| [design-super-agent](skills/design-super-agent)             | Comprehensive design review combining all areas    | "Full design review", "Analyze everything"        |
+| Skill                                                       | Description                                               | Triggers                                                           |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------ |
+| [ux-web-review](skills/ux-web-review)                       | Expert UX review and analysis of web applications         | "Give me UX feedback", "Review this web app"                       |
+| [ui-design-review](skills/ui-design-review)                 | Expert UI design review for visual interfaces             | "Review the UI design", "Critique this layout"                     |
+| [accessibility-expert](skills/accessibility-expert)         | WCAG 2.1/2.2 accessibility audits (AA/AAA)                | "Review accessibility", "Check WCAG compliance"                    |
+| [microcopy-content-design](skills/microcopy-content-design) | Microcopy and content design specialist                   | "Improve this copy", "Write error message for..."                  |
+| [user-research-flows](skills/user-research-flows)           | User research, personas, journeys, and flow design        | "Create a persona", "Map the user journey"                         |
+| [design-super-agent](skills/design-super-agent)             | Comprehensive design review combining all areas           | "Full design review", "Analyze everything"                         |
+| [github-project-setup](skills/github-project-setup)         | Scaffold or audit a GitHub project to a standard baseline | "Create a new GitHub project", "Update my project to the standard" |
 
 ## Installation
 
